@@ -31,8 +31,8 @@
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/experimental": "^5.0.1",
-    "@wagyu-swap/sdk": "^2.4.0",
-    "@wagyu-swap/uikit": "^0.50.1",
+    "@wagyu-swap/sdk": "git://github.com/altbee/wagyu-swap-sdk.git",
+    "@wagyu-swap/uikit": "git://github.com/altbee/wagyu-uikit.git",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
