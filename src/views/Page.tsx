@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '@wagyu-swap/uikit'
+import { Flex } from 'packages/uikit'
 import Footer from 'components/Menu/Footer'
 import SubNav from 'components/Menu/SubNav'
 import { PageMeta } from 'components/Layout/Page'

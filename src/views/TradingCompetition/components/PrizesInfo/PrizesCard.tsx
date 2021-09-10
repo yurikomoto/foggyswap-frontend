@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardHeader, Box, Heading, Text } from '@wagyu-swap/uikit'
+import { Card, CardHeader, Box, Heading, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import PrizesGrid from './PrizesGrid'
 

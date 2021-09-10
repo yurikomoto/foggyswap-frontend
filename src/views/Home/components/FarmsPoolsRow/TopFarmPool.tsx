@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Skeleton, Text } from '@wagyu-swap/uikit'
+import { Flex, Skeleton, Text } from 'packages/uikit'
 import Balance from 'components/Balance'
 import { useTranslation } from 'contexts/Localization'
 

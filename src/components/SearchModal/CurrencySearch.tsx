@@ -1,6 +1,6 @@
 import React, { KeyboardEvent, RefObject, useCallback, useMemo, useRef, useState, useEffect } from 'react'
 import { Currency, ETHER, Token } from '@wagyu-swap/sdk'
-import { Text, Input, Box } from '@wagyu-swap/uikit'
+import { Text, Input, Box } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { FixedSizeList } from 'react-window'
 import { useAudioModeManager } from 'state/user/hooks'

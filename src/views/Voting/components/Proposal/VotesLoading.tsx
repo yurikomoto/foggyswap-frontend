@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Skeleton } from '@wagyu-swap/uikit'
+import { Box, Flex, Skeleton } from 'packages/uikit'
 import times from 'lodash/times'
 import styled from 'styled-components'
 

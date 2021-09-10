@@ -1,4 +1,4 @@
-import { Image } from '@wagyu-swap/uikit'
+import { Image } from 'packages/uikit'
 import styled from 'styled-components'
 
 const DesktopImage = styled(Image)`

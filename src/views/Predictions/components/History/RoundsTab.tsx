@@ -1,7 +1,7 @@
 import React from 'react'
 import { useWeb3React } from '@web3-react/core'
 import { orderBy } from 'lodash'
-import { Box, Button, Flex, Heading, Text } from '@wagyu-swap/uikit'
+import { Box, Button, Flex, Heading, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useAppDispatch } from 'state'
 import { Bet } from 'state/types'

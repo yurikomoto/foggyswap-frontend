@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Heading, Text } from '@wagyu-swap/uikit'
+import { Box, Heading, Text } from 'packages/uikit'
 import Container from 'components/Layout/Container'
 import { useTranslation } from 'contexts/Localization'
 

@@ -12,7 +12,7 @@ import {
   Text,
   CardFooter,
   useModal,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import { useProfile } from 'state/profile/hooks'
 import { useTranslation } from 'contexts/Localization'
 import { Nft } from 'config/constants/nfts/types'

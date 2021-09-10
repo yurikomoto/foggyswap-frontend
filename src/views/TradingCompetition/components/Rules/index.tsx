@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text } from '@wagyu-swap/uikit'
+import { Flex, Text } from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import RulesCard from './RulesCard'

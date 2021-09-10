@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Button, Card, CardBody, CardHeader, CardProps, Heading, Radio, Text, useModal } from '@wagyu-swap/uikit'
+import { Button, Card, CardBody, CardHeader, CardProps, Heading, Radio, Text, useModal } from 'packages/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useAppDispatch } from 'state'
 import { Proposal } from 'state/types'

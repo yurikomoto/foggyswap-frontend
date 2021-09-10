@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { Box, Button, Flex, Text } from '@wagyu-swap/uikit'
+import { Box, Button, Flex, Text } from 'packages/uikit'
 import { AppDispatch } from 'state'
 import { useAllTransactions } from 'state/transactions/hooks'
 import { useTranslation } from 'contexts/Localization'

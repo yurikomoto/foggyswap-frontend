@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex } from '@wagyu-swap/uikit'
+import { Text, Flex } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { formatNumber } from 'utils/formatBalance'
 import { VotingBox, ModalInner } from './styles'

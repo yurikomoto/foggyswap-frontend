@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, LaurelLeftIcon, LaurelRightIcon } from '@wagyu-swap/uikit'
+import { Flex, LaurelLeftIcon, LaurelRightIcon } from 'packages/uikit'
 import { RibbonProps } from '../../types'
 import {
   RibbonDownMidExpanding,

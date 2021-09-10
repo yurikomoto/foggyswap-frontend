@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Text } from '@wagyu-swap/uikit'
+import { Heading, Text } from 'packages/uikit'
 import { useProfile } from 'state/profile/hooks'
 import { useTranslation } from 'contexts/Localization'
 import HeaderWrapper from 'views/Profile/components/HeaderWrapper'

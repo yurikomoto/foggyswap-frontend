@@ -12,7 +12,7 @@ import {
   Heading,
   Skeleton,
   Box,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { LotteryStatus } from 'config/constants/types'
 import { useGetUserLotteriesGraphData, useLottery } from 'state/lottery/hooks'

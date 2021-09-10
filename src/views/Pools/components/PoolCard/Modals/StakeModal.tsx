@@ -12,7 +12,7 @@ import {
   Link,
   CalculateIcon,
   IconButton,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import useToast from 'hooks/useToast'

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { LogoIcon, CheckmarkCircleIcon, CircleOutlineIcon, Flex, Text } from '@wagyu-swap/uikit'
+import { LogoIcon, CheckmarkCircleIcon, CircleOutlineIcon, Flex, Text } from 'packages/uikit'
 import { CountdownProps } from '../../types'
 
 const sharedFlexStyles = `

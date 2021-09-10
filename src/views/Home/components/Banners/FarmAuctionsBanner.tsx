@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Flex, Button, ArrowForwardIcon, Link, Heading } from '@wagyu-swap/uikit'
+import { Text, Flex, Button, ArrowForwardIcon, Link, Heading } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 const StyledSubheading = styled(Heading)`

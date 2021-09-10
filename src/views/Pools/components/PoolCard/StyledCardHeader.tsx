@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardHeader, Heading, Text, Flex } from '@wagyu-swap/uikit'
+import { CardHeader, Heading, Text, Flex } from 'packages/uikit'
 import { Token } from '@wagyu-swap/sdk'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

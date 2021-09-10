@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Skeleton, UserMenuItem } from '@wagyu-swap/uikit'
+import { Flex, Skeleton, UserMenuItem } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import history from 'routerHistory'
 

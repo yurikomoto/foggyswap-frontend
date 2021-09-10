@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Text, Card, Flex, Box, Spinner } from '@wagyu-swap/uikit'
+import { Text, Card, Flex, Box, Spinner } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { Auction, AuctionStatus, Bidder } from 'config/constants/types'
 import { TabToggleGroup, TabToggle } from 'components/TabToggle'

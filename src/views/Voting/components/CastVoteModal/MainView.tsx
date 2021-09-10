@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconButton, Text, Skeleton, Button, AutoRenewIcon, ChevronRightIcon } from '@wagyu-swap/uikit'
+import { IconButton, Text, Skeleton, Button, AutoRenewIcon, ChevronRightIcon } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { formatNumber } from 'utils/formatBalance'
 import TextEllipsis from '../TextEllipsis'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, TooltipText, useTooltip } from '@wagyu-swap/uikit'
+import { Text, TooltipText, useTooltip } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
 

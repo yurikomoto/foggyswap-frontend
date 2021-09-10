@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useWeb3React } from '@web3-react/core'
-import { useModal } from '@wagyu-swap/uikit'
+import { useModal } from 'packages/uikit'
 import { Nft } from 'config/constants/nfts/types'
 import nfts from 'config/constants/nfts'
 import NftGiveawayModal from './NftGiveawayModal'

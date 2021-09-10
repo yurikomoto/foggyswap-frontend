@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Text } from '@wagyu-swap/uikit'
+import { Box, Button, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useAppDispatch } from 'state'
 import { setHistoryPaneState } from 'state/predictions'

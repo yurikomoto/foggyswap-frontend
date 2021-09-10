@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '@wagyu-swap/uikit'
+import { Box } from 'packages/uikit'
 import { PredictionUser } from 'state/types'
 import MobileRow from './MobileRow'
 

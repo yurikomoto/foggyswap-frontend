@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, useModal, CalculateIcon, Skeleton, FlexProps, Button } from '@wagyu-swap/uikit'
+import { Flex, useModal, CalculateIcon, Skeleton, FlexProps, Button } from 'packages/uikit'
 import RoiCalculatorModal from 'components/RoiCalculatorModal'
 import Balance from 'components/Balance'
 import { DeserializedPool } from 'state/types'

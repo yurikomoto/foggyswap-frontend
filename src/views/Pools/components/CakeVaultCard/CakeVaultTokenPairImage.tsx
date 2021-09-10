@@ -1,5 +1,5 @@
 import React from 'react'
-import { TokenPairImage, ImageProps } from '@wagyu-swap/uikit'
+import { TokenPairImage, ImageProps } from 'packages/uikit'
 import { mainnetTokens } from 'config/constants/tokens'
 
 const CakeVaultTokenPairImage: React.FC<Omit<ImageProps, 'src'>> = (props) => {

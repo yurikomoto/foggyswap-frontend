@@ -16,7 +16,7 @@ import {
   ButtonMenuItem,
   HelpIcon,
   useTooltip,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import styled from 'styled-components'
 import Page from 'components/Layout/Page'
 import { getBscScanLink } from 'utils'

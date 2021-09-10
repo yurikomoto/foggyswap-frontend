@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Flex } from '@wagyu-swap/uikit'
+import { Flex } from 'packages/uikit'
 
 interface StickerProps {
   backgroundColor?: string

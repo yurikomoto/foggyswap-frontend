@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled, { css } from 'styled-components'
-import { ArrowDropDownIcon, Box, BoxProps, Text } from '@wagyu-swap/uikit'
+import { ArrowDropDownIcon, Box, BoxProps, Text } from 'packages/uikit'
 
 const DropDownHeader = styled.div`
   width: 100%;

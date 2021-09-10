@@ -1,6 +1,6 @@
 import React from 'react'
 import { Currency, Token } from '@wagyu-swap/sdk'
-import { Button, Text, Modal, useModal, InjectedModalProps, Link } from '@wagyu-swap/uikit'
+import { Button, Text, Modal, useModal, InjectedModalProps, Link } from 'packages/uikit'
 import styled from 'styled-components'
 import { AutoRow } from 'components/Layout/Row'
 import { AutoColumn } from 'components/Layout/Column'

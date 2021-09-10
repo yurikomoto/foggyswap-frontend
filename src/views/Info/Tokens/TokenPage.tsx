@@ -16,7 +16,7 @@ import {
   Spinner,
   Image,
   useMatchBreakpoints,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import Page from 'components/Layout/Page'
 import { getBscScanLink } from 'utils'
 import truncateHash from 'utils/truncateHash'

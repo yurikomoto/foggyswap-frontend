@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Heading, Image } from '@wagyu-swap/uikit'
+import { Flex, Text, Heading, Image } from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'

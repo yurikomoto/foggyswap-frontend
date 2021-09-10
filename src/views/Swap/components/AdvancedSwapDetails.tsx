@@ -1,6 +1,6 @@
 import React from 'react'
 import { Trade, TradeType } from '@wagyu-swap/sdk'
-import { Text } from '@wagyu-swap/uikit'
+import { Text } from 'packages/uikit'
 import { Field } from 'state/swap/actions'
 import { useUserSlippageTolerance } from 'state/user/hooks'
 import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown } from 'utils/prices'

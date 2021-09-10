@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Text } from '@wagyu-swap/uikit'
+import { Text } from 'packages/uikit'
 
 const TextEllipsis = styled(Text)`
   overflow: hidden;

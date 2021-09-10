@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, useWalletModal } from '@wagyu-swap/uikit'
+import { Button, useWalletModal } from 'packages/uikit'
 import useAuth from 'hooks/useAuth'
 import { useTranslation } from 'contexts/Localization'
 

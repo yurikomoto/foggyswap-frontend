@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Heading, Link } from '@wagyu-swap/uikit'
+import { Flex, Text, Heading, Link } from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import HowToCard from './HowToCard'

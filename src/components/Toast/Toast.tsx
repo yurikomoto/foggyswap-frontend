@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import styled from 'styled-components'
-import { Alert, alertVariants } from '@wagyu-swap/uikit'
+import { Alert, alertVariants } from 'packages/uikit'
 import { ToastProps, types } from './types'
 
 const alertTypeMap = {

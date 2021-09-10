@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from '@wagyu-swap/uikit'
+import { Box, Text } from 'packages/uikit'
 import { PredictionUser } from 'state/types'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

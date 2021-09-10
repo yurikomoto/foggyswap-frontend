@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex } from '@wagyu-swap/uikit'
+import { Box, Flex } from 'packages/uikit'
 import styled from 'styled-components'
 import HarvestCard from './HarvestCard'
 import UserDetail from './UserDetail'

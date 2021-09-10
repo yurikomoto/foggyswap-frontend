@@ -1,5 +1,5 @@
 import React from 'react'
-import { Td, Text } from '@wagyu-swap/uikit'
+import { Td, Text } from 'packages/uikit'
 import { PredictionUser } from 'state/types'
 import ResultAvatar from './ResultAvatar'
 import { NetWinnings } from './styles'

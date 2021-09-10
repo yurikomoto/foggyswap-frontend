@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState, useEffect } from 'react'
-import { Box, Text, Input, useModal } from '@wagyu-swap/uikit'
+import { Box, Text, Input, useModal } from 'packages/uikit'
 import styled from 'styled-components'
 import { isAddress } from 'utils'
 import { useAppDispatch } from 'state'

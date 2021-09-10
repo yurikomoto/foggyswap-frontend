@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Flex, Text } from '@wagyu-swap/uikit'
+import { Flex, Text } from 'packages/uikit'
 import styled, { DefaultTheme } from 'styled-components'
 
 type Status = 'expired' | 'live' | 'next' | 'soon' | 'canceled' | 'calculating'

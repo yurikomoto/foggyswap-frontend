@@ -1,5 +1,5 @@
 import React from 'react'
-import { useModal, Button, Skeleton } from '@wagyu-swap/uikit'
+import { useModal, Button, Skeleton } from 'packages/uikit'
 import WhitelistedBiddersModal from './WhitelistedBiddersModal'
 import useWhitelistedAddresses from '../hooks/useWhitelistedAddresses'
 

@@ -11,7 +11,7 @@ import {
   useModal,
   CardRibbon,
   useMatchBreakpoints,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import { LotteryRound } from 'state/types'
 import { useGetUserLotteriesGraphData, useLottery } from 'state/lottery/hooks'
 import { LotteryStatus } from 'config/constants/types'

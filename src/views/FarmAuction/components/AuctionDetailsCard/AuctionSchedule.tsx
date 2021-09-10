@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { format } from 'date-fns'
-import { Text, Flex, Box } from '@wagyu-swap/uikit'
+import { Text, Flex, Box } from 'packages/uikit'
 import { Auction, AuctionStatus } from 'config/constants/types'
 import { useTranslation } from 'contexts/Localization'
 

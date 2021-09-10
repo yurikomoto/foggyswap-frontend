@@ -1,6 +1,6 @@
 import { Currency, Percent, Price } from '@wagyu-swap/sdk'
 import React from 'react'
-import { Text } from '@wagyu-swap/uikit'
+import { Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { AutoColumn } from '../../components/Layout/Column'
 import { AutoRow } from '../../components/Layout/Row'

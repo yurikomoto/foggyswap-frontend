@@ -1,6 +1,6 @@
 import React from 'react'
 import { Token } from '@wagyu-swap/sdk'
-import { Modal, InjectedModalProps } from '@wagyu-swap/uikit'
+import { Modal, InjectedModalProps } from 'packages/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 
 interface Props extends InjectedModalProps {

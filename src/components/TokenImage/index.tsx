@@ -4,7 +4,7 @@ import {
   TokenPairImageProps as UIKitTokenPairImageProps,
   TokenImage as UIKitTokenImage,
   ImageProps,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import tokens from 'config/constants/tokens'
 import { Token } from '@wagyu-swap/sdk'
 

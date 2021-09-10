@@ -1,6 +1,6 @@
 import React from 'react'
 import { Price } from '@wagyu-swap/sdk'
-import { Text, AutoRenewIcon } from '@wagyu-swap/uikit'
+import { Text, AutoRenewIcon } from 'packages/uikit'
 import { StyledBalanceMaxMini } from './styleds'
 
 interface TradePriceProps {

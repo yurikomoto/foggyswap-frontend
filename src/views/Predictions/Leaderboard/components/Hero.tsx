@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading } from '@wagyu-swap/uikit'
+import { Heading } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import PageHeader from 'components/PageHeader'
 import Crumbs from './Crumbs'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from '@wagyu-swap/uikit'
+import { Box, Text } from 'packages/uikit'
 import styled from 'styled-components'
 
 const BaseLabel = styled.label`

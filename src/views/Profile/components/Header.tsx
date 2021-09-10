@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Flex, Heading, useModal, PresentWonIcon } from '@wagyu-swap/uikit'
+import { Button, Flex, Heading, useModal, PresentWonIcon } from 'packages/uikit'
 import { useProfile } from 'state/profile/hooks'
 import { useTranslation } from 'contexts/Localization'
 import ClaimNftAndCakeModal, { useCanClaim } from './ClaimGiftModal'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoxProps, Text } from '@wagyu-swap/uikit'
+import { BoxProps, Text } from 'packages/uikit'
 import { NodeRound } from 'state/types'
 import { useTranslation } from 'contexts/Localization'
 import { getRoundPosition } from '../../helpers'

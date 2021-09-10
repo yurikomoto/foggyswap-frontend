@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from '@wagyu-swap/uikit'
+import { Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 const BondlyWarning = () => {

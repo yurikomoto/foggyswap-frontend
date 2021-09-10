@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Box } from '@wagyu-swap/uikit'
+import { Box } from 'packages/uikit'
 
 const floatingAnim = (x: string, y: string) => keyframes`
   from {

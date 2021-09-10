@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '@wagyu-swap/uikit'
+import { Button } from 'packages/uikit'
 
 interface NumTicketsToBuyButtonProps {
   onClick: () => void

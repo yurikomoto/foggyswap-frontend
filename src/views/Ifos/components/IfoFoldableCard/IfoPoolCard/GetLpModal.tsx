@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal, ModalBody, Text, Image, Button, Link, OpenNewIcon } from '@wagyu-swap/uikit'
+import { Modal, ModalBody, Text, Image, Button, Link, OpenNewIcon } from 'packages/uikit'
 import { Token } from '@wagyu-swap/sdk'
 import { BASE_ADD_LIQUIDITY_URL } from 'config'
 import { useTranslation } from 'contexts/Localization'

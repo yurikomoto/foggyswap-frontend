@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Button, useModal, Skeleton } from '@wagyu-swap/uikit'
+import { Flex, Button, useModal, Skeleton } from 'packages/uikit'
 import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'
 import { DeserializedPool } from 'state/types'

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { Breadcrumbs, Heading, Text } from '@wagyu-swap/uikit'
+import { Breadcrumbs, Heading, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { ProfileCreationContext } from './contexts/ProfileCreationProvider'
 

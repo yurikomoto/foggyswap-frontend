@@ -1,5 +1,5 @@
 import React from 'react'
-import { BunnyPlaceholderIcon, Flex, Heading } from '@wagyu-swap/uikit'
+import { BunnyPlaceholderIcon, Flex, Heading } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface ComingSoonProps {

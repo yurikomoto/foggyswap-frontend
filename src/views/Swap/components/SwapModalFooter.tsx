@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import styled from 'styled-components'
 import { Trade, TradeType } from '@wagyu-swap/sdk'
-import { Button, Text, AutoRenewIcon } from '@wagyu-swap/uikit'
+import { Button, Text, AutoRenewIcon } from 'packages/uikit'
 import { Field } from 'state/swap/actions'
 import {
   computeSlippageAdjustedAmounts,

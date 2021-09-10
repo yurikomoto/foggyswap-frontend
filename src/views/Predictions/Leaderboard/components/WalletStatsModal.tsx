@@ -14,7 +14,7 @@ import {
   useMatchBreakpoints,
   Skeleton,
   Heading,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import { useGetProfileAvatar } from 'state/profile/hooks'
 import useTheme from 'hooks/useTheme'
 import styled from 'styled-components'

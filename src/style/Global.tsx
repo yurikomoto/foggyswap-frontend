@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 // eslint-disable-next-line import/no-unresolved
-import { PancakeTheme } from '@wagyu-swap/uikit/dist/theme'
+// import { PancakeTheme } from 'packages/uikit/dist/theme'
+import { PancakeTheme } from 'packages/uikit'
 
 declare module 'styled-components' {
   /* eslint-disable @typescript-eslint/no-empty-interface */

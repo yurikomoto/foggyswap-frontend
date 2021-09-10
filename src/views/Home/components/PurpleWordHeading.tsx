@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, TextProps } from '@wagyu-swap/uikit'
+import { Heading, TextProps } from 'packages/uikit'
 import useTheme from 'hooks/useTheme'
 
 interface HeadingProps extends TextProps {

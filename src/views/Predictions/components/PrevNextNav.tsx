@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowBackIcon, ArrowForwardIcon, BunnyCardsIcon, Flex, IconButton } from '@wagyu-swap/uikit'
+import { ArrowBackIcon, ArrowForwardIcon, BunnyCardsIcon, Flex, IconButton } from 'packages/uikit'
 import styled from 'styled-components'
 import { useGetCurrentEpoch, useGetSortedRounds } from 'state/predictions/hooks'
 import useSwiper from '../hooks/useSwiper'

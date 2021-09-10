@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Flex, ExpandableLabel, CardFooter } from '@wagyu-swap/uikit'
+import { Flex, ExpandableLabel, CardFooter } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { LotteryRound } from 'state/types'
 import FooterExpanded from './FooterExpanded'

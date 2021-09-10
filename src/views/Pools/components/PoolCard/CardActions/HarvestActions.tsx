@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Button, Heading, useModal, Skeleton } from '@wagyu-swap/uikit'
+import { Flex, Text, Button, Heading, useModal, Skeleton } from 'packages/uikit'
 import BigNumber from 'bignumber.js'
 import { Token } from '@wagyu-swap/sdk'
 import { useTranslation } from 'contexts/Localization'

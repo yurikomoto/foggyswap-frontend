@@ -1,6 +1,6 @@
 import React from 'react'
 import { Currency, Pair } from '@wagyu-swap/sdk'
-import { Button, ChevronDownIcon, Text, useModal, Flex } from '@wagyu-swap/uikit'
+import { Button, ChevronDownIcon, Text, useModal, Flex } from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, Box, CardProps } from '@wagyu-swap/uikit'
+import { Card, CardBody, Box, CardProps } from 'packages/uikit'
 
 const StyledCard = styled(Card)<{ background: string; rotation?: string }>`
   height: fit-content;

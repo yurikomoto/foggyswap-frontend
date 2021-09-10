@@ -1,4 +1,4 @@
-import { MenuEntry } from '@wagyu-swap/uikit'
+import { MenuEntry } from 'packages/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 
 const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [

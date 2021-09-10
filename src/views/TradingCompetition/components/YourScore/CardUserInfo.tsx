@@ -12,7 +12,7 @@ import {
   BlockIcon,
   Button,
   useModal,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import { LIVE } from 'config/constants/trading-competition/easterPhases'

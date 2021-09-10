@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text } from '@wagyu-swap/uikit'
+import { Text } from 'packages/uikit'
 import { Nft } from 'config/constants/nfts/types'
 
 interface CollectibleCardProps {

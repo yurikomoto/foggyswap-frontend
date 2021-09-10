@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, useMatchBreakpoints } from '@wagyu-swap/uikit'
+import { Text, useMatchBreakpoints } from 'packages/uikit'
 import { DeserializedPool } from 'state/types'
 import { useCakeVault } from 'state/pools/hooks'
 import { useTranslation } from 'contexts/Localization'

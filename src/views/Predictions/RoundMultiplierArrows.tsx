@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTheme } from 'styled-components'
-import { Svg, SvgProps } from '@wagyu-swap/uikit'
+import { Svg, SvgProps } from 'packages/uikit'
 
 interface MultiplierProps extends SvgProps {
   isActive: boolean

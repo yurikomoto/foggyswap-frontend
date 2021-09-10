@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Token } from '@wagyu-swap/sdk'
-import { ButtonMenu, ButtonMenuItem, ModalBody } from '@wagyu-swap/uikit'
+import { ButtonMenu, ButtonMenuItem, ModalBody } from 'packages/uikit'
 import styled from 'styled-components'
 import { TokenList } from '@uniswap/token-lists'
 import { useTranslation } from 'contexts/Localization'

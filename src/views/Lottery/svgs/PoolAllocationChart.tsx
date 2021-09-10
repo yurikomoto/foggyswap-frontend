@@ -1,5 +1,5 @@
 import React from 'react'
-import { Svg, SvgProps } from '@wagyu-swap/uikit'
+import { Svg, SvgProps } from 'packages/uikit'
 
 const PoolAllocationChart: React.FC<SvgProps> = (props) => {
   return (

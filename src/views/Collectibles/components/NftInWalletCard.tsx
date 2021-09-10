@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Heading, Text } from '@wagyu-swap/uikit'
+import { Card, CardBody, Heading, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import CardContent from './CardContent'
 

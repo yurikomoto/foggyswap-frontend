@@ -1,6 +1,6 @@
 import React from 'react'
 import { Price } from '@wagyu-swap/sdk'
-import { Flex, Text } from '@wagyu-swap/uikit'
+import { Flex, Text } from 'packages/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'
 import { useTranslation } from 'contexts/Localization'
 import { formatBnb } from '../helpers'

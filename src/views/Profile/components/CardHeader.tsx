@@ -1,5 +1,5 @@
 import styled, { DefaultTheme } from 'styled-components'
-import { CardHeader as UIKitCardHeader } from '@wagyu-swap/uikit'
+import { CardHeader as UIKitCardHeader } from 'packages/uikit'
 
 const getBackground = (theme: DefaultTheme) => {
   if (theme.isDark) {

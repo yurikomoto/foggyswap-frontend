@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Text, Flex, Message, Modal, InjectedModalProps, Checkbox } from '@wagyu-swap/uikit'
+import { Button, Text, Flex, Message, Modal, InjectedModalProps, Checkbox } from 'packages/uikit'
 import { useExpertModeManager } from 'state/user/hooks'
 import { useTranslation } from 'contexts/Localization'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Button, Text } from '@wagyu-swap/uikit'
+import { Heading, Button, Text } from 'packages/uikit'
 import history from 'routerHistory'
 import { useTranslation } from 'contexts/Localization'
 import { CompetitionProps } from 'views/TradingCompetition/types'

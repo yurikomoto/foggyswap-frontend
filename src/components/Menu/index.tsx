@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu as UikitMenu } from '@wagyu-swap/uikit'
+import { Menu as UikitMenu } from 'packages/uikit'
 import { languageList } from 'config/localization/languages'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'

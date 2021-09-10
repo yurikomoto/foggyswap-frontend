@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonMenu, ButtonMenuItem } from '@wagyu-swap/uikit'
+import { ButtonMenu, ButtonMenuItem } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useAppDispatch } from 'state'
 import { setLeaderboardFilter } from 'state/predictions'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Box } from '@wagyu-swap/uikit'
+import { Text, Flex, Box } from 'packages/uikit'
 import styled from 'styled-components'
 import truncateHash from 'utils/truncateHash'
 import { LeaderboardDataItem } from '../../../types'

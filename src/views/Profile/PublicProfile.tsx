@@ -15,7 +15,7 @@ import {
   BlockIcon,
   VisibilityOn,
   VisibilityOff,
-} from '@wagyu-swap/uikit'
+} from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useProfile } from 'state/profile/hooks'
 import { useUserUsernameVisibility } from 'state/user/hooks'

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useModal } from '@wagyu-swap/uikit'
+import { useModal } from 'packages/uikit'
 import ProfileAvatarWithTeam, { ProfileAvatarProps } from 'components/ProfileAvatarWithTeam'
 import EditProfileModal from './EditProfileModal'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, FlexProps, PrizeIcon, Text } from '@wagyu-swap/uikit'
+import { Flex, FlexProps, PrizeIcon, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface PointsLabelProps extends FlexProps {

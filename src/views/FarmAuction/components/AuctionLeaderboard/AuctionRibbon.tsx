@@ -1,4 +1,4 @@
-import { Text } from '@wagyu-swap/uikit'
+import { Text } from 'packages/uikit'
 import { Auction, AuctionStatus } from 'config/constants/types'
 import { useTranslation } from 'contexts/Localization'
 import React from 'react'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, useTooltip, TooltipText } from '@wagyu-swap/uikit'
+import { Text, Flex, useTooltip, TooltipText } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useCakeVault } from 'state/pools/hooks'
 import UnstakingFeeCountdownRow from './UnstakingFeeCountdownRow'

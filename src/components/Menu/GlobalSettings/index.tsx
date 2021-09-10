@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, IconButton, CogIcon, useModal } from '@wagyu-swap/uikit'
+import { Flex, IconButton, CogIcon, useModal } from 'packages/uikit'
 import SettingsModal from './SettingsModal'
 
 const GlobalSettings = () => {

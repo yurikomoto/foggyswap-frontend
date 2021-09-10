@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, IconButton, AddIcon, MinusIcon, useModal, Skeleton } from '@wagyu-swap/uikit'
+import { Flex, Text, IconButton, AddIcon, MinusIcon, useModal, Skeleton } from 'packages/uikit'
 import BigNumber from 'bignumber.js'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { DeserializedPool } from 'state/types'

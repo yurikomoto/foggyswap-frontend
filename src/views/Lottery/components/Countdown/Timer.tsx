@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Heading } from '@wagyu-swap/uikit'
+import { Flex, Heading } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 export interface TimerProps {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { AutoRenewIcon, Button } from '@wagyu-swap/uikit'
+import { AutoRenewIcon, Button } from 'packages/uikit'
 import { PoolIds } from 'config/constants/types'
 import { WalletIfoData } from 'views/Ifos/types'
 import { useTranslation } from 'contexts/Localization'

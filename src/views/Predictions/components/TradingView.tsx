@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Box } from '@wagyu-swap/uikit'
+import { Box } from 'packages/uikit'
 import { DefaultTheme, useTheme } from 'styled-components'
 import debounce from 'lodash/debounce'
 import { useTranslation } from 'contexts/Localization'

@@ -1,5 +1,5 @@
 import { Currency, ETHER, Token } from '@wagyu-swap/sdk'
-import { BinanceIcon } from '@wagyu-swap/uikit'
+import { BinanceIcon } from 'packages/uikit'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 import useHttpLocations from '../../hooks/useHttpLocations'

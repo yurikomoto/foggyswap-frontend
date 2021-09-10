@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Image, Skeleton } from '@wagyu-swap/uikit'
+import { Flex, Image, Skeleton } from 'packages/uikit'
 import Sticker from '../../Sticker'
 
 const Wrapper = styled(Flex)<{ imageSize?: number }>`

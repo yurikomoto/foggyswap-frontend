@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Flex, ChevronRightIcon, Box, SmallDotIcon, PrizeIcon } from '@wagyu-swap/uikit'
+import { Text, Flex, ChevronRightIcon, Box, SmallDotIcon, PrizeIcon } from 'packages/uikit'
 import { dateOptions, timeOptions } from '../../helpers'
 
 interface FinishedRoundRowProps {

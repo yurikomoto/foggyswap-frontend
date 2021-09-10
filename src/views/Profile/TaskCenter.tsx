@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, CardHeader, Flex, Heading, Text } from '@wagyu-swap/uikit'
+import { Card, CardBody, CardHeader, Flex, Heading, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import AchievementsList from './components/AchievementsList'
 import ClaimPointsCallout from './components/ClaimPointsCallout '

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import { Trade, TradeType } from '@wagyu-swap/sdk'
-import { Button, Text, ErrorIcon, ArrowDownIcon } from '@wagyu-swap/uikit'
+import { Button, Text, ErrorIcon, ArrowDownIcon } from 'packages/uikit'
 import { Field } from 'state/swap/actions'
 import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown, warningSeverity } from 'utils/prices'
 import { AutoColumn } from 'components/Layout/Column'
