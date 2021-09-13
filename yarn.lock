@@ -4276,7 +4276,7 @@
 
 "@wagyu-swap/sdk@git://github.com/altbee/wagyu-swap-sdk.git":
   version "2.4.0"
-  resolved "git://github.com/altbee/wagyu-swap-sdk.git#3d8d8cecaf9a7f75f24897ed9dab7a867675d058"
+  resolved "git://github.com/altbee/wagyu-swap-sdk.git#20a58f04a8495f52fa68ee11af043744d8307648"
   dependencies:
     "@wagyu-swap-libs/wagyu-swap-core" "git://github.com/altbee/wagyu-swap-core.git"
     big.js "^5.2.2"
@@ -4288,7 +4288,7 @@
 
 "@wagyu-swap/uikit@git://github.com/altbee/wagyu-uikit.git":
   version "0.51.0"
-  resolved "git://github.com/altbee/wagyu-uikit.git#2a043aa589e89c2aae276a5fb58d2b2a684b1518"
+  resolved "git://github.com/altbee/wagyu-uikit.git#02fe5240cfad116bbd4d5e7a63d75661e9356bc0"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"

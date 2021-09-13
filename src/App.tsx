@@ -73,9 +73,9 @@ const App: React.FC = () => {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route exact path="/farms/auction">
+            {/* <Route exact path="/farms/auction">
               <FarmAuction />
-            </Route>
+            </Route> */}
             <Route path="/farms">
               <Farms />
             </Route>
@@ -88,7 +88,7 @@ const App: React.FC = () => {
             <Route path="/ifo">
               <Ifos />
             </Route>
-            <Route path="/collectibles">
+            {/* <Route path="/collectibles">
               <Collectibles />
             </Route>
             <Route exact path="/teams">
@@ -117,7 +117,7 @@ const App: React.FC = () => {
             </Route>
             <Route path="/voting/proposal/:id">
               <Proposal />
-            </Route>
+            </Route> */}
             {/* Info pages */}
             <Route path="/info">
               <Info />
@@ -149,9 +149,9 @@ const App: React.FC = () => {
             <Route path="/syrup">
               <Redirect to="/pools" />
             </Route>
-            <Route path="/nft">
+            {/* <Route path="/nft">
               <Redirect to="/collectibles" />
-            </Route>
+            </Route> */}
 
             {/* 404 */}
             <Route component={NotFound} />

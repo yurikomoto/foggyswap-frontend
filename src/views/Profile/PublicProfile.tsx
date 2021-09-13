@@ -19,7 +19,7 @@ import {
 import { useTranslation } from 'contexts/Localization'
 import { useProfile } from 'state/profile/hooks'
 import { useUserUsernameVisibility } from 'state/user/hooks'
-import { getBscScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import Menu from './components/Menu'
 import CardHeader from './components/CardHeader'
 import Collectibles from './components/Collectibles'
@@ -113,7 +113,7 @@ const PublicProfile = () => {
                   <Icon ml="4px" onClick={toggleUsernameVisibility} cursor="pointer" />
                 </Flex>
                 <Flex alignItems="center">
-                  <AddressLink href={getBscScanLink(account, 'address')} color="text" external>
+                  <AddressLink href={getVelasScanLink(account, 'address')} color="text" external>
                     {account}
                     <OpenNewIcon ml="4px" />
                   </AddressLink>

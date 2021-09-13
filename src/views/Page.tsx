@@ -5,7 +5,7 @@ import Footer from 'components/Menu/Footer'
 import SubNav from 'components/Menu/SubNav'
 import { PageMeta } from 'components/Layout/Page'
 
-const StyledPage = styled.div`
+const StyledPage = styled.div<{ bg?: string }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +14,21 @@ const StyledPage = styled.div`
   padding-bottom: 0;
   min-height: calc(100vh - 64px);
   background: ${({ theme }) => theme.colors.gradients.bubblegum};
+
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: ' ';
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    background-image: url(${(props) => props.bg});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;
@@ -30,15 +45,15 @@ const StyledPage = styled.div`
   }
 `
 
-const Page: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ children, ...props }) => {
+const Page: React.FC<React.HTMLAttributes<HTMLDivElement> & { bgUrl?: string }> = ({ children, bgUrl, ...props }) => {
   return (
     <>
       <PageMeta />
-      <StyledPage {...props}>
+      <StyledPage bg={bgUrl} {...props}>
         <SubNav />
         {children}
         <Flex flexGrow={1} />
-        <Footer />
+        {/* <Footer /> */}
       </StyledPage>
     </>
   )

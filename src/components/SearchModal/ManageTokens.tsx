@@ -7,7 +7,7 @@ import { useToken } from 'hooks/Tokens'
 import { useRemoveUserAddedToken } from 'state/user/hooks'
 import useUserAddedTokens from 'state/user/hooks/useUserAddedTokens'
 import { CurrencyLogo } from 'components/Logo'
-import { getBscScanLink, isAddress } from 'utils'
+import { getVelasScanLink, isAddress } from 'utils'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useTranslation } from 'contexts/Localization'
 import Column, { AutoColumn } from '../Layout/Column'
@@ -73,7 +73,7 @@ export default function ManageTokens({
         <RowBetween key={token.address} width="100%">
           <RowFixed>
             <CurrencyLogo currency={token} size="20px" />
-            <Link external href={getBscScanLink(token.address, 'address', chainId)} color="textSubtle" ml="10px">
+            <Link external href={getVelasScanLink(token.address, 'address', chainId)} color="textSubtle" ml="10px">
               {token.symbol}
             </Link>
           </RowFixed>
@@ -81,7 +81,7 @@ export default function ManageTokens({
             <IconButton variant="text" onClick={() => removeToken(chainId, token.address)}>
               <CloseIcon />
             </IconButton>
-            <LinkExternal href={getBscScanLink(token.address, 'address', chainId)} />
+            <LinkExternal href={getVelasScanLink(token.address, 'address', chainId)} />
           </RowFixed>
         </RowBetween>
       ))

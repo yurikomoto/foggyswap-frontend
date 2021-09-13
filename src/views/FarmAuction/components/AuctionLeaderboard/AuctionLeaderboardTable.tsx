@@ -15,7 +15,7 @@ import {
   EllipsisIcon,
   LinkExternal,
 } from 'packages/uikit'
-import { getBscScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTranslation } from 'contexts/Localization'
 import { usePriceCakeBusd } from 'state/farms/hooks'
@@ -99,7 +99,7 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, 
             </SubMenuItem>
           )}
           {account && (
-            <SubMenuItem as={LinkExternal} href={getBscScanLink(account, 'address')} bold={false} color="text">
+            <SubMenuItem as={LinkExternal} href={getVelasScanLink(account, 'address')} bold={false} color="text">
               {t('Bidder Address')}
             </SubMenuItem>
           )}

@@ -50,10 +50,10 @@ describe('hooks', () => {
     test('invalid recipient', () => {
       expect(
         queryParametersToSwapState(
-          parse('?outputCurrency=BNB&exactAmount=20.5&recipient=abc', { parseArrays: false, ignoreQueryPrefix: true }),
+          parse('?outputCurrency=VLX&exactAmount=20.5&recipient=abc', { parseArrays: false, ignoreQueryPrefix: true }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'VLX' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,
@@ -64,13 +64,13 @@ describe('hooks', () => {
     test('valid recipient', () => {
       expect(
         queryParametersToSwapState(
-          parse('?outputCurrency=BNB&exactAmount=20.5&recipient=0x0fF2D1eFd7A57B7562b2bf27F3f37899dB27F4a5', {
+          parse('?outputCurrency=VLX&exactAmount=20.5&recipient=0x0fF2D1eFd7A57B7562b2bf27F3f37899dB27F4a5', {
             parseArrays: false,
             ignoreQueryPrefix: true,
           }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'VLX' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,
@@ -80,13 +80,13 @@ describe('hooks', () => {
     test('accepts any recipient', () => {
       expect(
         queryParametersToSwapState(
-          parse('?outputCurrency=BNB&exactAmount=20.5&recipient=bob.argent.xyz', {
+          parse('?outputCurrency=VLX&exactAmount=20.5&recipient=bob.argent.xyz', {
             parseArrays: false,
             ignoreQueryPrefix: true,
           }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'VLX' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,

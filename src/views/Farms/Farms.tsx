@@ -39,11 +39,34 @@ const ControlContainer = styled.div`
   flex-direction: column;
   margin-bottom: 32px;
 
+  background-color: #fff;
+
   ${({ theme }) => theme.mediaQueries.sm} {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 16px 32px;
     margin-bottom: 0;
+  }
+`
+
+const ControllerWrapper = styled.div`
+  background-color: #fff;
+`
+
+const ContentWrapper = styled.div<{ bgUrl?: string }>`
+  position: relative;
+  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  &:after {
+    position: absolute;
+    content: ' ';
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    background-image: url(${(props) => props.bgUrl});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 `
 
@@ -369,81 +392,78 @@ const Farms: React.FC = () => {
 
   return (
     <>
-      <PageHeader>
+      <PageHeader background="#fff">
         <Heading as="h1" scale="xxl" color="secondary" mb="24px">
           {t('Farms')}
         </Heading>
         <Heading scale="lg" color="text">
           {t('Stake LP tokens to earn.')}
         </Heading>
-        <NavLink exact activeClassName="active" to="/farms/auction" id="lottery-pot-banner">
-          <Button p="0" variant="text">
-            <Text color="primary" bold fontSize="16px" mr="4px">
-              {t('Community Auctions')}
-            </Text>
-            <ArrowForwardIcon color="primary" />
-          </Button>
-        </NavLink>
       </PageHeader>
-      <Page>
-        <ControlContainer>
-          <ViewControls>
-            <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
-            <ToggleWrapper>
-              <Toggle
-                id="staked-only-farms"
-                checked={stakedOnly}
-                onChange={() => setStakedOnly(!stakedOnly)}
-                scale="sm"
-              />
-              <Text> {t('Staked only')}</Text>
-            </ToggleWrapper>
-            <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} />
-          </ViewControls>
-          <FilterContainer>
-            <LabelWrapper>
-              <Text textTransform="uppercase">{t('Sort by')}</Text>
-              <Select
-                options={[
-                  {
-                    label: t('Hot'),
-                    value: 'hot',
-                  },
-                  {
-                    label: t('APR'),
-                    value: 'apr',
-                  },
-                  {
-                    label: t('Multiplier'),
-                    value: 'multiplier',
-                  },
-                  {
-                    label: t('Earned'),
-                    value: 'earned',
-                  },
-                  {
-                    label: t('Liquidity'),
-                    value: 'liquidity',
-                  },
-                ]}
-                onOptionChange={handleSortOptionChange}
-              />
-            </LabelWrapper>
-            <LabelWrapper style={{ marginLeft: 16 }}>
-              <Text textTransform="uppercase">{t('Search')}</Text>
-              <SearchInput onChange={handleChangeQuery} placeholder="Search Farms" />
-            </LabelWrapper>
-          </FilterContainer>
-        </ControlContainer>
-        {renderContent()}
-        {account && !userDataLoaded && stakedOnly && (
-          <Flex justifyContent="center">
-            <Loading />
-          </Flex>
-        )}
-        <div ref={observerRef} />
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
-      </Page>
+      <ControllerWrapper>
+        <Page style={{ minHeight: 'unset' }}>
+          <ControlContainer>
+            <ViewControls>
+              <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
+              <ToggleWrapper>
+                <Toggle
+                  id="staked-only-farms"
+                  checked={stakedOnly}
+                  onChange={() => setStakedOnly(!stakedOnly)}
+                  scale="sm"
+                />
+                <Text> {t('Staked only')}</Text>
+              </ToggleWrapper>
+              <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} />
+            </ViewControls>
+            <FilterContainer>
+              <LabelWrapper>
+                <Text textTransform="uppercase">{t('Sort by')}</Text>
+                <Select
+                  options={[
+                    {
+                      label: t('Hot'),
+                      value: 'hot',
+                    },
+                    {
+                      label: t('APR'),
+                      value: 'apr',
+                    },
+                    {
+                      label: t('Multiplier'),
+                      value: 'multiplier',
+                    },
+                    {
+                      label: t('Earned'),
+                      value: 'earned',
+                    },
+                    {
+                      label: t('Liquidity'),
+                      value: 'liquidity',
+                    },
+                  ]}
+                  onOptionChange={handleSortOptionChange}
+                />
+              </LabelWrapper>
+              <LabelWrapper style={{ marginLeft: 16 }}>
+                <Text textTransform="uppercase">{t('Search')}</Text>
+                <SearchInput onChange={handleChangeQuery} placeholder="Search Farms" />
+              </LabelWrapper>
+            </FilterContainer>
+          </ControlContainer>
+        </Page>
+      </ControllerWrapper>
+      <ContentWrapper bgUrl="/images/farm/bg.svg">
+        <Page>
+          {renderContent()}
+          {account && !userDataLoaded && stakedOnly && (
+            <Flex justifyContent="center">
+              <Loading />
+            </Flex>
+          )}
+          <div ref={observerRef} />
+        </Page>
+      </ContentWrapper>
     </>
   )
 }

@@ -1,18 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
-import styled from "styled-components";
-import throttle from "lodash/throttle";
-import Overlay from "../../components/Overlay/Overlay";
-import Flex from "../../components/Box/Flex";
-import { useMatchBreakpoints } from "../../hooks";
-import Logo from "./components/Logo";
-import Panel from "./components/Panel";
-import { NavProps } from "./types";
-import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import React, { useState, useEffect, useRef } from 'react'
+import styled from 'styled-components'
+import throttle from 'lodash/throttle'
+import Overlay from '../../components/Overlay/Overlay'
+import Flex from '../../components/Box/Flex'
+import { useMatchBreakpoints } from '../../hooks'
+import Logo from './components/Logo'
+import Panel from './components/Panel'
+import { NavProps } from './types'
+import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from './config'
+import SocialLinks from './components/SocialLinks'
 
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-`;
+`
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
@@ -30,12 +31,12 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
-`;
+`
 
 const BodyWrapper = styled.div`
   position: relative;
   display: flex;
-`;
+`
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
@@ -48,7 +49,7 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
     max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px)`};
   }
-`;
+`
 
 const MobileOnlyOverlay = styled(Overlay)`
   position: fixed;
@@ -57,7 +58,7 @@ const MobileOnlyOverlay = styled(Overlay)`
   ${({ theme }) => theme.mediaQueries.nav} {
     display: none;
   }
-`;
+`
 
 const Menu: React.FC<NavProps> = ({
   userMenu,
@@ -71,53 +72,57 @@ const Menu: React.FC<NavProps> = ({
   links,
   children,
 }) => {
-  const { isMobile, isTablet } = useMatchBreakpoints();
-  const isSmallerScreen = isMobile || isTablet;
-  const [isPushed, setIsPushed] = useState(!isSmallerScreen);
-  const [showMenu, setShowMenu] = useState(true);
-  const refPrevOffset = useRef(window.pageYOffset);
+  const { isMobile, isTablet } = useMatchBreakpoints()
+  const isSmallerScreen = isMobile || isTablet
+  const [isPushed, setIsPushed] = useState(!isSmallerScreen)
+  const [showMenu, setShowMenu] = useState(true)
+  const refPrevOffset = useRef(window.pageYOffset)
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentOffset = window.pageYOffset;
-      const isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
-      const isTopOfPage = currentOffset === 0;
+      const currentOffset = window.pageYOffset
+      const isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight
+      const isTopOfPage = currentOffset === 0
       // Always show the menu when user reach the top
       if (isTopOfPage) {
-        setShowMenu(true);
+        setShowMenu(true)
       }
       // Avoid triggering anything at the bottom because of layout shift
       else if (!isBottomOfPage) {
         if (currentOffset < refPrevOffset.current) {
           // Has scroll up
-          setShowMenu(true);
+          setShowMenu(true)
         } else {
           // Has scroll down
-          setShowMenu(false);
+          setShowMenu(false)
         }
       }
-      refPrevOffset.current = currentOffset;
-    };
-    const throttledHandleScroll = throttle(handleScroll, 200);
+      refPrevOffset.current = currentOffset
+    }
+    const throttledHandleScroll = throttle(handleScroll, 200)
 
-    window.addEventListener("scroll", throttledHandleScroll);
+    window.addEventListener('scroll', throttledHandleScroll)
     return () => {
-      window.removeEventListener("scroll", throttledHandleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', throttledHandleScroll)
+    }
+  }, [])
 
   // Find the home link if provided
-  const homeLink = links.find((link) => link.label === "Home");
+  const homeLink = links.find((link) => link.label === 'Home')
 
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? "/"}
-        />
+        <Flex>
+          <Logo
+            isPushed={isPushed}
+            togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
+            isDark={isDark}
+            href={homeLink?.href ?? '/'}
+          />
+          <SocialLinks />
+        </Flex>
+
         <Flex>
           {globalMenu} {userMenu}
         </Flex>
@@ -142,7 +147,7 @@ const Menu: React.FC<NavProps> = ({
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

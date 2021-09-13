@@ -28,14 +28,21 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
 
   return (
     <AppHeaderContainer>
-      <Flex alignItems="center" mr={noConfig ? 0 : '16px'}>
+      {!noConfig && (
+        <Flex alignItems="center">
+          <NotificationDot show={expertMode}>
+            <GlobalSettings />
+          </NotificationDot>
+        </Flex>
+      )}
+      <Flex alignItems="center" mr={noConfig ? 0 : '16px'} ml={noConfig ? 0 : '16px'}>
         {backTo && (
           <IconButton as={Link} to={backTo}>
             <ArrowBackIcon width="32px" />
           </IconButton>
         )}
-        <Flex flexDirection="column">
-          <Heading as="h2" mb="8px">
+        <Flex flexDirection="column" alignItems="center">
+          <Heading as="h2" mb="8px" scale="xl">
             {title}
           </Heading>
           <Flex alignItems="center">
@@ -48,9 +55,6 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
       </Flex>
       {!noConfig && (
         <Flex alignItems="center">
-          <NotificationDot show={expertMode}>
-            <GlobalSettings />
-          </NotificationDot>
           <Transactions />
         </Flex>
       )}

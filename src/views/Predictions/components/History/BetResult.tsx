@@ -10,7 +10,7 @@ import { fetchLedgerData, markAsCollected } from 'state/predictions'
 import { Result } from 'state/predictions/helpers'
 import { useGetIsClaimable } from 'state/predictions/hooks'
 import { useBNBBusdPrice } from 'hooks/useBUSDPrice'
-import { getBscScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import { multiplyPriceByAmount } from 'utils/prices'
 import useIsRefundable from '../../hooks/useIsRefundable'
 import { formatBnb, getNetPayout } from './helpers'
@@ -128,8 +128,8 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
         )}
         {bet.claimed && bet.claimedHash && (
           <Flex justifyContent="center">
-            <LinkExternal href={getBscScanLink(bet.claimedHash, 'transaction')} mb="16px">
-              {t('View on BscScan')}
+            <LinkExternal href={getVelasScanLink(bet.claimedHash, 'transaction')} mb="16px">
+              {t('View on VelasScan')}
             </LinkExternal>
           </Flex>
         )}
@@ -144,12 +144,12 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
         </Flex>
         <Flex alignItems="center" justifyContent="space-between" mb="16px">
           <Text>{t('Your position')}</Text>
-          <Text>{`${formatBnb(bet.amount)} BNB`}</Text>
+          <Text>{`${formatBnb(bet.amount)} VLX`}</Text>
         </Flex>
         <Flex alignItems="start" justifyContent="space-between">
           <Text bold>{isWinner ? t('Your winnings') : t('Your Result')}:</Text>
           <Box style={{ textAlign: 'right' }}>
-            <Text bold color={getResultColor()}>{`${isWinner ? '+' : '-'}${formatBnb(payout)} BNB`}</Text>
+            <Text bold color={getResultColor()}>{`${isWinner ? '+' : '-'}${formatBnb(payout)} VLX`}</Text>
             <Text fontSize="12px" color="textSubtle">
               {`~$${totalPayout.toFixed(2)}`}
             </Text>
@@ -163,7 +163,7 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
                 {t('Amount to collect')}:
               </Text>
               <Flex justifyContent="end">
-                <Text fontSize="14px" color="textSubtle">{`${formatBnb(returned)} BNB`}</Text>
+                <Text fontSize="14px" color="textSubtle">{`${formatBnb(returned)} VLX`}</Text>
                 <span ref={targetRef}>
                   <InfoIcon color="textSubtle" ml="4px" />
                 </span>

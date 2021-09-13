@@ -7,10 +7,25 @@ import { DEFAULT_META, getCustomMeta } from 'config/constants/meta'
 import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 import Container from './Container'
 
-const StyledPage = styled(Container)`
+const StyledPage = styled(Container)<{ bg?: string }>`
   min-height: calc(100vh - 64px);
   padding-top: 16px;
   padding-bottom: 16px;
+
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: ' ';
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    background-image: url(${(props) => props.bg});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   ${({ theme }) => theme.mediaQueries.sm} {
     padding-top: 24px;
@@ -50,11 +65,13 @@ interface PageProps extends React.HTMLAttributes<HTMLDivElement> {
   symbol?: string
 }
 
-const Page: React.FC<PageProps> = ({ children, symbol, ...props }) => {
+const Page: React.FC<PageProps & { bgUrl?: string }> = ({ children, symbol, bgUrl, ...props }) => {
   return (
     <>
       <PageMeta symbol={symbol} />
-      <StyledPage {...props}>{children}</StyledPage>
+      <StyledPage bg={bgUrl} {...props}>
+        {children}
+      </StyledPage>
     </>
   )
 }
