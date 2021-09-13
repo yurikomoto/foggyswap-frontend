@@ -167,31 +167,52 @@ export default function AddLiquidity({
     }
 
     setAttemptingTxn(true)
-    await estimate(...args, value ? { value } : {})
-      .then((estimatedGasLimit) =>
-        method(...args, {
-          ...(value ? { value } : {}),
-          gasLimit: calculateGasMargin(estimatedGasLimit),
-          gasPrice,
-        }).then((response) => {
-          setAttemptingTxn(false)
-
-          addTransaction(response, {
-            summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
-              currencies[Field.CURRENCY_A]?.symbol
-            } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
-          })
-
-          setTxHash(response.hash)
-        }),
-      )
-      .catch((err) => {
+    console.log('-=-=-=-', args)
+    method(...args, {
+      ...(value ? { value } : {}),
+      // gasLimit: calculateGasMargin(estimatedGasLimit),
+      // gasPrice,
+      gasLimit: BigNumber.from(6000000).toString(),
+    })
+      .then((response) => {
         setAttemptingTxn(false)
-        // we only care if the error is something _other_ than the user rejected the tx
-        if (err?.code !== 4001) {
-          console.error(err)
-        }
+
+        addTransaction(response, {
+          summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
+            currencies[Field.CURRENCY_A]?.symbol
+          } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
+        })
+
+        setTxHash(response.hash)
       })
+      .catch((err) => {
+        console.warn('err', err)
+      })
+    // await estimate(...args, value ? { value } : {})
+    //   .then((estimatedGasLimit) =>
+    //     method(...args, {
+    //       ...(value ? { value } : {}),
+    //       gasLimit: calculateGasMargin(estimatedGasLimit),
+    //       gasPrice,
+    //     }).then((response) => {
+    //       setAttemptingTxn(false)
+
+    //       addTransaction(response, {
+    //         summary: `Add ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(3)} ${
+    //           currencies[Field.CURRENCY_A]?.symbol
+    //         } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`,
+    //       })
+
+    //       setTxHash(response.hash)
+    //     }),
+    //   )
+    //   .catch((err) => {
+    //     setAttemptingTxn(false)
+    //     // we only care if the error is something _other_ than the user rejected the tx
+    //     if (err?.code !== 4001) {
+    //       console.error(err)
+    //     }
+    //   })
   }
 
   const modalHeader = () => {
