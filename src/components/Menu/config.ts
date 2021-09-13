@@ -2,11 +2,11 @@ import { MenuEntry } from 'packages/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 
 const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
-  {
-    label: t('Home'),
-    icon: 'HomeIcon',
-    href: '/',
-  },
+  // {
+  //   label: t('Home'),
+  //   icon: 'HomeIcon',
+  //   href: '/',
+  // },
   {
     label: t('Trade'),
     icon: 'TradeIcon',
@@ -40,11 +40,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //   icon: 'PredictionsIcon',
   //   href: '/prediction',
   // },
-  {
-    label: t('Lottery'),
-    icon: 'TicketIcon',
-    href: '/lottery',
-  },
+  // {
+  //   label: t('Lottery'),
+  //   icon: 'TicketIcon',
+  //   href: '/lottery',
+  // },
   // {
   //   label: t('Collectibles'),
   //   icon: 'NftIcon',
@@ -91,10 +91,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Contact'),
         href: 'https://docs.pancakeswap.finance/contact-us',
       },
-      {
-        label: t('Voting'),
-        href: '/voting',
-      },
+      // {
+      //   label: t('Voting'),
+      //   href: '/voting',
+      // },
       {
         label: t('Github'),
         href: 'https://github.com/pancakeswap',
@@ -107,10 +107,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Blog'),
         href: 'https://pancakeswap.medium.com',
       },
-      {
-        label: t('Merch'),
-        href: 'https://pancakeswap.creator-spring.com/',
-      },
+      // {
+      //   label: t('Merch'),
+      //   href: 'https://pancakeswap.creator-spring.com/',
+      // },
     ],
   },
 ]

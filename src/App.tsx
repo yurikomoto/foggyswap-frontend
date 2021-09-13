@@ -66,12 +66,13 @@ const App: React.FC = () => {
     <Router history={history}>
       <ResetCSS />
       <GlobalStyle />
-      <GlobalCheckClaimStatus excludeLocations={['/collectibles']} />
+      {/* <GlobalCheckClaimStatus excludeLocations={['/collectibles']} /> */}
       <Menu>
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>
-              <Home />
+              {/* <Home /> */}
+              <Redirect to="/swap" />
             </Route>
             {/* <Route exact path="/farms/auction">
               <FarmAuction />
@@ -82,12 +83,12 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
+            {/* <Route path="/lottery">
               <Lottery />
-            </Route>
-            <Route path="/ifo">
+            </Route> */}
+            {/* <Route path="/ifo">
               <Ifos />
-            </Route>
+            </Route> */}
             {/* <Route path="/collectibles">
               <Collectibles />
             </Route>
