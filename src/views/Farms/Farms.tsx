@@ -53,21 +53,9 @@ const ControllerWrapper = styled.div`
   background-color: #fff;
 `
 
-const ContentWrapper = styled.div<{ bgUrl?: string }>`
+const ContentWrapper = styled.div`
   position: relative;
   background: ${({ theme }) => theme.colors.gradients.bubblegum};
-  &:after {
-    position: absolute;
-    content: ' ';
-    left: 20px;
-    right: 20px;
-    top: 20px;
-    bottom: 20px;
-    background-image: url(${(props) => props.bgUrl});
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 `
 
 const ToggleWrapper = styled.div`
@@ -119,10 +107,16 @@ const ViewControls = styled.div`
   }
 `
 
-const StyledImage = styled(Image)`
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 58px;
+const StyledBg = styled.div<{ bgUrl: string }>`
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+  background-image: url(${(props) => props.bgUrl});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 `
 const NUMBER_OF_FARMS_VISIBLE = 12
 
@@ -453,7 +447,8 @@ const Farms: React.FC = () => {
           </ControlContainer>
         </Page>
       </ControllerWrapper>
-      <ContentWrapper bgUrl="/images/farm/bg.svg">
+      <ContentWrapper>
+        <StyledBg bgUrl="/images/farm/bg.svg" />
         <Page>
           {renderContent()}
           {account && !userDataLoaded && stakedOnly && (

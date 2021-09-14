@@ -25,6 +25,7 @@ const StyledPage = styled(Container)<{ bg?: string }>`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
