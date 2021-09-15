@@ -4266,19 +4266,19 @@
     "@uniswap/lib" "1.1.1"
     "@uniswap/v2-core" "1.0.0"
 
-"@wagyu-swap-libs/wagyu-swap-core@git://github.com/altbee/wagyu-swap-core.git":
+"@wagyu-swap-libs/wagyu-swap-core@git://github.com/wagyuswapapp/wagyu-swap-core.git":
   version "0.1.0"
-  resolved "git://github.com/altbee/wagyu-swap-core.git#6a470d8425baa33bb0b847d1d77f823045596567"
+  resolved "git://github.com/wagyuswapapp/wagyu-swap-core.git#f819955ce5d0d8a34d1908ca4b59d14466c35ce2"
   dependencies:
     truffle "^5.1.41"
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@wagyu-swap/sdk@git://github.com/altbee/wagyu-swap-sdk.git":
+"@wagyu-swap/sdk@git://github.com/wagyuswapapp/wagyu-swap-sdk.git":
   version "2.4.0"
-  resolved "git://github.com/altbee/wagyu-swap-sdk.git#a923c387c7ef57191499e768564a75e3ebe9e1d3"
+  resolved "git://github.com/wagyuswapapp/wagyu-swap-sdk.git#3360b2d35068c0c16b7defdd5691d40344defcfe"
   dependencies:
-    "@wagyu-swap-libs/wagyu-swap-core" "git://github.com/altbee/wagyu-swap-core.git"
+    "@wagyu-swap-libs/wagyu-swap-core" "git://github.com/wagyuswapapp/wagyu-swap-core.git"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
@@ -4286,9 +4286,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@wagyu-swap/uikit@git://github.com/altbee/wagyu-uikit.git":
+"@wagyu-swap/uikit@git://github.com/wagyuswapapp/wagyu-uikit.git":
   version "0.51.0"
-  resolved "git://github.com/altbee/wagyu-uikit.git#02fe5240cfad116bbd4d5e7a63d75661e9356bc0"
+  resolved "git://github.com/wagyuswapapp/wagyu-uikit.git#02fe5240cfad116bbd4d5e7a63d75661e9356bc0"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
