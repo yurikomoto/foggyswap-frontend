@@ -7,6 +7,7 @@ import {
 } from 'packages/uikit'
 import tokens from 'config/constants/tokens'
 import { Token } from '@wagyu-swap/sdk'
+import getTokenLogoURL from 'utils/getTokenLogoURL'
 
 interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc' | 'secondarySrc'> {
   primaryToken: Token
@@ -15,7 +16,8 @@ interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc
 
 const getImageUrlFromToken = (token: Token) => {
   const address = token.symbol === 'VLX' ? tokens.wvlx.address : token.address
-  return `/images/tokens/${address}.svg`
+  return getTokenLogoURL(address)
+  // return `/images/tokens/${address}.svg`
 }
 
 export const TokenPairImage: React.FC<TokenPairImageProps> = ({ primaryToken, secondaryToken, ...props }) => {

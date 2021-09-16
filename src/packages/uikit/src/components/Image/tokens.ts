@@ -5,7 +5,7 @@ import addresses from '../../addresses.json'
  */
 const tokens = {
   cake: {
-    symbol: 'CAKE',
+    symbol: 'WAGYU',
     address: {
       106: addresses[106].CakeToken,
       111: addresses[111].CakeToken,
