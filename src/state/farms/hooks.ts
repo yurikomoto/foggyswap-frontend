@@ -21,7 +21,7 @@ const deserializeFarmUserData = (farm: SerializedFarm): DeserializedFarmUserData
 }
 
 const deserializeFarm = (farm: SerializedFarm): DeserializedFarm => {
-  const { lpAddresses, lpSymbol, pid, dual, multiplier, isCommunity, quoteTokenPriceBusd, tokenPriceBusd } = farm
+  const { lpAddresses, lpSymbol, pid, dual, multiplier, isCommunity, quoteTokenPriceUsdt, tokenPriceUsdt } = farm
 
   return {
     lpAddresses,
@@ -30,8 +30,8 @@ const deserializeFarm = (farm: SerializedFarm): DeserializedFarm => {
     dual,
     multiplier,
     isCommunity,
-    quoteTokenPriceBusd,
-    tokenPriceBusd,
+    quoteTokenPriceUsdt,
+    tokenPriceUsdt,
     token: deserializeToken(farm.token),
     quoteToken: deserializeToken(farm.quoteToken),
     userData: deserializeFarmUserData(farm),
@@ -74,7 +74,7 @@ export const usePollFarmsWithUserData = (includeArchive = false) => {
 
 /**
  * Fetches the "core" farm data used globally
- * 251 = WAGYU-BNB LP
+ * 251 = WAG-BNB LP
  * 252 = BUSD-BNB LP
  */
 export const usePollCoreFarmData = () => {
@@ -121,7 +121,7 @@ export const useFarmUser = (pid): DeserializedFarmUserData => {
 // Return the base token price for a farm, from a given pid
 export const useBusdPriceFromPid = (pid: number): BigNumber => {
   const farm = useFarmFromPid(pid)
-  return farm && new BigNumber(farm.tokenPriceBusd)
+  return farm && new BigNumber(farm.tokenPriceUsdt)
 }
 
 export const useLpTokenPrice = (symbol: string) => {
@@ -147,7 +147,7 @@ export const useLpTokenPrice = (symbol: string) => {
 export const usePriceCakeBusd = (): BigNumber => {
   // const cakeBnbFarm = useFarmFromPid(251)
 
-  // const cakePriceBusdAsString = cakeBnbFarm.tokenPriceBusd
+  // const cakePriceBusdAsString = cakeBnbFarm.tokenPriceUsdt
   const cakePriceBusdAsString = BIG_ZERO
 
   const cakePriceBusd = useMemo(() => {

@@ -25,7 +25,7 @@ const UnstakingFeeCountdownRow: React.FC<UnstakingFeeCountdownRowProps> = ({ isT
       </Text>
       <Text>
         {t(
-          'Only applies within 3 days of staking. Unstaking after 3 days will not include a fee. Timer resets every time you stake new WAGYU in the pool.',
+          'Only applies within 3 days of staking. Unstaking after 3 days will not include a fee. Timer resets every time you stake new WAG in the pool.',
         )}
       </Text>
     </>,

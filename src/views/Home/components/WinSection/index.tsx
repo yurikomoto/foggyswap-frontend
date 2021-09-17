@@ -72,10 +72,10 @@ const LotteryCardData: IconCardData = {
 const bottomLeftImage = {
   path: '/images/home/prediction-cards/',
   attributes: [
-    { src: 'bottom-left', alt: 'WAGYU card' },
-    { src: 'green', alt: 'Green WAGYU card with up arrow' },
+    { src: 'bottom-left', alt: 'WAG card' },
+    { src: 'green', alt: 'Green WAG card with up arrow' },
     { src: 'red', alt: 'Red Cake card with down arrow' },
-    { src: 'top-right', alt: 'WAGYU card' },
+    { src: 'top-right', alt: 'WAG card' },
   ],
 }
 

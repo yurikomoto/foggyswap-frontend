@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         {t('Show off your stats and collectibles with your unique profile')}
       </Heading>
       <Text color="textSubtle" mb="24px">
-        {t('Total cost: 1.5 WAGYU')}
+        {t('Total cost: 1.5 WAG')}
       </Text>
       <Breadcrumbs>
         {steps.map((translationKey, index) => {

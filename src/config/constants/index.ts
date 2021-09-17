@@ -2,7 +2,7 @@ import { ChainId, JSBI, Percent, Token } from '@wagyu-swap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 import addresses from './addresses.json'
 
-export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].PancakeRouter
+export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].WagyuRouter
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -11,7 +11,7 @@ type ChainTokenList = {
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.wvlx, mainnetTokens.cake, mainnetTokens.usdt, mainnetTokens.eth],
+  [ChainId.MAINNET]: [mainnetTokens.wvlx, mainnetTokens.cake, mainnetTokens.usdt, mainnetTokens.weth],
   [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.usdt],
 }
 

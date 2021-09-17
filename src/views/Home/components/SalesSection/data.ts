@@ -19,7 +19,7 @@ export const swapSectionData: SalesSectionProps = {
     attributes: [
       { src: 'VLX', alt: 'VLX token' },
       { src: 'BTC', alt: 'BTC token' },
-      { src: 'WAGYU', alt: 'WAGYU token' },
+      { src: 'WAG', alt: 'WAG token' },
     ],
   },
 }
@@ -49,13 +49,13 @@ export const earnSectionData: SalesSectionProps = {
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'WAGYU makes our world go round.',
+  headingText: 'WAG makes our world go round.',
   bodyText:
-    'WAGYU token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'WAG token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: 'Buy WAGYU',
+    text: 'Buy WAG',
     external: false,
   },
   secondaryButton: {
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d pancake' },
       { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'WAGYU token' },
+      { src: 'coin', alt: 'WAG token' },
       { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

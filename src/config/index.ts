@@ -15,12 +15,12 @@ export const BASE_VELAS_SCAN_URLS = {
 }
 
 // CAKE_PER_BLOCK details
-// 40 WAGYU is minted per block
-// 20 WAGYU per block is sent to Burn pool (A farm just for burning cake)
-// 10 WAGYU per block goes to WAGYU syrup pool
-// 9 WAGYU per block goes to Yield farms and lottery
+// 40 WAG is minted per block
+// 20 WAG per block is sent to Burn pool (A farm just for burning cake)
+// 10 WAG per block goes to WAG syrup pool
+// 9 WAG per block goes to Yield farms and lottery
 // CAKE_PER_BLOCK in config/index.ts = 40 as we only change the amount sent to the burn pool which is effectively a farm.
-// WAGYU/Block in src/views/Home/components/CakeDataRow.tsx = 15 (40 - Amount sent to burn pool)
+// WAG/Block in src/views/Home/components/CakeDataRow.tsx = 15 (40 - Amount sent to burn pool)
 export const CAKE_PER_BLOCK = new BigNumber(40)
 export const BLOCKS_PER_YEAR = new BigNumber((60 / BSC_BLOCK_TIME) * 60 * 24 * 365) // 10512000
 export const CAKE_PER_YEAR = CAKE_PER_BLOCK.times(BLOCKS_PER_YEAR)

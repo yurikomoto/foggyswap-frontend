@@ -29,7 +29,7 @@ const RecentCakeProfitCountdownRow = () => {
 
   return (
     <Flex alignItems="center" justifyContent="space-between">
-      <Text fontSize="14px">{`${t('Recent WAGYU profit')}:`}</Text>
+      <Text fontSize="14px">{`${t('Recent WAG profit')}:`}</Text>
       {hasAutoEarnings && (
         <RecentCakeProfitBalance
           cakeToDisplay={autoCakeToDisplay}

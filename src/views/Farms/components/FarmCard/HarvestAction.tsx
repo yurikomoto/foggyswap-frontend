@@ -45,7 +45,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
             await onReward()
             toastSuccess(
               `${t('Harvested')}!`,
-              t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'WAGYU' }),
+              t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'WAG' }),
             )
           } catch (e) {
             toastError(

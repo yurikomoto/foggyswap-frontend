@@ -2,12 +2,12 @@ import addresses from './addresses.json'
 
 export default {
   masterChef: {
-    111: addresses[111].MasterChef,
-    106: addresses[106].MasterChef,
+    111: addresses[111].WAGFarm,
+    106: addresses[106].WAGFarm,
   },
   sousChef: {
-    111: addresses[111].SousChefFactory,
-    106: addresses[106].SousChefFactory,
+    111: addresses[111].WAGStakingFactory,
+    106: addresses[106].WAGStakingFactory,
   },
   lotteryV2: {
     111: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',
@@ -54,8 +54,8 @@ export default {
     111: '0x24ec6962dbe874F6B67B5C5085710610667fA0854F',
   },
   cakeVault: {
-    106: '0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC',
-    111: '',
+    106: addresses[106].WagyuVault,
+    111: addresses[111].WagyuVault,
   },
   predictions: {
     106: '0x18B2A687610328590Bc8F2e5fEdDe3b582A49cdA',

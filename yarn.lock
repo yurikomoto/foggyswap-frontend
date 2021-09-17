@@ -4276,7 +4276,7 @@
 
 "@wagyu-swap/sdk@git://github.com/wagyuswapapp/wagyu-swap-sdk.git":
   version "2.4.0"
-  resolved "git://github.com/wagyuswapapp/wagyu-swap-sdk.git#3360b2d35068c0c16b7defdd5691d40344defcfe"
+  resolved "git://github.com/wagyuswapapp/wagyu-swap-sdk.git#f48b9c8385cc3ad980cd6c88f6892c27720fb46a"
   dependencies:
     "@wagyu-swap-libs/wagyu-swap-core" "git://github.com/wagyuswapapp/wagyu-swap-core.git"
     big.js "^5.2.2"

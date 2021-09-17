@@ -32,8 +32,8 @@ const Container = styled.div`
 
 const RotatingPancakeIcon = styled(PancakeIcon)`
   position: absolute;
-  top: -40px;
-  left: 26px;
+  top: -24px;
+  left: 35px;
   animation: ${rotate} 2s linear infinite;
   transform: translate3d(0, 0, 0);
 `

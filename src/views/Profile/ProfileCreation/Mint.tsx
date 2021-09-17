@@ -71,7 +71,7 @@ const Mint: React.FC = () => {
             {t('Choose wisely: you can only ever make one starter collectible!')}
           </Text>
           <Text as="p" mb="24px" color="textSubtle">
-            {t('Cost: %num% WAGYU', { num: formatUnits(MINT_COST) })}
+            {t('Cost: %num% WAG', { num: formatUnits(MINT_COST) })}
           </Text>
           {nfts.map((nft) => {
             const handleChange = (value: string) => setVariationId(Number(value))
@@ -92,7 +92,7 @@ const Mint: React.FC = () => {
           })}
           {!hasMinimumCakeRequired && (
             <Text color="failure" mb="16px">
-              {t('A minimum of %num% WAGYU is required', { num: formatUnits(MINT_COST) })}
+              {t('A minimum of %num% WAG is required', { num: formatUnits(MINT_COST) })}
             </Text>
           )}
           <ApproveConfirmButtons
