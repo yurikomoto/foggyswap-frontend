@@ -7,16 +7,16 @@ const farms: SerializedFarmConfig[] = [
   /**
    * These 3 farms (PID 0, 251, 252) should always be at the top of the file.
    */
-  // {
-  //   pid: 0,
-  //   lpSymbol: 'WAG',
-  //   lpAddresses: {
-  //     111: '0xE51267C6780Bce26e76d3536baF5D8795d8dC883',
-  //     106: '0xE51267C6780Bce26e76d3536baF5D8795d8dC883',
-  //   },
-  //   token: serializedTokens.syrup,
-  //   quoteToken: serializedTokens.wvlx,
-  // },
+  {
+    pid: 0,
+    lpSymbol: 'WAG',
+    lpAddresses: {
+      111: '0x1cb91c74e838f0e0726adcf8e4f25f027e5feff8',
+      106: '0x1cb91c74e838f0e0726adcf8e4f25f027e5feff8',
+    },
+    token: serializedTokens.syrup,
+    quoteToken: serializedTokens.wvlx,
+  },
   {
     pid: 1,
     lpSymbol: 'VLX_TE6 LP',

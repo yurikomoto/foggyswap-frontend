@@ -54,7 +54,7 @@ export default {
     111: '0x24ec6962dbe874F6B67B5C5085710610667fA0854F',
   },
   cakeVault: {
-    106: addresses[106].WagyuVault,
+    106: '',
     111: addresses[111].WagyuVault,
   },
   predictions: {

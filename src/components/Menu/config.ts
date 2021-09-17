@@ -97,7 +97,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Github'),
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/wagyuswapapp',
       },
       {
         label: t('Docs'),
@@ -105,7 +105,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
       {
         label: t('Blog'),
-        href: 'https://pancakeswap.medium.com',
+        href: 'https://medium.com/@wagyuswap.app',
       },
       // {
       //   label: t('Merch'),

@@ -22,6 +22,8 @@ export const fetchPublicVaultData = async () => {
       calls,
     )
 
+    console.log('fetchPublicVaultData', sharePrice, shares, estimatedCakeBountyReward, totalPendingCakeHarvest)
+
     const totalSharesAsBigNumber = shares ? new BigNumber(shares.toString()) : BIG_ZERO
     const sharePriceAsBigNumber = sharePrice ? new BigNumber(sharePrice.toString()) : BIG_ZERO
     const totalCakeInVaultEstimate = convertSharesToCake(totalSharesAsBigNumber, sharePriceAsBigNumber)
@@ -33,6 +35,7 @@ export const fetchPublicVaultData = async () => {
       totalPendingCakeHarvest: new BigNumber(totalPendingCakeHarvest.toString()).toJSON(),
     }
   } catch (error) {
+    console.error('errror', error)
     return {
       totalShares: null,
       pricePerFullShare: null,

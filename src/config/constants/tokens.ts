@@ -14,17 +14,17 @@ interface SerializedTokenList {
 }
 
 export const mainnetTokens = {
-  wvlx: new Token(MAINNET, addresses[106].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://www.binance.com/'),
+  wvlx: new Token(MAINNET, addresses[106].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://wagyuswap.app/'),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
-  vlx: new Token(MAINNET, addresses[106].WVLX, 18, 'VLX', 'VLX', 'https://www.binance.com/'),
-  cake: new Token(MAINNET, addresses[106].WAGToken, 18, 'WAG', 'WAGToken', 'https://pancakeswap.finance/'),
+  vlx: new Token(MAINNET, addresses[106].WVLX, 18, 'VLX', 'VLX', 'https://wagyuswap.app/'),
+  cake: new Token(MAINNET, addresses[106].WAGToken, 18, 'WAG', 'WAGToken', 'https://wagyuswap.app/'),
   usdt: new Token(
     MAINNET,
     '0x01445C31581c354b7338AC35693AB2001B50b9aE',
     18,
     'USDT',
     'Multichain Tether USD',
-    'https://tether.to/',
+    'https://wagyuswap.app/',
   ),
   weth: new Token(
     MAINNET,
@@ -32,7 +32,7 @@ export const mainnetTokens = {
     18,
     'WETH',
     'Multichain WETH',
-    'https://ethereum.org/en/',
+    'https://wagyuswap.app/',
   ),
   busd: new Token(
     MAINNET,
@@ -40,7 +40,7 @@ export const mainnetTokens = {
     18,
     'BUSD',
     'Velas BUSD',
-    'https://www.binance.com/',
+    'https://wagyuswap.app/',
   ),
   usdc: new Token(
     MAINNET,
@@ -48,26 +48,26 @@ export const mainnetTokens = {
     18,
     'USDC',
     'Velas USDC',
-    'https://www.binance.com/',
+    'https://wagyuswap.app/',
   ),
-  syrup: new Token(TESTNET, addresses[106].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://pancakeswap.finance/'),
-  te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://pancakeswap.finance/'),
-  te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://pancakeswap.finance/'),
-  te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://pancakeswap.finance/'),
-  te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://pancakeswap.finance/'),
+  syrup: new Token(TESTNET, addresses[106].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://wagyuswap.app/'),
+  te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://wagyuswap.app/'),
+  te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://wagyuswap.app/'),
+  te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://wagyuswap.app/'),
+  te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://wagyuswap.app/'),
 }
 
 export const testnetTokens = {
-  wvlx: new Token(TESTNET, addresses[111].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://www.binance.com/'),
-  cake: new Token(TESTNET, addresses[111].WAGToken, 18, 'WAG', 'WAGToken', 'https://pancakeswap.finance/'),
-  syrup: new Token(TESTNET, addresses[111].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://pancakeswap.finance/'),
+  wvlx: new Token(TESTNET, addresses[111].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://wagyuswap.app/'),
+  cake: new Token(TESTNET, addresses[111].WAGToken, 18, 'WAG', 'WAGToken', 'https://wagyuswap.app/'),
+  syrup: new Token(TESTNET, addresses[111].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://wagyuswap.app/'),
   usdt: new Token(
     TESTNET,
     '0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4',
     18,
     'USDT',
     'Velas USDT',
-    'https://www.binance.com/',
+    'https://wagyuswap.app/',
   ),
   busd: new Token(
     TESTNET,
@@ -75,7 +75,7 @@ export const testnetTokens = {
     18,
     'BUSD',
     'Velas BUSD',
-    'https://www.binance.com/',
+    'https://wagyuswap.app/',
   ),
   usdc: new Token(
     TESTNET,
@@ -83,7 +83,7 @@ export const testnetTokens = {
     18,
     'USDC',
     'Velas USDC',
-    'https://www.binance.com/',
+    'https://wagyuswap.app/',
   ),
   eth: new Token(
     TESTNET,
@@ -91,12 +91,12 @@ export const testnetTokens = {
     18,
     'WETH',
     'Multichain WETH',
-    'https://www.binance.com/',
+    'https://wagyuswap.app/',
   ),
-  te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://pancakeswap.finance/'),
-  te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://pancakeswap.finance/'),
-  te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://pancakeswap.finance/'),
-  te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://pancakeswap.finance/'),
+  te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://wagyuswap.app/'),
+  te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://wagyuswap.app/'),
+  te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://wagyuswap.app/'),
+  te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://wagyuswap.app/'),
 }
 
 const tokens = (): TokenList => {
