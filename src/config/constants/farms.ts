@@ -57,46 +57,6 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.wvlx,
     quoteToken: serializedTokens.te18,
   },
-  {
-    pid: 5,
-    lpSymbol: 'VLX_ETH LP',
-    lpAddresses: {
-      111: '0x0bF711BE88bEA7b4BcDa0aBF357a1b1a4422F66E',
-      106: '0x0bF711BE88bEA7b4BcDa0aBF357a1b1a4422F66E',
-    },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.weth,
-  },
-  {
-    pid: 6,
-    lpSymbol: 'VLX_USDT LP',
-    lpAddresses: {
-      111: '0xb6C8cD97985d4e170e6f40C6d34e8911CDfBAbcD',
-      106: '0xb6C8cD97985d4e170e6f40C6d34e8911CDfBAbcD',
-    },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.usdt,
-  },
-  {
-    pid: 7,
-    lpSymbol: 'VLX_USDC LP',
-    lpAddresses: {
-      111: '0x421aD110418e89d33988eBac3426a09B35efCFEb',
-      106: '0x421aD110418e89d33988eBac3426a09B35efCFEb',
-    },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.usdc,
-  },
-  {
-    pid: 8,
-    lpSymbol: 'VLX_BUSD LP',
-    lpAddresses: {
-      111: '0x6A100008591912681EDffB3dDcAb45288D004e34',
-      106: '0x6A100008591912681EDffB3dDcAb45288D004e34',
-    },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.busd,
-  },
 ]
 
 export default farms

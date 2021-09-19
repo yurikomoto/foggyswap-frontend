@@ -237,8 +237,6 @@ const Pools: React.FC = () => {
   chosenPools = sortPools(chosenPools).slice(0, numberOfPoolsVisible)
   chosenPoolsLength.current = chosenPools.length
 
-  console.log('chosenPools', chosenPools)
-
   const cardLayout = (
     <CardLayout>
       {chosenPools.map((pool) =>
