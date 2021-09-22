@@ -17,7 +17,7 @@ export const setupNetwork = async () => {
         params: [
           {
             chainId: `0x${chainId.toString(16)}`,
-            chainName: 'VLAS Testnet',
+            chainName: chainId === 106 ? 'VLAS' : 'VLAS Testnet',
             nativeCurrency: {
               name: 'VLX',
               symbol: 'vlx',
