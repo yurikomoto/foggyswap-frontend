@@ -9,7 +9,7 @@ import { useMasterchef, useSousChef } from 'hooks/useContract'
 import { DEFAULT_GAS_LIMIT } from 'config'
 
 const options = {
-  gasLimit: DEFAULT_GAS_LIMIT,
+  gasLimit: DEFAULT_GAS_LIMIT * 2,
 }
 
 const harvestPool = async (sousChefContract) => {
