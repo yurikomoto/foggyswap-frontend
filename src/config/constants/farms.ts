@@ -24,8 +24,8 @@ const farms: SerializedFarmConfig[] = [
       111: '0x4a7Cbd0Aa9E113251698c3851690f8D4277b6AdD',
       106: '0x4a7Cbd0Aa9E113251698c3851690f8D4277b6AdD',
     },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.te6,
+    token: serializedTokens.te6,
+    quoteToken: serializedTokens.wvlx,
   },
   {
     pid: 2,
@@ -34,8 +34,8 @@ const farms: SerializedFarmConfig[] = [
       111: '0x02F1D5BD67580d8Ac0fA611Bc23953Fce19a9935',
       106: '0x02F1D5BD67580d8Ac0fA611Bc23953Fce19a9935',
     },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.te9,
+    token: serializedTokens.te9,
+    quoteToken: serializedTokens.wvlx,
   },
   {
     pid: 3,
@@ -44,8 +44,8 @@ const farms: SerializedFarmConfig[] = [
       111: '0x81443B242A30CbCd2F007990bd4713E7ad5891E6',
       106: '0x81443B242A30CbCd2F007990bd4713E7ad5891E6',
     },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.te12,
+    token: serializedTokens.te12,
+    quoteToken: serializedTokens.wvlx,
   },
   {
     pid: 4,
@@ -54,8 +54,8 @@ const farms: SerializedFarmConfig[] = [
       111: '0xD98AF4A17690066DcF7057c5F4EdA299Ed44DB0b',
       106: '0xD98AF4A17690066DcF7057c5F4EdA299Ed44DB0b',
     },
-    token: serializedTokens.wvlx,
-    quoteToken: serializedTokens.te18,
+    token: serializedTokens.te18,
+    quoteToken: serializedTokens.wvlx,
   },
 ]
 
