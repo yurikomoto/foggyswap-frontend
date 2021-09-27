@@ -103,9 +103,17 @@ export function useDerivedMintInfo(
     if (independentAmount) {
       // we wrap the currencies just to get the price in terms of the other token
       const wrappedIndependentAmount = wrappedCurrencyAmount(independentAmount, chainId)
+
       const [tokenA, tokenB] = [wrappedCurrency(currencyA, chainId), wrappedCurrency(currencyB, chainId)]
       if (tokenA && tokenB && wrappedIndependentAmount && pair) {
         const dependentCurrency = dependentField === Field.CURRENCY_B ? currencyB : currencyA
+
+        if (pair.priceOf(tokenA).denominator.toString() === '0' && dependentField !== Field.CURRENCY_B) {
+          return undefined
+        }
+        if (pair.priceOf(tokenB).denominator.toString() === '0' && dependentField === Field.CURRENCY_B) {
+          return undefined
+        }
         const dependentTokenAmount =
           dependentField === Field.CURRENCY_B
             ? pair.priceOf(tokenA).quote(wrappedIndependentAmount)

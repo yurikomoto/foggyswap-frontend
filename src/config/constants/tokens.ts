@@ -85,7 +85,7 @@ export const testnetTokens = {
     'Velas USDC',
     'https://wagyuswap.app/',
   ),
-  eth: new Token(
+  weth: new Token(
     TESTNET,
     '0x3538C7f88aDbc8ad1F435f7EA70287e26b926344',
     18,

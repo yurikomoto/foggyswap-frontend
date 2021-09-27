@@ -14,8 +14,8 @@ export default {
     106: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',
   },
   multiCall: {
-    106: addresses[106].Multicall,
-    111: addresses[111].Multicall,
+    106: addresses[106].Multicall2,
+    111: addresses[111].Multicall2,
   },
   // not
   pancakeProfile: {

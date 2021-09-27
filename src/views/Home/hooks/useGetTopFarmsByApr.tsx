@@ -17,51 +17,51 @@ enum FetchStatus {
 
 const useGetTopFarmsByApr = (isIntersecting: boolean) => {
   const dispatch = useAppDispatch()
-  // const { data: farms } = useFarms()
-  // const [fetchStatus, setFetchStatus] = useState(FetchStatus.NOT_FETCHED)
-  // const [topFarms, setTopFarms] = useState<FarmWithStakedValue[]>([null, null, null, null, null])
-  // const cakePriceBusd = usePriceCakeBusd()
+  const { data: farms } = useFarms()
+  const [fetchStatus, setFetchStatus] = useState(FetchStatus.NOT_FETCHED)
+  const [topFarms, setTopFarms] = useState<FarmWithStakedValue[]>([null, null, null, null, null])
+  const cakePriceBusd = usePriceCakeBusd()
 
-  // useEffect(() => {
-  //   const fetchFarmData = async () => {
-  //     setFetchStatus(FetchStatus.FETCHING)
-  //     const activeFarms = nonArchivedFarms.filter((farm) => farm.pid !== 0 && farm.multiplier !== '0X')
-  //     try {
-  //       await dispatch(fetchFarmsPublicDataAsync(activeFarms.map((farm) => farm.pid)))
-  //       setFetchStatus(FetchStatus.SUCCESS)
-  //     } catch (e) {
-  //       console.error(e)
-  //       setFetchStatus(FetchStatus.FAILED)
-  //     }
-  //   }
+  useEffect(() => {
+    const fetchFarmData = async () => {
+      setFetchStatus(FetchStatus.FETCHING)
+      const activeFarms = nonArchivedFarms.filter((farm) => farm.pid !== 0 && farm.multiplier !== '0X')
+      try {
+        await dispatch(fetchFarmsPublicDataAsync(activeFarms.map((farm) => farm.pid)))
+        setFetchStatus(FetchStatus.SUCCESS)
+      } catch (e) {
+        console.error(e)
+        setFetchStatus(FetchStatus.FAILED)
+      }
+    }
 
-  //   if (isIntersecting && fetchStatus === FetchStatus.NOT_FETCHED) {
-  //     fetchFarmData()
-  //   }
-  // }, [dispatch, setFetchStatus, fetchStatus, topFarms, isIntersecting])
+    if (isIntersecting && fetchStatus === FetchStatus.NOT_FETCHED) {
+      fetchFarmData()
+    }
+  }, [dispatch, setFetchStatus, fetchStatus, topFarms, isIntersecting])
 
-  // useEffect(() => {
-  //   const getTopFarmsByApr = (farmsState: DeserializedFarm[]) => {
-  //     const farmsWithPrices = farmsState.filter((farm) => farm.lpTotalInQuoteToken && farm.quoteTokenPriceUsdt)
-  //     const farmsWithApr: FarmWithStakedValue[] = farmsWithPrices.map((farm) => {
-  //       const totalLiquidity = farm.lpTotalInQuoteToken.times(farm.quoteTokenPriceUsdt)
-  //       const { cakeRewardsApr, lpRewardsApr } = getFarmApr(
-  //         farm.poolWeight,
-  //         cakePriceBusd,
-  //         totalLiquidity,
-  //         farm.lpAddresses[ChainId.MAINNET],
-  //       )
-  //       return { ...farm, apr: cakeRewardsApr, lpRewardsApr }
-  //     })
+  useEffect(() => {
+    const getTopFarmsByApr = (farmsState: DeserializedFarm[]) => {
+      const farmsWithPrices = farmsState.filter((farm) => farm.lpTotalInQuoteToken && farm.quoteTokenPriceUsdt)
+      const farmsWithApr: FarmWithStakedValue[] = farmsWithPrices.map((farm) => {
+        const totalLiquidity = farm.lpTotalInQuoteToken.times(farm.quoteTokenPriceUsdt)
+        const { cakeRewardsApr, lpRewardsApr } = getFarmApr(
+          farm.poolWeight,
+          cakePriceBusd,
+          totalLiquidity,
+          farm.lpAddresses[ChainId.MAINNET],
+        )
+        return { ...farm, apr: cakeRewardsApr, lpRewardsApr }
+      })
 
-  //     const sortedByApr = orderBy(farmsWithApr, (farm) => farm.apr + farm.lpRewardsApr, 'desc')
-  //     setTopFarms(sortedByApr.slice(0, 5))
-  //   }
+      const sortedByApr = orderBy(farmsWithApr, (farm) => farm.apr + farm.lpRewardsApr, 'desc')
+      setTopFarms(sortedByApr.slice(0, 5))
+    }
 
-  //   if (fetchStatus === FetchStatus.SUCCESS && !topFarms[0]) {
-  //     getTopFarmsByApr(farms)
-  //   }
-  // }, [setTopFarms, farms, fetchStatus, cakePriceBusd, topFarms])
+    if (fetchStatus === FetchStatus.SUCCESS && !topFarms[0]) {
+      getTopFarmsByApr(farms)
+    }
+  }, [setTopFarms, farms, fetchStatus, cakePriceBusd, topFarms])
 
   return { topFarms: [] }
 }
