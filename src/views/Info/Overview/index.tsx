@@ -97,7 +97,6 @@ const Overview: React.FC = () => {
       .map((pool) => pool.data)
       .filter((pool) => pool)
   }, [allPoolData])
-  console.log('===poolData===', poolDatas, allPoolData)
 
   const somePoolsAreLoading = useMemo(() => {
     return Object.values(allPoolData).some((pool) => !pool.data)
