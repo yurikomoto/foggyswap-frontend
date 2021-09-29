@@ -1,16 +1,16 @@
-import React from "react";
-import { BrowserRouter, Link as RouterLink } from "react-router-dom";
-import Text from "../Text/Text";
-import Link from "../Link/Link";
-import LogoIcon from "../Svg/Icons/Logo";
-import PresentWonIcon from "../Svg/Icons/PresentWon";
-import BreadCrumbs from "./Breadcrumbs";
+import React from 'react'
+import { BrowserRouter, Link as RouterLink } from 'react-router-dom'
+import Text from '../Text/Text'
+import Link from '../Link/Link'
+import LogoIcon from '../Svg/Icons/Logo'
+import PresentWonIcon from '../Svg/Icons/PresentWon'
+import BreadCrumbs from './Breadcrumbs'
 
 export default {
-  title: "Components/Breadcrumbs",
+  title: 'Components/Breadcrumbs',
   component: BreadCrumbs,
   argTypes: {},
-};
+}
 
 export const Default: React.FC = () => {
   return (
@@ -24,13 +24,13 @@ export const Default: React.FC = () => {
           <Text color="textDisabled">Crumb 2</Text>
         </BreadCrumbs>
         <BreadCrumbs>
-          <Text>PancakeSwap</Text>
+          <Text>WagyuSwap</Text>
           <Text>The #1 AMM and yield farm on Binance Smart Chain.</Text>
         </BreadCrumbs>
       </Text>
     </BrowserRouter>
-  );
-};
+  )
+}
 
 export const CustomSeparator: React.FC = () => {
   return (
@@ -56,5 +56,5 @@ export const CustomSeparator: React.FC = () => {
         </BreadCrumbs>
       </Text>
     </Text>
-  );
-};
+  )
+}

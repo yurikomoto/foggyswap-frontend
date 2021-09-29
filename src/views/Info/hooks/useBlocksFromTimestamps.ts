@@ -73,7 +73,7 @@ export const useBlocksFromTimestamps = (
 } => {
   const [blocks, setBlocks] = useState<Block[]>()
   const [error, setError] = useState(false)
-
+  console.log('useBlocksFromTimestamps', blocks, error)
   useEffect(() => {
     const fetchData = async () => {
       const result = await getBlocksFromTimestamps(timestamps, sortDirection, skipCount)
@@ -93,3 +93,7 @@ export const useBlocksFromTimestamps = (
     error,
   }
 }
+
+/**
+query blocks {    t1632795360:blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: 1632795360, timestamp_lt: 1632795960 }) {      number    },t1632708960:blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: 1632708960, timestamp_lt: 1632709560 }) {      number    },t1632276960:blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: 1632276960, timestamp_lt: 1632277560 }) {      number    },t1631672160:blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: 1631672160, timestamp_lt: 1631672760 }) {      number    }  }
+ */

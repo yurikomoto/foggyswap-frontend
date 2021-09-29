@@ -111,17 +111,17 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/info':
       return {
-        title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
+        title: `${t('Overview')} | ${t('WagyuSwap Info & Analytics')}`,
         description: 'View statistics for Pancakeswap exchanges.',
       }
     case '/info/pools':
       return {
-        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
+        title: `${t('Pools')} | ${t('WagyuSwap Info & Analytics')}`,
         description: 'View statistics for Pancakeswap exchanges.',
       }
     case '/info/tokens':
       return {
-        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
+        title: `${t('Pools')} | ${t('WagyuSwap Info & Analytics')}`,
         description: 'View statistics for Pancakeswap exchanges.',
       }
     default:

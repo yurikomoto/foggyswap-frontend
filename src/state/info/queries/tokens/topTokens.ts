@@ -15,13 +15,14 @@ interface TopTokensResponse {
  * The actual data is later requested in tokenData.ts
  * Note: dailyTxns_gt: 300 is there to prevent fetching incorrectly priced tokens with high dailyVolumeUSD
  */
+// TODO: REVERT
 const fetchTopTokens = async (timestamp24hAgo: number): Promise<string[]> => {
   try {
     const query = gql`
       query topTokens($blacklist: [String!], $timestamp24hAgo: Int) {
         tokenDayDatas(
           first: 30
-          where: { dailyTxns_gt: 300, id_not_in: $blacklist, date_gt: $timestamp24hAgo }
+          where: { dailyTxns_gt: 0, id_not_in: $blacklist, date_gt: $timestamp24hAgo }
           orderBy: dailyVolumeUSD
           orderDirection: desc
         ) {
@@ -29,6 +30,7 @@ const fetchTopTokens = async (timestamp24hAgo: number): Promise<string[]> => {
         }
       }
     `
+
     const data = await request<TopTokensResponse>(INFO_CLIENT, query, { blacklist: TOKEN_BLACKLIST, timestamp24hAgo })
     // tokenDayDatas id has compound id "0xTOKENADDRESS-NUMBERS", extracting token address with .split('-')
     return data.tokenDayDatas.map((t) => t.id.split('-')[0])

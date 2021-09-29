@@ -97,6 +97,7 @@ const Overview: React.FC = () => {
       .map((pool) => pool.data)
       .filter((pool) => pool)
   }, [allPoolData])
+  console.log('===poolData===', poolDatas, allPoolData)
 
   const somePoolsAreLoading = useMemo(() => {
     return Object.values(allPoolData).some((pool) => !pool.data)
@@ -105,7 +106,7 @@ const Overview: React.FC = () => {
   return (
     <Page>
       <Heading scale="lg" mb="16px" id="info-overview-title">
-        {t('PancakeSwap Info & Analytics')}
+        {t('WagyuSwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>
