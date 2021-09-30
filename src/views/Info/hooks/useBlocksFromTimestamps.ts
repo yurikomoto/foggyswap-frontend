@@ -73,7 +73,7 @@ export const useBlocksFromTimestamps = (
 } => {
   const [blocks, setBlocks] = useState<Block[]>()
   const [error, setError] = useState(false)
-  console.log('useBlocksFromTimestamps', blocks, error)
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await getBlocksFromTimestamps(timestamps, sortDirection, skipCount)

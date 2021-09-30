@@ -149,7 +149,6 @@ const usePoolDatas = (poolAddresses: string[]): PoolDatas => {
         block14d.number,
         poolAddresses,
       )
-      console.log('fetchPoolData', error, data)
       if (error) {
         setFetchState({ error: true })
       } else {

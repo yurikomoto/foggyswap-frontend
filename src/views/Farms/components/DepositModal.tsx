@@ -70,8 +70,6 @@ const DepositModal: React.FC<DepositModalProps> = ({
     earningTokenPrice: cakePrice.toNumber(),
   })
 
-  console.log('interestBreakdown[3]', interestBreakdown[3])
-
   const annualRoi = cakePrice.times(interestBreakdown[3])
   const formattedAnnualRoi = formatNumber(
     annualRoi.toNumber(),

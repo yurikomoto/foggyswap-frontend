@@ -5,7 +5,7 @@ const getTokenLogoURL = (address: string) => {
 
   return `https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas${
     parseInt(chainId, 10) === ChainId.TESTNET ? '-test' : ''
-  }/assets/${address}/logo.png?raw=true`
+  }/assets/${address.toLowerCase()}/logo.png?raw=true`
 }
 
 export default getTokenLogoURL
