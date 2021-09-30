@@ -5,13 +5,14 @@ import { TOKEN_BLACKLIST } from 'config/constants/info'
 /**
  * Data for showing Pools table on the Token page
  */
+// TODO: REVERT
 const POOLS_FOR_TOKEN = gql`
   query poolsForToken($address: Bytes!, $blacklist: [String!]) {
     asToken0: pairs(
       first: 15
       orderBy: trackedReserveBNB
       orderDirection: desc
-      where: { totalTransactions_gt: 100, token0: $address, token1_not_in: $blacklist }
+      where: { totalTransactions_gt: 1, token0: $address, token1_not_in: $blacklist }
     ) {
       id
     }
@@ -19,7 +20,7 @@ const POOLS_FOR_TOKEN = gql`
       first: 15
       orderBy: trackedReserveBNB
       orderDirection: desc
-      where: { totalTransactions_gt: 100, token1: $address, token0_not_in: $blacklist }
+      where: { totalTransactions_gt: 1, token1: $address, token0_not_in: $blacklist }
     ) {
       id
     }

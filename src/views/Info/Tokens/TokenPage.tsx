@@ -82,6 +82,7 @@ const TokenPage: React.FC<RouteComponentProps<{ address: string }>> = ({
 
   const tokenData = useTokenData(address)
   const poolsForToken = usePoolsForToken(address)
+
   const poolDatas = usePoolDatas(poolsForToken ?? [])
   const transactions = useTokenTransactions(address)
   const chartData = useTokenChartData(address)
