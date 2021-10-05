@@ -57,7 +57,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         )}
       </Flex>
       <Flex alignItems="center" justifyContent="end" mb="24px">
-        <LinkExternal href={getVelasScanLink(account, 'address')}>{t('View on VelasScan')}</LinkExternal>
+        <LinkExternal href={getVelasScanLink(account, 'address')}>{t('View on Velas Explorer')}</LinkExternal>
       </Flex>
       <Button variant="secondary" width="100%" onClick={handleLogout}>
         {t('Disconnect Wallet')}

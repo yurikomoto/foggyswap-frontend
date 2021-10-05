@@ -83,6 +83,18 @@ export const PancakeStack = styled.div<HandleProps>`
   .pancake {
     width: ${getScale('pancakeSize')};
     height: ${getScale('pancakeSize')};
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    background: #756072;
+    box-shadow: rgb(189 194 196) 0px 1.5px 0px 1.5px;
+    transition: all 0.4s ease 0s;
+    border-radius: 50%;
+  }
+
+  .wagyu {
+    width: ${getScale('pancakeSize')};
+    height: ${getScale('pancakeSize')};
     /* position: absolute; */
     transition: 0.4s ease;
     top: 2px;
@@ -120,9 +132,14 @@ export const PancakeInput = styled.input<InputProps>`
     transform: translateX(${getScale('travelDistance')});
   }
 
-  &:checked + label .pancake:nth-child(1) {
+  &:checked + label .wagyu {
     transition-delay: 0.2s;
     opacity: 1;
+  }
+
+  &:checked + label .pancake {
+    transition-delay: 0.1s;
+    opacity: 0;
   }
 `
 

@@ -84,12 +84,25 @@ export const useBnbPrices = (): BnbPrices | undefined => {
 
   useEffect(() => {
     const fetch = async () => {
-      const [block24, block48, blockWeek] = blocks
-      const { bnbPrices, error: fetchError } = await fetchBnbPrices(block24.number, block48.number, blockWeek.number)
-      if (fetchError) {
+      if (blocks.length === 0) {
         setError(true)
       } else {
-        setPrices(bnbPrices)
+        const block24 = blocks[0]
+        let [, block48, blockWeek] = blocks
+
+        if (blocks.length === 1) {
+          block48 = block24
+          blockWeek = block24
+        }
+        if (blocks.length === 2) {
+          blockWeek = block48
+        }
+        const { bnbPrices, error: fetchError } = await fetchBnbPrices(block24.number, block48.number, blockWeek.number)
+        if (fetchError) {
+          setError(true)
+        } else {
+          setPrices(bnbPrices)
+        }
       }
     }
     if (!prices && !error && blocks && !blockError) {

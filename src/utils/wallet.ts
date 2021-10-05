@@ -2,6 +2,7 @@
 
 import { BASE_BSC_SCAN_URL, BASE_URL } from 'config'
 import { nodes } from './getRpcUrl'
+import getTokenLogoURL from './getTokenLogoURL'
 
 /**
  * Prompt the user to add BSC as a network on Metamask, or switch to BSC if the wallet is on a different network
@@ -55,7 +56,8 @@ export const registerToken = async (tokenAddress: string, tokenSymbol: string, t
         address: tokenAddress,
         symbol: tokenSymbol,
         decimals: tokenDecimals,
-        image: `${BASE_URL}/images/tokens/${tokenAddress}.png`,
+        // image: `${BASE_URL}/images/tokens/${tokenAddress}.png`,
+        image: getTokenLogoURL(tokenAddress),
       },
     },
   })

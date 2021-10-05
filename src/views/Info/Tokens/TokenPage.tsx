@@ -140,7 +140,7 @@ const TokenPage: React.FC<RouteComponentProps<{ address: string }>> = ({
               </Breadcrumbs>
               <Flex justifyContent={[null, null, 'flex-end']} mt={['8px', '8px', 0]}>
                 <LinkExternal mr="8px" color="primary" href={getVelasScanLink(address, 'address')}>
-                  {t('View on VelasScan')}
+                  {t('View on Velas Explorer')}
                 </LinkExternal>
                 {cmcLink && (
                   <StyledCMCLink href={cmcLink} rel="noopener noreferrer nofollow" target="_blank">

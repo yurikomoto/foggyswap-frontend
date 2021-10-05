@@ -89,7 +89,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://wagyuswap-1.gitbook.io/wagyuswap/',
       },
       // {
       //   label: t('Voting'),

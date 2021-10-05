@@ -103,7 +103,7 @@ export default function AddressInputPanel({
               <Text>{t('Recipient')}</Text>
               {address && chainId && (
                 <Link external small href={getVelasScanLink(name ?? address, 'address', chainId)}>
-                  ({t('View on VelasScan')})
+                  ({t('View on Velas Explorer')})
                 </Link>
               )}
             </RowBetween>

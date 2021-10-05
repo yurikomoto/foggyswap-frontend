@@ -118,6 +118,16 @@ const StyledBg = styled.div<{ bgUrl: string }>`
   background-repeat: no-repeat;
   background-position: center;
 `
+
+const NoContainer = styled.div`
+  filter: ${({ theme }) => theme.card.dropShadow};
+  width: 100%;
+  background: ${({ theme }) => theme.card.background};
+  border-radius: 16px;
+  margin: 16px 0px;
+  padding: 16px;
+`
+
 const NUMBER_OF_FARMS_VISIBLE = 12
 
 const getDisplayApr = (cakeRewardsApr?: number, lpRewardsApr?: number) => {
@@ -309,6 +319,14 @@ const Farms: React.FC = () => {
   })
 
   const renderContent = (): JSX.Element => {
+    if (rowData.length === 0) {
+      return (
+        <NoContainer>
+          <Text textAlign="center">No Pools</Text>
+        </NoContainer>
+      )
+    }
+
     if (viewMode === ViewMode.TABLE && rowData.length) {
       const columnSchema = DesktopColumnSchema
 
