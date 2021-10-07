@@ -1,8 +1,9 @@
 import BigNumber from 'bignumber.js'
 import { convertSharesToCake } from 'views/Pools/helpers'
-import { multicallv2 } from 'utils/multicall'
-import cakeVaultAbi from 'config/abi/cakeVault.json'
-import { getCakeVaultAddress } from 'utils/addressHelpers'
+import multicall, { multicallv2 } from 'utils/multicall'
+import cakeVaultAbi from 'config/abi/WagyuVault.json'
+import masterChefAbi from 'config/abi/WAGFarm.json'
+import { getCakeVaultAddress, getMasterChefAddress } from 'utils/addressHelpers'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { getMulticallContract } from 'utils/contractHelpers'
 
@@ -23,6 +24,16 @@ export const fetchPublicVaultData = async () => {
       calls,
     )
 
+    const farmCalls = [
+      {
+        address: getMasterChefAddress(),
+        name: 'userInfo',
+        params: [0, getCakeVaultAddress()],
+      },
+    ]
+
+    const [userInfo] = await multicall(masterChefAbi, farmCalls)
+
     const totalSharesAsBigNumber = shares ? new BigNumber(shares.toString()) : BIG_ZERO
     const sharePriceAsBigNumber = sharePrice ? new BigNumber(sharePrice.toString()) : BIG_ZERO
     const totalCakeInVaultEstimate = convertSharesToCake(totalSharesAsBigNumber, sharePriceAsBigNumber)
@@ -32,15 +43,16 @@ export const fetchPublicVaultData = async () => {
       totalCakeInVault: totalCakeInVaultEstimate.cakeAsBigNumber.toJSON(),
       estimatedCakeBountyReward: new BigNumber(estimatedCakeBountyReward.toString()).toJSON(),
       totalPendingCakeHarvest: new BigNumber(totalPendingCakeHarvest.toString()).toJSON(),
+      amountInFarm: new BigNumber(userInfo[0].toString()).toJSON(),
     }
   } catch (error) {
-    console.error('==shit error', error)
     return {
       totalShares: null,
       pricePerFullShare: null,
       totalCakeInVault: null,
       estimatedCakeBountyReward: null,
       totalPendingCakeHarvest: null,
+      amountInFarm: null,
     }
   }
 }

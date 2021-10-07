@@ -24,6 +24,8 @@ import { getAddress, getCakeVaultAddress } from 'utils/addressHelpers'
 import { registerToken } from 'utils/wallet'
 import { getVelasScanLink } from 'utils'
 import Balance from 'components/Balance'
+import RemainingTime from 'components/RemainingTime'
+
 import { getPoolBlockInfo } from 'views/Pools/helpers'
 
 interface ExpandedFooterProps {
@@ -120,13 +122,13 @@ const ExpandedFooter: React.FC<ExpandedFooterProps> = ({ pool, account }) => {
           <Text small>{hasPoolStarted ? t('Ends in') : t('Starts in')}:</Text>
           {blocksRemaining || blocksUntilStart ? (
             <Flex alignItems="center">
-              <Link external href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}>
-                <Balance small value={blocksToDisplay} decimals={0} color="primary" />
-                <Text small ml="4px" color="primary" textTransform="lowercase">
+              {/* <Link external href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}> */}
+              <RemainingTime small value={blocksToDisplay} color="primary" />
+              {/* <Text small ml="4px" color="primary" textTransform="lowercase">
                   {t('Blocks')}
-                </Text>
-                <TimerIcon ml="4px" color="primary" />
-              </Link>
+                </Text> */}
+              <TimerIcon ml="4px" color="primary" />
+              {/* </Link> */}
             </Flex>
           ) : (
             <Skeleton width="54px" height="21px" />

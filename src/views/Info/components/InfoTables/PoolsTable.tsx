@@ -19,7 +19,7 @@ import { ClickableColumnHeader, TableWrapper, PageButtons, Arrow, Break } from '
 const ResponsiveGrid = styled.div`
   display: grid;
   grid-gap: 1em;
-  align-items: center;
+  align-items: flex-start;
   grid-template-columns: 20px 3.5fr repeat(5, 1fr);
 
   padding: 0 24px;

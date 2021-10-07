@@ -101,6 +101,7 @@ const Pools: React.FC = () => {
     fees: { performanceFee },
     pricePerFullShare,
     totalCakeInVault,
+    amountInFarm: vaultWagInFarm,
   } = useCakeVault()
   const accountHasVaultShares = userShares && userShares.gt(0)
   const performanceFeeAsDecimal = performanceFee && performanceFee / 100
@@ -202,9 +203,9 @@ const Pools: React.FC = () => {
                 )
               }
             } else if (pool.sousId === 0) {
-              if (pool.totalStaked?.isFinite() && totalCakeInVault.isFinite()) {
+              if (pool.totalStaked?.isFinite() && vaultWagInFarm?.isFinite()) {
                 const manualCakeTotalMinusAutoVault = ethers.BigNumber.from(pool.totalStaked.toString()).sub(
-                  totalCakeInVault.toString(),
+                  vaultWagInFarm.toString(),
                 )
                 totalStaked = +formatUnits(manualCakeTotalMinusAutoVault, pool.stakingToken.decimals)
               }
@@ -236,6 +237,8 @@ const Pools: React.FC = () => {
 
   chosenPools = sortPools(chosenPools).slice(0, numberOfPoolsVisible)
   chosenPoolsLength.current = chosenPools.length
+
+  console.log('chosenPools', chosenPools)
 
   const cardLayout = (
     <CardLayout>

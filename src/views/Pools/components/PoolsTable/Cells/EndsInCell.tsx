@@ -7,6 +7,7 @@ import { useBlock } from 'state/block/hooks'
 import Balance from 'components/Balance'
 import { useTranslation } from 'contexts/Localization'
 import { getPoolBlockInfo } from 'views/Pools/helpers'
+import RemainingTime from 'components/RemainingTime'
 import BaseCell, { CellContent } from './BaseCell'
 
 interface FinishCellProps {
@@ -30,19 +31,19 @@ const EndsInCell: React.FC<FinishCellProps> = ({ pool }) => {
   const renderBlocks = shouldShowBlockCountdown ? (
     <Flex alignItems="center">
       <Flex flex="1.3">
-        <Balance fontSize="16px" value={blocksToDisplay} decimals={0} />
-        <Text ml="4px" textTransform="lowercase">
+        <RemainingTime fontSize="16px" value={blocksToDisplay} />
+        {/* <Text ml="4px" textTransform="lowercase">
           {t('Blocks')}
-        </Text>
+        </Text> */}
       </Flex>
       <Flex flex="1">
-        <Link
+        {/* <Link
           external
           href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}
           onClick={(e) => e.stopPropagation()}
-        >
-          <TimerIcon ml="4px" />
-        </Link>
+        > */}
+        <TimerIcon ml="4px" />
+        {/* </Link> */}
       </Flex>
     </Flex>
   ) : (

@@ -53,7 +53,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const innerLogo = (
     <>
       <img alt="logo mobile" className="mobile-icon" src="/images/logo.png" />
-      <img alt="logo desktop" className="desktop-icon" src="/images/logo_desktop.png" />
+      <img alt="logo desktop" className="desktop-icon" src="/images/logo_desktop.svg" />
     </>
   )
 

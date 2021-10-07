@@ -21,6 +21,8 @@ import BigNumber from 'bignumber.js'
 import { DeserializedPool } from 'state/types'
 import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
+import RemainingTime from 'components/RemainingTime'
+
 import { CompoundingPoolTag, ManualPoolTag } from 'components/Tags'
 import { getAddress, getCakeVaultAddress } from 'utils/addressHelpers'
 import { BIG_ZERO } from 'utils/bigNumber'
@@ -199,13 +201,13 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
       <Flex mb="8px" justifyContent="space-between">
         <Text>{hasPoolStarted ? t('Ends in') : t('Starts in')}:</Text>
         <Flex>
-          <Link external href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}>
-            <Balance fontSize="16px" value={blocksToDisplay} decimals={0} color="primary" />
-            <Text ml="4px" color="primary" textTransform="lowercase">
+          {/* <Link external href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}> */}
+          <RemainingTime fontSize="16px" value={blocksToDisplay} color="primary" />
+          {/* <Text ml="4px" color="primary" textTransform="lowercase">
               {t('Blocks')}
-            </Text>
-            <TimerIcon ml="4px" color="primary" />
-          </Link>
+            </Text> */}
+          <TimerIcon ml="4px" color="primary" />
+          {/* </Link> */}
         </Flex>
       </Flex>
     ) : (

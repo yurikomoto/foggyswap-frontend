@@ -82,6 +82,7 @@ export const useCakeVault = () => {
       lastDepositedTime,
       lastUserActionTime,
     },
+    amountInFarm: amountInFarmString,
   } = useSelector((state: State) => state.pools.cakeVault)
 
   const estimatedCakeBountyReward = useMemo(() => {
@@ -112,6 +113,10 @@ export const useCakeVault = () => {
     return new BigNumber(cakeAtLastUserActionAsString)
   }, [cakeAtLastUserActionAsString])
 
+  const amountInFarm = useMemo(() => {
+    return new BigNumber(amountInFarmString)
+  }, [amountInFarmString])
+
   return {
     totalShares,
     pricePerFullShare,
@@ -131,5 +136,6 @@ export const useCakeVault = () => {
       lastDepositedTime,
       lastUserActionTime,
     },
+    amountInFarm,
   }
 }

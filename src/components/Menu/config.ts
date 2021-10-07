@@ -87,10 +87,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('More'),
     icon: 'MoreIcon',
     items: [
-      {
-        label: t('Contact'),
-        href: 'https://wagyuswap-1.gitbook.io/wagyuswap/',
-      },
+      // {
+      //   label: t('Contact'),
+      //   href: 'https://docs.wagyuswap.app/wagyuswap/',
+      // },
       // {
       //   label: t('Voting'),
       //   href: '/voting',
@@ -101,7 +101,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.wagyuswap.app/wagyuswap/',
       },
       {
         label: t('Blog'),

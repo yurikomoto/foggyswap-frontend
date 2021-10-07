@@ -151,6 +151,7 @@ export const updateUserPendingReward =
 
 export const fetchCakeVaultPublicData = createAsyncThunk<CakeVault>('cakeVault/fetchPublicData', async () => {
   const publicVaultInfo = await fetchPublicVaultData()
+
   return publicVaultInfo
 })
 

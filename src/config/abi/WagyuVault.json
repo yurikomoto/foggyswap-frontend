@@ -2,12 +2,12 @@
   {
     "inputs": [
       {
-        "internalType": "contract IERC20",
+        "internalType": "contract IBEP20",
         "name": "_token",
         "type": "address"
       },
       {
-        "internalType": "contract IERC20",
+        "internalType": "contract IBEP20",
         "name": "_receiptToken",
         "type": "address"
       },
@@ -428,7 +428,7 @@
     "name": "receiptToken",
     "outputs": [
       {
-        "internalType": "contract IERC20",
+        "internalType": "contract IBEP20",
         "name": "",
         "type": "address"
       }
@@ -526,7 +526,7 @@
     "name": "token",
     "outputs": [
       {
-        "internalType": "contract IERC20",
+        "internalType": "contract IBEP20",
         "name": "",
         "type": "address"
       }

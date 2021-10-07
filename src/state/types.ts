@@ -140,6 +140,7 @@ export interface CakeVault {
   totalPendingCakeHarvest?: string
   fees?: VaultFees
   userData?: VaultUser
+  amountInFarm?: string
 }
 
 export interface PoolsState {

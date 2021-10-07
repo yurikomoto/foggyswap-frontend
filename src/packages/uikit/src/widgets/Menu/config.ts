@@ -146,14 +146,14 @@ export const socials = [
     href: 'http://t.me/wagyuswapofficial',
   },
   {
-    label: 'Twitter',
-    icon: 'TwitterIcon',
-    href: 'https://twitter.com/WagyuSwap_app',
-  },
-  {
     label: 'Medium',
     icon: 'MediumIcon',
     href: 'https://medium.com/@wagyuswap.app',
+  },
+  {
+    label: 'Twitter',
+    icon: 'TwitterIcon',
+    href: 'https://twitter.com/WagyuSwap_app',
   },
 ]
 
