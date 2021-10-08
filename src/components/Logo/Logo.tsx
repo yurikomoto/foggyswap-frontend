@@ -28,8 +28,8 @@ const Logo: React.FC<LogoProps> = ({ srcs, alt, ...rest }) => {
       />
     )
   }
-
-  return <HelpIcon {...rest} />
+  return <img {...rest} alt={alt} src="/images/VRC20.png" />
+  // return <HelpIcon {...rest} />
 }
 
 export default Logo
