@@ -77,10 +77,10 @@
     {
       "name": "Wagyu",
       "symbol": "WAG",
-      "address": "0x9238dd30b416d3e0c6df6d3e813b044327de979a",
+      "address": "0xb830d8213e2c3dd621037703d05a5e594387b6be",
       "chainId": 111,
       "decimals": 18,
-      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas-test/assets/0x9238dd30b416d3e0c6df6d3e813b044327de979a/logo.png?raw=true"
+      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas-test/assets/0xb830d8213e2c3dd621037703d05a5e594387b6be/logo.png?raw=true"
     }
   ]
 }
