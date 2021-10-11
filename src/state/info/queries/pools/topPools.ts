@@ -43,16 +43,18 @@ const fetchTopPools = async (timestamp24hAgo: number): Promise<string[]> => {
 const useTopPoolAddresses = (): string[] => {
   const [topPoolAddresses, setTopPoolAddresse] = useState([])
   const [timestamp24hAgo] = getDeltaTimestamps()
+  const [fetched, setFetched] = useState(false)
 
   useEffect(() => {
     const fetch = async () => {
       const addresses = await fetchTopPools(timestamp24hAgo)
+      setFetched(true)
       setTopPoolAddresse(addresses)
     }
-    if (topPoolAddresses.length === 0) {
+    if (topPoolAddresses.length === 0 && !fetched) {
       fetch()
     }
-  }, [topPoolAddresses, timestamp24hAgo])
+  }, [topPoolAddresses, timestamp24hAgo, fetched])
 
   return topPoolAddresses
 }

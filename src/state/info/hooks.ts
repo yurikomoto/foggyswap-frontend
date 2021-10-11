@@ -110,21 +110,24 @@ export const usePoolChartData = (address: string): ChartEntry[] | undefined => {
   const pool = useSelector((state: AppState) => state.info.pools.byAddress[address])
   const chartData = pool?.chartData
   const [error, setError] = useState(false)
+  const [fetched, setFetched] = useState(false)
 
   useEffect(() => {
     const fetch = async () => {
       const { error: fetchError, data } = await fetchPoolChartData(address)
       if (!fetchError && data) {
+        setFetched(true)
+
         dispatch(updatePoolChartData({ poolAddress: address, chartData: data }))
       }
       if (fetchError) {
         setError(fetchError)
       }
     }
-    if (!chartData && !error) {
+    if (!chartData && !error && !fetched) {
       fetch()
     }
-  }, [address, dispatch, error, chartData])
+  }, [address, dispatch, error, chartData, fetched])
 
   return chartData
 }
