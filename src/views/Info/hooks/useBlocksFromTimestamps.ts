@@ -7,7 +7,7 @@ import { Block } from 'state/info/types'
 const getBlockSubqueries = (timestamps: number[]) =>
   timestamps.map((timestamp) => {
     return `t${timestamp}:blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: ${timestamp}, timestamp_lt: ${
-      timestamp + 600
+      timestamp + 60000
     } }) {
       number
     }`
