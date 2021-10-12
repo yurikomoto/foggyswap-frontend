@@ -13,7 +13,7 @@ export const BITQUERY_API = 'https://graphql.bitquery.io'
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 // https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu/graphql
-// export const INFO_CLIENT = 'https://bsc.streamingfast.io/subgraphs/name/pancakeswap/exchange-v2'
-export const INFO_CLIENT = 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu'
-// export const BLOCKS_CLIENT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks'
-export const BLOCKS_CLIENT = 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/blocks'
+export const INFO_CLIENT = 'http://164.90.190.145:8000/subgraphs/name/wagyu'
+// export const INFO_CLIENT = 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu/graphql'
+export const BLOCKS_CLIENT = 'http://164.90.190.145:8000/subgraphs/name/blocks'
+// export const BLOCKS_CLIENT = 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/blocks'

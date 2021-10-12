@@ -43,6 +43,14 @@
       "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x01445C31581c354b7338AC35693AB2001B50b9aE/logo.png?raw=true"
     },
     {
+      "name": "Wagyu",
+      "symbol": "WAG",
+      "address": "0x9c1ac064ef030b4213e49bd5a1fd203437dc6714",
+      "chainId": 106,
+      "decimals": 18,
+      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas-test/assets/0x9c1ac064ef030b4213e49bd5a1fd203437dc6714/logo.png?raw=true"
+    },
+    {
       "name": "Multichain WETH",
       "symbol": "WETH",
       "address": "0x3538C7f88aDbc8ad1F435f7EA70287e26b926344",
