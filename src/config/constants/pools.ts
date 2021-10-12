@@ -16,7 +16,7 @@ const pools: SerializedPoolConfig[] =
           earningToken: serializedTokens.cake,
           contractAddress: {
             111: '0x0FE7711dD2A622725FfB30f378145e1D40127f80',
-            106: '0x2FEE0Bd8b9Ff3f1443f4c1F43fbbB59385EF7AEC',
+            106: '0x66C0A4441c726426dBAa28AA5A1f6Ee59cbDFD37',
           },
           poolCategory: PoolCategory.CORE,
           harvest: true,
@@ -32,7 +32,7 @@ const pools: SerializedPoolConfig[] =
           earningToken: serializedTokens.cake,
           contractAddress: {
             111: '0x0FE7711dD2A622725FfB30f378145e1D40127f80',
-            106: '0x2FEE0Bd8b9Ff3f1443f4c1F43fbbB59385EF7AEC',
+            106: '0x66C0A4441c726426dBAa28AA5A1f6Ee59cbDFD37',
           },
           poolCategory: PoolCategory.CORE,
           harvest: true,

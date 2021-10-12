@@ -8,8 +8,8 @@ const serializedTokens = serializeTokens()
 const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 const { MAINNET } = ChainId
 
-export const VLX_WAG_LP_PID = chainId === MAINNET ? 5 : 9
-export const VLX_USDT_LP_PID = chainId === MAINNET ? 4 : 6
+export const VLX_WAG_LP_PID = chainId === MAINNET ? 1 : 9
+export const VLX_USDT_LP_PID = chainId === MAINNET ? 5 : 6
 
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
@@ -19,59 +19,59 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'WAG',
           lpAddresses: {
             111: '0xb830d8213e2c3dD621037703D05A5e594387B6Be',
-            106: '0x9C1Ac064Ef030b4213e49BD5A1fD203437dc6714',
+            106: '0x40c8002c2887ADE2297AD48D9Dc101dE08bD104C',
           },
           token: serializedTokens.syrup,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 1,
+          lpSymbol: 'VLX_WAG LP',
+          lpAddresses: {
+            111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
+            106: '0x1E4cf38D767364BfF986658c620302010d338bF0',
+          },
+          token: serializedTokens.cake,
+          quoteToken: serializedTokens.wvlx,
+        },
+        {
+          pid: 2,
           lpSymbol: 'VLX_ETH LP',
           lpAddresses: {
             111: '0x8A70d2a3e2cba2CAD61FbA419E62eB821F18Bb57',
-            106: '0x5B3175bB6260d4992a3503152Ed1b1CF9539E7cC',
+            106: '0x3601F724D9cC2f4C96A39CEc560F842151EDFEbe',
           },
           token: serializedTokens.weth,
           quoteToken: serializedTokens.wvlx,
         },
         {
-          pid: 2,
+          pid: 3,
           lpSymbol: 'VLX_BUSD LP',
           lpAddresses: {
             111: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
-            106: '0x7F6B48395Fa2EFEFF723261A008AC6aF4186195A',
+            106: '0xed4b109d49Fe69e6582fEb0fCBfD172F44c4CAED',
           },
           token: serializedTokens.busd,
           quoteToken: serializedTokens.wvlx,
         },
         {
-          pid: 3,
+          pid: 4,
           lpSymbol: 'VLX_USDC LP',
           lpAddresses: {
             111: '0x33ea93e391aF9cAA4b8e9C3368236B93DFCF39C4',
-            106: '0x653728Db508b80eF702f913951bEC557Ce54C6e1',
+            106: '0x2d5EB9519F2d745D84Ed6CD0b923073Fc794d423',
           },
           token: serializedTokens.usdc,
           quoteToken: serializedTokens.wvlx,
         },
         {
-          pid: 4,
+          pid: 5,
           lpSymbol: 'VLX_USDT LP',
           lpAddresses: {
             111: '0xF20c93c5e5F534C9D95567497Ea17a841164d37b',
-            106: '0xBD98E06DD203E1D5138b57Af4C40563Bb0aF5bF2',
+            106: '0x92a86D1585918Bc077ddD9C7c63f32DAAe687923',
           },
           token: serializedTokens.usdt,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 5,
-          lpSymbol: 'VLX_WAG LP',
-          lpAddresses: {
-            111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
-            106: '0xb75d384df53e54C9f13413c5e45af7Da46ee41a4',
-          },
-          token: serializedTokens.cake,
           quoteToken: serializedTokens.wvlx,
         },
       ]
