@@ -23,6 +23,7 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     ],
     [chainId, currency, wrapped],
   )
+
   const [[ethPairState, ethPair], [busdPairState, busdPair], [busdEthPairState, busdEthPair]] = usePairs(tokenPairs)
 
   return useMemo(() => {
@@ -43,8 +44,14 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     }
 
     const ethPairETHAmount = ethPair?.reserveOf(WVLX)
+
     const ethPairETHBUSDValue: JSBI =
-      ethPairETHAmount && busdEthPair ? busdEthPair.priceOf(WVLX).quote(ethPairETHAmount).raw : JSBI.BigInt(0)
+      ethPairETHAmount &&
+      busdEthPair &&
+      JSBI.notEqual(ethPairETHAmount.denominator, JSBI.BigInt(0)) &&
+      Number((busdEthPair as any).tokenAmounts[0].toFixed()) !== 0
+        ? busdEthPair.priceOf(WVLX).quote(ethPairETHAmount).raw
+        : JSBI.BigInt(0)
 
     // all other tokens
     // first try the busd pair

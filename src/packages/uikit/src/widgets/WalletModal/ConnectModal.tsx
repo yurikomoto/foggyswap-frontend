@@ -71,7 +71,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
                 <WalletCard walletConfig={wallet} login={login} onDismiss={onDismiss} />
               </Box>
             ))}
-            {!showMore && <MoreWalletCard t={t} onClick={() => setShowMore(true)} />}
+            {/* {!showMore && <MoreWalletCard t={t} onClick={() => setShowMore(true)} />} */}
           </Grid>
         </WalletWrapper>
         <Box p="24px">
@@ -80,7 +80,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
           </Text>
           <Button
             as="a"
-            href="https://docswagyuswap.gitbook.io/wagyuswap/"
+            href="https://docs.wagyuswap.app/wagyuswap/"
             variant="subtle"
             width="100%"
             {...getExternalLinkProps()}

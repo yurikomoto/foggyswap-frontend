@@ -10,7 +10,7 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docswagyuswap.gitbook.io/wagyuswap/',
+    to: 'https://docs.wagyuswap.app/wagyuswap/',
     text: 'Learn',
     external: true,
   },
@@ -59,7 +59,7 @@ export const cakeSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docswagyuswap.gitbook.io/wagyuswap/',
+    to: 'https://docs.wagyuswap.app/wagyuswap/',
     text: 'Learn',
     external: true,
   },
