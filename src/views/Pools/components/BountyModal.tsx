@@ -61,7 +61,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
   const handleConfirmClick = async () => {
     setPendingTx(true)
     try {
-      const tx = await callWithGasPrice(cakeVaultContract, 'harvest', undefined, { gasLimit: 500000 })
+      const tx = await callWithGasPrice(cakeVaultContract, 'harvest', undefined, { gasLimit: 700000 })
       const receipt = await tx.wait()
       if (receipt.status) {
         toastSuccess(
