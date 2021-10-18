@@ -18,22 +18,22 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
 // https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu/graphql
-export const INFO_CLIENT = {
-  [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/wagyu',
-  [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/wagyu',
-}[chainId]
-
 // export const INFO_CLIENT = {
-//   [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu',
-//   [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/wagyu',
+//   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/wagyu',
+//   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/wagyu',
 // }[chainId]
+
+export const INFO_CLIENT = {
+  [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu',
+  [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/wagyu',
+  // }[chainId]
+
+  // export const BLOCKS_CLIENT = {
+  //   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/blocks',
+  //   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/blocks',
+}[chainId]
 
 export const BLOCKS_CLIENT = {
-  [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/blocks',
-  [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/blocks',
+  [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/blocks',
+  [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/blocks',
 }[chainId]
-
-// export const BLOCKS_CLIENT = {
-//   [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/blocks',
-//   [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/blocks',
-// }[chainId]
