@@ -23,7 +23,7 @@ export const mainnetTokens = {
   usdt: new Token(
     MAINNET,
     '0x01445C31581c354b7338AC35693AB2001B50b9aE',
-    18,
+    6,
     'USDT',
     'Multichain Tether USD',
     'https://wagyuswap.app/',
@@ -47,7 +47,7 @@ export const mainnetTokens = {
   usdc: new Token(
     MAINNET,
     '0xe2C120f188eBd5389F71Cf4d9C16d05b62A58993',
-    18,
+    6,
     'USDC',
     'Velas USDC',
     'https://wagyuswap.app/',

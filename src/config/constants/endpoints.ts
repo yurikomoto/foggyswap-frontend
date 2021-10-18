@@ -29,7 +29,7 @@ export const INFO_CLIENT = {
 // }[chainId]
 
 export const BLOCKS_CLIENT = {
-  [ChainId.TESTNET]: 'http://164.90.190.145:8000/subgraphs/name/blocks',
+  [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/blocks',
   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/blocks',
 }[chainId]
 
