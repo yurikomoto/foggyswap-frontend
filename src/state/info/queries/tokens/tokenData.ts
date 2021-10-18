@@ -5,7 +5,7 @@ import { INFO_CLIENT } from 'config/constants/endpoints'
 import { getDeltaTimestamps } from 'views/Info/utils/infoQueryHelpers'
 import { useBlocksFromTimestamps } from 'views/Info/hooks/useBlocksFromTimestamps'
 import { getPercentChange, getChangeForPeriod, getAmountChange } from 'views/Info/utils/infoDataHelpers'
-import { TokenData } from 'state/info/types'
+import { Block, TokenData } from 'state/info/types'
 import { useBnbPrices } from 'views/Info/hooks/useBnbPrices'
 
 interface TokenFields {
@@ -118,7 +118,18 @@ const useFetchedTokenDatas = (tokenAddresses: string[]): TokenDatas => {
   const [fetchState, setFetchState] = useState<TokenDatas>({ error: false })
   const [t24h, t48h, t7d, t14d] = getDeltaTimestamps()
   const { blocks, error: blockError } = useBlocksFromTimestamps([t24h, t48h, t7d, t14d])
-  const [block24h, block48h, block7d, block14d] = blocks ?? []
+
+  // TODO:
+  // @ts-ignore
+  let [block24h, block48h, block7d, block14d]: Block[] = []
+  if (blocks && blocks.length > 0) {
+    block24h = blocks[0]
+    block48h = blocks.length > 1 ? blocks[1] : block24h
+    block7d = blocks.length > 2 ? blocks[2] : block48h
+    block14d = blocks.length > 3 ? blocks[3] : block7d
+  }
+  //
+
   const bnbPrices = useBnbPrices()
 
   useEffect(() => {

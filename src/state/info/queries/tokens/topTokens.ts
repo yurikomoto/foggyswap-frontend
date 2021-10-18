@@ -51,6 +51,7 @@ const useTopTokenAddresses = (): string[] => {
   useEffect(() => {
     const fetch = async () => {
       const addresses = await fetchTopTokens(timestamp24hAgo)
+
       setFetched(true)
       setTopTokenAddresses(addresses)
     }
