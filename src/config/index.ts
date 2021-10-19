@@ -10,8 +10,8 @@ BigNumber.config({
 export const VELAS_BLOCK_TIME = 0.4
 
 export const BASE_VELAS_SCAN_URLS = {
-  [ChainId.MAINNET]: 'https://evmexplorer.velas.com/',
-  [ChainId.TESTNET]: 'https://evmexplorer.testnet.velas.com/',
+  [ChainId.MAINNET]: 'https://evmexplorer.velas.com',
+  [ChainId.TESTNET]: 'https://evmexplorer.testnet.velas.com',
 }
 
 // CAKE_PER_BLOCK details
