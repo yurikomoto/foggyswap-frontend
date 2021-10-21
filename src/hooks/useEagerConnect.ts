@@ -23,7 +23,8 @@ const useEagerConnect = () => {
     const connectorId = window.localStorage.getItem(connectorLocalStorageKey) as ConnectorNames
 
     if (connectorId) {
-      const isConnectorBinanceChain = connectorId === ConnectorNames.BSC
+      // const isConnectorBinanceChain = connectorId === ConnectorNames.BSC
+      const isConnectorBinanceChain = false
       const isBinanceChainDefined = Reflect.has(window, 'BinanceChain')
 
       // Currently BSC extension doesn't always inject in time.
