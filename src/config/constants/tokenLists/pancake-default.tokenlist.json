@@ -45,10 +45,10 @@
     {
       "name": "Wagyu",
       "symbol": "WAG",
-      "address": "0x1920afdc480f51f5d01306b72184655cd5a3be69",
+      "address": "0xabf26902fd7b624e0db40d31171ea9dddf078351",
       "chainId": 106,
       "decimals": 18,
-      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x1920afdc480f51f5d01306b72184655cd5a3be69/logo.png?raw=true"
+      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xabf26902fd7b624e0db40d31171ea9dddf078351/logo.png?raw=true"
     },
     {
       "name": "Multichain ETH",

@@ -19,7 +19,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'WAG',
           lpAddresses: {
             111: '0xb830d8213e2c3dD621037703D05A5e594387B6Be',
-            106: '0x1920AFDC480f51F5d01306B72184655Cd5A3bE69',
+            106: '0xaBf26902Fd7B624e0db40D31171eA9ddDf078351',
           },
           token: serializedTokens.syrup,
           quoteToken: serializedTokens.wvlx,
@@ -29,7 +29,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'VLX_WAG LP',
           lpAddresses: {
             111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
-            106: '0x9b7398f11f11BE8B3283D89092886530811c94D6',
+            106: '0x33f879690C165cC320B0BA04cEb1F9CeaC80F376',
           },
           token: serializedTokens.cake,
           quoteToken: serializedTokens.wvlx,
@@ -39,7 +39,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'VLX_ETH LP',
           lpAddresses: {
             111: '0x8A70d2a3e2cba2CAD61FbA419E62eB821F18Bb57',
-            106: '0xF75A25125303DC6d204F1bd12bb855D9424184EF',
+            106: '0x7c3F1eA99770aa23Fe1b19097c93BB0cF34C8351',
           },
           token: serializedTokens.weth,
           quoteToken: serializedTokens.wvlx,
@@ -49,7 +49,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'VLX_BUSD LP',
           lpAddresses: {
             111: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
-            106: '0xe24Edf18E80e08C50b563EcD7b0ABd33E0f42375',
+            106: '0x8e2B762Bee3E2bf2C8fB0cdd04274042748D6C23',
           },
           token: serializedTokens.busd,
           quoteToken: serializedTokens.wvlx,
@@ -59,7 +59,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'VLX_USDC LP',
           lpAddresses: {
             111: '0x33ea93e391aF9cAA4b8e9C3368236B93DFCF39C4',
-            106: '0xe53B7b9DE68520D5a038904f845EAB3392D96E97',
+            106: '0x757Ac3cDFfa84b67dFC58c5880Aa8037ef5a23d5',
           },
           token: serializedTokens.usdc,
           quoteToken: serializedTokens.wvlx,
@@ -69,7 +69,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'VLX_USDT LP',
           lpAddresses: {
             111: '0xF20c93c5e5F534C9D95567497Ea17a841164d37b',
-            106: '0xdb3125121Bd73922fB95C52F1e735E0EB4a889DD',
+            106: '0x7F3cB73FC470c2c9F543FdD17dF4De0e97b51A97',
           },
           token: serializedTokens.usdt,
           quoteToken: serializedTokens.wvlx,
