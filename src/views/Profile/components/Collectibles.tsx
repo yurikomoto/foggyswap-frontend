@@ -57,7 +57,7 @@ const Collectibles = () => {
         </Flex>
       )}
       <Flex alignItems="center" justifyContent="flex-end">
-        <Link to="/collectibles">{t('See all approved Pancake Collectibles')}</Link>
+        <Link to="/collectibles">{t('See all approved Wagyu Collectibles')}</Link>
         <ChevronRightIcon />
       </Flex>
     </>
