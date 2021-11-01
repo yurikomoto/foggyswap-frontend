@@ -37,6 +37,11 @@ import { currencyId } from '../../utils/currencyId'
 import PoolPriceBar from './PoolPriceBar'
 import Page from '../Page'
 
+interface IState {
+  tokenAApprovalRequest: boolean
+  tokenBApprovalRequest: boolean
+}
+
 export default function AddLiquidity({
   match: {
     params: { currencyIdA, currencyIdB },
@@ -46,6 +51,7 @@ export default function AddLiquidity({
   const { account, chainId, library } = useActiveWeb3React()
   const { t } = useTranslation()
   const gasPrice = useGasPrice()
+  const [state, setState] = useState<IState>({ tokenAApprovalRequest: false, tokenBApprovalRequest: false })
 
   const currencyA = useCurrency(currencyIdA)
   const currencyB = useCurrency(currencyIdB)
@@ -292,6 +298,26 @@ export default function AddLiquidity({
 
   const addIsUnsupported = useIsTransactionUnsupported(currencies?.CURRENCY_A, currencies?.CURRENCY_B)
 
+  const onApproveA = async () => {
+    try {
+      setState((prev) => ({ ...prev, tokenAApprovalRequest: true }))
+      await approveACallback()
+      setState((prev) => ({ ...prev, tokenAApprovalRequest: false }))
+    } catch (e: any) {
+      setState((prev) => ({ ...prev, tokenAApprovalRequest: false }))
+    }
+  }
+
+  const onApproveB = async () => {
+    try {
+      setState((prev) => ({ ...prev, tokenBApprovalRequest: true }))
+      await approveBCallback()
+      setState((prev) => ({ ...prev, tokenBApprovalRequest: false }))
+    } catch (e: any) {
+      setState((prev) => ({ ...prev, tokenBApprovalRequest: false }))
+    }
+  }
+
   const [onPresentAddLiquidityModal] = useModal(
     <TransactionConfirmationModal
       title={noLiquidity ? t('You are creating a pool') : t('You will receive')}
@@ -396,8 +422,8 @@ export default function AddLiquidity({
                     <RowBetween>
                       {approvalA !== ApprovalState.APPROVED && (
                         <Button
-                          onClick={approveACallback}
-                          disabled={approvalA === ApprovalState.PENDING}
+                          onClick={onApproveA}
+                          disabled={approvalA === ApprovalState.PENDING || state.tokenAApprovalRequest}
                           width={approvalB !== ApprovalState.APPROVED ? '48%' : '100%'}
                         >
                           {approvalA === ApprovalState.PENDING ? (
@@ -409,8 +435,8 @@ export default function AddLiquidity({
                       )}
                       {approvalB !== ApprovalState.APPROVED && (
                         <Button
-                          onClick={approveBCallback}
-                          disabled={approvalB === ApprovalState.PENDING}
+                          onClick={onApproveB}
+                          disabled={approvalB === ApprovalState.PENDING || state.tokenBApprovalRequest}
                           width={approvalA !== ApprovalState.APPROVED ? '48%' : '100%'}
                         >
                           {approvalB === ApprovalState.PENDING ? (

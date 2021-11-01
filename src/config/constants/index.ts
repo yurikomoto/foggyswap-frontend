@@ -94,3 +94,6 @@ export const BLOCKED_ADDRESSES: string[] = [
 export { default as farmsConfig } from './farms'
 export { default as poolsConfig } from './pools'
 export { default as ifosConfig } from './ifo'
+
+export const WAG_LP_SYMBOL = 'Wagyu-LP'
+export const WAG_LP_DECIMALS = 18

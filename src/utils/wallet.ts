@@ -1,6 +1,7 @@
 // Set of helper functions to facilitate wallet setup
 
 import { BASE_BSC_SCAN_URL, BASE_URL } from 'config'
+import { WAG_LP_SYMBOL } from 'config/constants'
 import { nodes } from './getRpcUrl'
 import getTokenLogoURL from './getTokenLogoURL'
 
@@ -57,7 +58,7 @@ export const registerToken = async (tokenAddress: string, tokenSymbol: string, t
         symbol: tokenSymbol,
         decimals: tokenDecimals,
         // image: `${BASE_URL}/images/tokens/${tokenAddress}.png`,
-        image: getTokenLogoURL(tokenAddress),
+        image: tokenSymbol === WAG_LP_SYMBOL ? '' : getTokenLogoURL(tokenAddress),
       },
     },
   })

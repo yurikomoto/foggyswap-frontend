@@ -1,7 +1,10 @@
 import React from 'react'
 import { useTranslation } from 'contexts/Localization'
+import { WAG_LP_DECIMALS, WAG_LP_SYMBOL } from 'config/constants'
 import styled from 'styled-components'
-import { Text, Flex, LinkExternal, Skeleton } from 'packages/uikit'
+import { Text, Flex, LinkExternal, Skeleton, Button, MetamaskIcon } from 'packages/uikit'
+import { useWeb3React } from '@web3-react/core'
+import { registerToken } from 'utils/wallet'
 
 export interface ExpandableSectionProps {
   bscScanAddress?: string
@@ -10,6 +13,7 @@ export interface ExpandableSectionProps {
   totalValueFormatted?: string
   lpLabel?: string
   addLiquidityUrl?: string
+  lpAddress?: string
 }
 
 const Wrapper = styled.div`
@@ -27,8 +31,12 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   totalValueFormatted,
   lpLabel,
   addLiquidityUrl,
+  lpAddress,
 }) => {
   const { t } = useTranslation()
+  const { account } = useWeb3React()
+  const isMetaMaskInScope = !!window.ethereum?.isMetaMask
+  const tokenAddress = lpAddress || ''
 
   return (
     <Wrapper>
@@ -41,6 +49,21 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
       )}
       <StyledLinkExternal href={bscScanAddress}>{t('View Contract')}</StyledLinkExternal>
       <StyledLinkExternal href={infoAddress}>{t('See Pair Info')}</StyledLinkExternal>
+      {account && isMetaMaskInScope && tokenAddress && (
+        <Flex justifyContent="flex-start">
+          <Button
+            variant="text"
+            p="0"
+            height="auto"
+            onClick={() => registerToken(tokenAddress, WAG_LP_SYMBOL, WAG_LP_DECIMALS)}
+          >
+            <Text color="primary" fontWeight="400">
+              {t('Add to Metamask')}
+            </Text>
+            <MetamaskIcon ml="4px" />
+          </Button>
+        </Flex>
+      )}
     </Wrapper>
   )
 }

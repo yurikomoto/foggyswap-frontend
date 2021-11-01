@@ -1,13 +1,16 @@
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
+import { WAG_LP_DECIMALS, WAG_LP_SYMBOL } from 'config/constants'
 import { useTranslation } from 'contexts/Localization'
-import { LinkExternal, Text } from 'packages/uikit'
+import { Button, Flex, LinkExternal, MetamaskIcon, Text } from 'packages/uikit'
 import { FarmWithStakedValue } from 'views/Farms/components/FarmCard/FarmCard'
 import getLiquidityUrlPathParts from 'utils/getLiquidityUrlPathParts'
 import { getAddress } from 'utils/addressHelpers'
 import { getVelasScanLink } from 'utils'
 import { CommunityTag, CoreTag, DualTag } from 'components/Tags'
 
+import { useWeb3React } from '@web3-react/core'
+import { registerToken } from 'utils/wallet'
 import HarvestAction from './HarvestAction'
 import StakedAction from './StakedAction'
 import Apr, { AprProps } from '../Apr'
@@ -139,6 +142,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
   expanded,
 }) => {
   const farm = details
+  const { account } = useWeb3React()
 
   const { t } = useTranslation()
   const isActive = farm.multiplier !== '0X'
@@ -152,6 +156,9 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
   const bsc = getVelasScanLink(lpAddress, 'address')
   const info = `/info/pool/${lpAddress}`
 
+  const isMetaMaskInScope = !!window.ethereum?.isMetaMask
+  const tokenAddress = lpAddress || ''
+
   return (
     <Container expanded={expanded}>
       <InfoContainer>
@@ -164,6 +171,19 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
         )}
         <StyledLinkExternal href={bsc}>{t('View Contract')}</StyledLinkExternal>
         <StyledLinkExternal href={info}>{t('See Pair Info')}</StyledLinkExternal>
+        {account && isMetaMaskInScope && tokenAddress && (
+          <Flex mb="8px" justifyContent={['flex-end', 'flex-end', 'flex-start']}>
+            <Button
+              variant="text"
+              p="0"
+              height="auto"
+              onClick={() => registerToken(tokenAddress, WAG_LP_SYMBOL, WAG_LP_DECIMALS)}
+            >
+              <Text color="primary">{t('Add to Metamask')}</Text>
+              <MetamaskIcon ml="4px" />
+            </Button>
+          </Flex>
+        )}
         <TagsContainer>
           {farm.isCommunity ? <CommunityTag /> : <CoreTag />}
           {dual ? <DualTag /> : null}

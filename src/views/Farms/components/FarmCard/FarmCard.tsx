@@ -120,6 +120,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
             removed={removed}
             bscScanAddress={getVelasScanLink(lpAddress, 'address')}
             infoAddress={`/info/pool/${lpAddress}`}
+            lpAddress={lpAddress}
             totalValueFormatted={totalValueFormatted}
             lpLabel={lpLabel}
             addLiquidityUrl={addLiquidityUrl}
