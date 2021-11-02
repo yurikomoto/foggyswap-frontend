@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button, Heading, Text, LogoIcon } from 'packages/uikit'
+import { Button, Heading, Text, LogoIcon, Image } from 'packages/uikit'
 import Page from 'components/Layout/Page'
 import { useTranslation } from 'contexts/Localization'
 
@@ -18,7 +18,8 @@ const NotFound = () => {
   return (
     <Page>
       <StyledNotFound>
-        <LogoIcon width="64px" mb="8px" />
+        {/* <LogoIcon width="64px" mb="8px" /> */}
+        <Image width={64} height={64} src="/images/logo.png" />
         <Heading scale="xxl">404</Heading>
         <Text mb="16px">{t('Oops, page not found.')}</Text>
         <Button as="a" href="/" scale="sm">
