@@ -20,7 +20,7 @@ const pools: SerializedPoolConfig[] =
           },
           poolCategory: PoolCategory.CORE,
           harvest: true,
-          tokenPerBlock: '1.3',
+          tokenPerBlock: '13',
           sortOrder: 1,
           isFinished: false,
         },
