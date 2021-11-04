@@ -74,6 +74,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.usdt,
           quoteToken: serializedTokens.wvlx,
         },
+        {
+          pid: 6,
+          lpSymbol: 'VLX_BITORB LP',
+          lpAddresses: {
+            111: '',
+            106: '0xa4c1Ee69750Ff17a2fa561D697E2fb23f4e0A842',
+          },
+          token: serializedTokens.bitorb,
+          quoteToken: serializedTokens.wvlx,
+        },
       ]
     : [
         /**

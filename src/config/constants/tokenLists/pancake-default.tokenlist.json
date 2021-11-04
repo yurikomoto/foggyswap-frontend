@@ -27,6 +27,14 @@
       "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xa065e0858417dfc7abc6f2bd4d0185332475c180/logo.png?raw=true"
     },
     {
+      "name": "Bitorbit",
+      "symbol": "BITORB",
+      "address": "0x09bce7716d46459df7473982fd27a96eabd6ee4d",
+      "chainId": 106,
+      "decimals": 18,
+      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x09bce7716d46459df7473982fd27a96eabd6ee4d/logo.png?raw=true"
+    },
+    {
       "name": "Multichain ETH",
       "symbol": "ETH",
       "address": "0x85219708c49aa701871Ad330A94EA0f41dFf24Ca",
