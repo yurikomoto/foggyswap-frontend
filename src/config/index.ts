@@ -14,16 +14,16 @@ export const BASE_VELAS_SCAN_URLS = {
   [ChainId.TESTNET]: 'https://evmexplorer.testnet.velas.com',
 }
 
-// CAKE_PER_BLOCK details
+// WAG_PER_SECOND details
 // 40 WAG is minted per block
 // 20 WAG per block is sent to Burn pool (A farm just for burning cake)
 // 10 WAG per block goes to WAG syrup pool
 // 9 WAG per block goes to Yield farms and lottery
-// CAKE_PER_BLOCK in config/index.ts = 40 as we only change the amount sent to the burn pool which is effectively a farm.
+// WAG_PER_SECOND in config/index.ts = 40 as we only change the amount sent to the burn pool which is effectively a farm.
 // WAG/Block in src/views/Home/components/CakeDataRow.tsx = 15 (40 - Amount sent to burn pool)
-export const CAKE_PER_BLOCK = new BigNumber(40)
+export const WAG_PER_SECOND = new BigNumber(13)
 export const SECONDS_PER_YEAR = new BigNumber(60 * 60 * 24 * 365) // 10512000
-export const CAKE_PER_YEAR = CAKE_PER_BLOCK.times(SECONDS_PER_YEAR)
+export const CAKE_PER_YEAR = WAG_PER_SECOND.times(SECONDS_PER_YEAR)
 // export const BASE_URL = 'https://pancakeswap.finance'
 export const BASE_URL = `${window.location.protocol}//${window.location.host}`
 export const BASE_ADD_LIQUIDITY_URL = `${BASE_URL}/add`
