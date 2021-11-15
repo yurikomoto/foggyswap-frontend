@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@wagyu-swap/sdk'
+import { Currency, Percent, Price } from '@astroswap/sdk'
 import React from 'react'
 import { Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'

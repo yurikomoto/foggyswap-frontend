@@ -1,4 +1,4 @@
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@astroswap/sdk'
 import { SerializedToken } from 'config/constants/types'
 import { parseUnits } from 'ethers/lib/utils'
 

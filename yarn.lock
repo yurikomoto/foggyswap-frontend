@@ -81,6 +81,26 @@
   dependencies:
     tslib "~2.0.1"
 
+"@astroswap-libs/astroswap-core@git://github.com/astroswapapp/astroswap-core.git":
+  version "0.1.0"
+  resolved "git://github.com/astroswapapp/astroswap-core.git#5118cffbbcba520e2d7736fd21ca15656a90304b"
+  dependencies:
+    truffle "^5.1.41"
+    truffle-flattener "^1.4.4"
+    truffle-hdwallet-provider "^1.0.17"
+
+"@astroswap/sdk@git://github.com/astroswapapp/astroswap-sdk.git":
+  version "2.4.0"
+  resolved "git://github.com/astroswapapp/astroswap-sdk.git#93f24ef483417f197616d6a838ed6f62c7e997be"
+  dependencies:
+    "@astroswap-libs/astroswap-core" "git://github.com/astroswapapp/astroswap-core.git"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
 "@babel/code-frame@7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -3782,11 +3802,6 @@
     "@types/koa-compose" "*"
     "@types/node" "*"
 
-"@types/lodash@^4.14.168":
-  version "4.14.171"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.171.tgz#f01b3a5fe3499e34b622c362a46a609fdb23573b"
-  integrity sha512-7eQ2xYLLI/LsicL2nejW9Wyko3lcpN6O/z0ZLHrEQsg280zIdCv1t/0m6UtBjUHokCGBQ3gYTbHzDkZ1xOBwwg==
-
 "@types/long@^4.0.0", "@types/long@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.1.tgz#459c65fa1867dafe6a8f322c4c51695663cc55e9"
@@ -4035,10 +4050,10 @@
     "@types/react" "*"
     csstype "^3.0.2"
 
-"@types/styled-system@^5.1.10":
-  version "5.1.12"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.12.tgz#4f3ca8da3dffe3c5a6cc3b2a97f51b41464c104a"
-  integrity sha512-7x4BYKKfK9QewfsFC2x5r9BK/OrfX+JF/1P21jKPMHruawDw9gvG7bTZgTVk6YkzDO2JUlsk4i8hdiAepAhD0g==
+"@types/styled-system@^5.1.13":
+  version "5.1.13"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.13.tgz#9ad667534d3bd75720dd7778c94c783449cb5c14"
+  integrity sha512-RtpV6zXnnMQNcxKjC06BUM4MUER5o9uZ6b7xAc2OzhWxSsmQ3jXyW8ohuXdEJRKypEe0EqAzbSGx2Im0NXfdKA==
   dependencies:
     csstype "^3.0.2"
 
@@ -4265,37 +4280,6 @@
   dependencies:
     "@uniswap/lib" "1.1.1"
     "@uniswap/v2-core" "1.0.0"
-
-"@wagyu-swap-libs/wagyu-swap-core@git://github.com/wagyuswapapp/wagyu-swap-core.git":
-  version "0.1.0"
-  resolved "git://github.com/wagyuswapapp/wagyu-swap-core.git#f819955ce5d0d8a34d1908ca4b59d14466c35ce2"
-  dependencies:
-    truffle "^5.1.41"
-    truffle-flattener "^1.4.4"
-    truffle-hdwallet-provider "^1.0.17"
-
-"@wagyu-swap/sdk@git://github.com/wagyuswapapp/wagyu-swap-sdk.git":
-  version "2.4.0"
-  resolved "git://github.com/wagyuswapapp/wagyu-swap-sdk.git#06b00c583ed662ac51ef0adb5fa27d1b4e9799e5"
-  dependencies:
-    "@wagyu-swap-libs/wagyu-swap-core" "git://github.com/wagyuswapapp/wagyu-swap-core.git"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
-"@wagyu-swap/uikit@git://github.com/wagyuswapapp/wagyu-uikit.git":
-  version "0.51.0"
-  resolved "git://github.com/wagyuswapapp/wagyu-uikit.git#02fe5240cfad116bbd4d5e7a63d75661e9356bc0"
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    styled-system "^5.1.5"
 
 "@walletconnect/browser-utils@^1.5.0":
   version "1.5.0"

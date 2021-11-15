@@ -1,5 +1,5 @@
 import React from 'react'
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@astroswap/sdk'
 import { Modal, InjectedModalProps } from 'packages/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 

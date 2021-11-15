@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@wagyu-swap/sdk'
+import { ChainId, Token } from '@astroswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { SerializedToken } from './types'
 import addresses from './addresses.json'
@@ -112,8 +112,12 @@ export const testnetTokens = {
 const tokens = (): TokenList => {
   // If testnet - return list comprised of testnetTokens wherever they exist, and mainnetTokens where they don't
   if (chainId === ChainId.TESTNET) {
-    return Object.keys(mainnetTokens).reduce((accum, key) => {
-      return { ...accum, [key]: testnetTokens[key] || mainnetTokens[key] }
+    // return Object.keys(mainnetTokens).reduce((accum, key) => {
+    //   return { ...accum, [key]: testnetTokens[key] || mainnetTokens[key] }
+    // }, {})
+
+    return Object.keys(testnetTokens).reduce((accum, key) => {
+      return { ...accum, [key]: testnetTokens[key] }
     }, {})
   }
 

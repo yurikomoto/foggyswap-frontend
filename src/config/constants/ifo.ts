@@ -1,4 +1,4 @@
-import { Token, ChainId } from '@wagyu-swap/sdk'
+import { Token, ChainId } from '@astroswap/sdk'
 import tokens from './tokens'
 import farms from './farms'
 import { Ifo } from './types'

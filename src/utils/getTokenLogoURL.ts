@@ -1,9 +1,9 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@astroswap/sdk'
 
 const getTokenLogoURL = (address: string) => {
   const chainId = process.env.REACT_APP_CHAIN_ID
 
-  return `https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas${
+  return `https://github.com/astroswapapp/assets/blob/master/blockchains/velas${
     parseInt(chainId, 10) === ChainId.TESTNET ? '-test' : ''
   }/assets/${address.toLowerCase()}/logo.png?raw=true`
 }

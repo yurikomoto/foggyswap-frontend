@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { Currency, Token } from '@wagyu-swap/sdk'
+import { Currency, Token } from '@astroswap/sdk'
 import {
   ModalContainer,
   ModalHeader,

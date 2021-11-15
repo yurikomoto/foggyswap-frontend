@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@wagyu-swap/sdk'
+import { CurrencyAmount, ETHER, JSBI } from '@astroswap/sdk'
 import { MIN_BNB } from '../config/constants'
 
 /**

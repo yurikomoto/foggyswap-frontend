@@ -1,4 +1,4 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@astroswap/sdk'
 import addresses from 'config/constants/contracts'
 import { Address } from 'config/constants/types'
 

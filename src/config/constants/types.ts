@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@astroswap/sdk'
 
 export type TranslatableText =
   | string

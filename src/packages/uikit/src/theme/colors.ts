@@ -2,7 +2,7 @@ import { Colors } from './types'
 
 export const baseColors = {
   failure: '#ED4B9E',
-  primary: '#DE2549',
+  primary: '#D7326D',
   primaryBright: '#53DEE9',
   primaryDark: '#0098A1',
   secondary: '#7645D9',
@@ -32,9 +32,9 @@ export const lightColors: Colors = {
   input: '#FAF1EA',
   inputSecondary: '#d7caec',
   tertiary: '#EFF4F5',
-  text: '#432645',
+  text: '#000',
   textDisabled: '#BDC2C4',
-  textSubtle: '#432645',
+  textSubtle: '#000',
   disabled: '#E9EAEB',
   gradients: {
     bubblegum: 'linear-gradient(180deg, #E3CCCB -34.7%, #F9F1EA 79.3%)',
@@ -64,9 +64,9 @@ export const darkColors: Colors = {
   inputSecondary: '#262130',
   primaryDark: '#0098A1',
   tertiary: '#353547',
-  text: '#432645',
+  text: '#000',
   textDisabled: '#666171',
-  textSubtle: '#432645',
+  textSubtle: '#000',
   disabled: '#524B63',
   gradients: {
     bubblegum: 'linear-gradient(180deg, #E3CCCB -34.7%, #F9F1EA 79.3%)',

@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@wagyu-swap/sdk'
+import { Token, TokenAmount } from '@astroswap/sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from './useContract'

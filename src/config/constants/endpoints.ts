@@ -1,4 +1,4 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@astroswap/sdk'
 
 export const GRAPH_API_PROFILE = process.env.REACT_APP_GRAPH_API_PROFILE
 export const GRAPH_API_PREDICTION = process.env.REACT_APP_GRAPH_API_PREDICTION

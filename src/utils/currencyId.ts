@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@wagyu-swap/sdk'
+import { Currency, ETHER, Token } from '@astroswap/sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'VLX'

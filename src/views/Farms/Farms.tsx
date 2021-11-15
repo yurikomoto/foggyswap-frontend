@@ -3,7 +3,7 @@ import { Route, useRouteMatch, useLocation, NavLink } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex } from 'packages/uikit'
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@astroswap/sdk'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
 import Page from 'components/Layout/Page'
@@ -39,8 +39,6 @@ const ControlContainer = styled.div`
   flex-direction: column;
   margin-bottom: 32px;
 
-  background-color: #fff;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     flex-direction: row;
     flex-wrap: wrap;
@@ -49,13 +47,11 @@ const ControlContainer = styled.div`
   }
 `
 
-const ControllerWrapper = styled.div`
-  background-color: #fff;
-`
+const ControllerWrapper = styled.div``
 
 const ContentWrapper = styled.div`
   position: relative;
-  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  /* background: ${({ theme }) => theme.colors.gradients.bubblegum}; */
 `
 
 const ToggleWrapper = styled.div`
@@ -107,18 +103,6 @@ const ViewControls = styled.div`
   }
 `
 
-const StyledBg = styled.div<{ bgUrl: string }>`
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  top: 20px;
-  bottom: 20px;
-  background-image: url(${(props) => props.bgUrl});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-`
-
 const NoContainer = styled.div`
   filter: ${({ theme }) => theme.card.dropShadow};
   width: 100%;
@@ -126,6 +110,11 @@ const NoContainer = styled.div`
   border-radius: 16px;
   margin: 16px 0px;
   padding: 16px;
+`
+
+const FarmWrapper = styled.div<{ bgUrl: string }>`
+  background-image: ${({ bgUrl }) => `url(${bgUrl})`};
+  background-size: cover;
 `
 
 const NUMBER_OF_FARMS_VISIBLE = 12
@@ -403,12 +392,12 @@ const Farms: React.FC = () => {
   }
 
   return (
-    <>
-      <PageHeader background="#fff">
-        <Heading as="h1" scale="xxl" color="#ec9091" mb="24px">
+    <FarmWrapper bgUrl="/images/swap/bg.svg">
+      <PageHeader background="#0000">
+        <Heading as="h1" scale="xxl" color="#fff" mb="24px">
           {t('Farms')}
         </Heading>
-        <Heading scale="lg" color="text">
+        <Heading scale="lg" color="#fff">
           {t('Stake LP tokens to earn.')}
         </Heading>
       </PageHeader>
@@ -424,7 +413,7 @@ const Farms: React.FC = () => {
                   onChange={() => setStakedOnly(!stakedOnly)}
                   scale="sm"
                 />
-                <Text> {t('Staked only')}</Text>
+                <Text color="#fff"> {t('Staked only')}</Text>
               </ToggleWrapper>
               <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} />
             </ViewControls>
@@ -466,7 +455,6 @@ const Farms: React.FC = () => {
         </Page>
       </ControllerWrapper>
       <ContentWrapper>
-        <StyledBg bgUrl="/images/farm/bg.svg" />
         <Page>
           {renderContent()}
           {account && !userDataLoaded && stakedOnly && (
@@ -477,7 +465,7 @@ const Farms: React.FC = () => {
           <div ref={observerRef} />
         </Page>
       </ContentWrapper>
-    </>
+    </FarmWrapper>
   )
 }
 
