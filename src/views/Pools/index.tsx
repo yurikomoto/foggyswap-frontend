@@ -76,6 +76,11 @@ const LabelWrapper = styled.div`
   }
 `
 
+const PoolsWrapper = styled.div<{ bgUrl: string }>`
+  background-image: ${({ bgUrl }) => `url(${bgUrl})`};
+  background-size: cover;
+`
+
 const ControlStretch = styled(Flex)`
   > div {
     flex: 1;
@@ -253,17 +258,17 @@ const Pools: React.FC = () => {
   const tableLayout = <PoolsTable pools={chosenPools} account={account} userDataLoaded={userDataLoaded} />
 
   return (
-    <>
-      <PageHeader>
+    <PoolsWrapper bgUrl="/images/swap/bg.svg">
+      <PageHeader background="transparent">
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
-            <Heading as="h1" scale="xxl" color="#ec9091" mb="24px">
+            <Heading as="h1" scale="xxl" color="#fff" mb="24px" fontFamily="FukuCatch">
               {t('Sizzle Pools')}
             </Heading>
-            <Heading scale="md" color="text">
+            <Heading scale="md" color="#fff">
               {t('Stake tokens to get')}
             </Heading>
-            <Heading scale="md" color="text">
+            <Heading scale="md" color="#fff">
               {t('mouthwatering APR, low risk.')}
             </Heading>
           </Flex>
@@ -284,7 +289,7 @@ const Pools: React.FC = () => {
           />
           <FilterContainer>
             <LabelWrapper>
-              <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase">
+              <Text fontSize="12px" bold textTransform="uppercase" color="#fff">
                 {t('Sort by')}
               </Text>
               <ControlStretch>
@@ -312,7 +317,7 @@ const Pools: React.FC = () => {
               </ControlStretch>
             </LabelWrapper>
             <LabelWrapper style={{ marginLeft: 16 }}>
-              <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase">
+              <Text fontSize="12px" bold color="#fff" textTransform="uppercase">
                 {t('Search')}
               </Text>
               <SearchInput onChange={handleChangeSearchQuery} placeholder="Search Pools" />
@@ -320,7 +325,7 @@ const Pools: React.FC = () => {
           </FilterContainer>
         </PoolControls>
         {showFinishedPools && (
-          <Text fontSize="20px" color="failure" pb="32px">
+          <Text fontSize="20px" color="#fff" pb="32px">
             {t('These pools are no longer distributing rewards. Please unstake your tokens.')}
           </Text>
         )}
@@ -332,7 +337,7 @@ const Pools: React.FC = () => {
         {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
         <div ref={observerRef} />
       </Page>
-    </>
+    </PoolsWrapper>
   )
 }
 

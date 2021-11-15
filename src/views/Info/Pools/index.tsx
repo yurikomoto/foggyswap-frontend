@@ -22,7 +22,7 @@ const PoolsOverview: React.FC = () => {
 
   return (
     <Page>
-      <Heading scale="lg" mb="16px">
+      <Heading scale="lg" mb="16px" color="#fff">
         {t('Your Watchlist')}
       </Heading>
       <Card>
@@ -34,7 +34,7 @@ const PoolsOverview: React.FC = () => {
           </Text>
         )}
       </Card>
-      <Heading scale="lg" mt="40px" mb="16px" id="info-pools-title">
+      <Heading scale="lg" mt="40px" mb="16px" id="info-pools-title" color="#fff">
         {t('All Pools')}
       </Heading>
       <PoolTable poolDatas={poolDatas} />

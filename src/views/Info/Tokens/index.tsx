@@ -26,7 +26,7 @@ const TokensOverview: React.FC = () => {
 
   return (
     <Page>
-      <Heading scale="lg" mb="16px">
+      <Heading scale="lg" mb="16px" color="#fff">
         {t('Your Watchlist')}
       </Heading>
       {savedTokens.length > 0 ? (
@@ -39,7 +39,7 @@ const TokensOverview: React.FC = () => {
         </Card>
       )}
       <TopTokenMovers />
-      <Heading scale="lg" mt="40px" mb="16px" id="info-tokens-title">
+      <Heading scale="lg" mt="40px" mb="16px" id="info-tokens-title" color="#fff">
         {t('All Tokens')}
       </Heading>
       <TokenTable tokenDatas={formattedTokens} />

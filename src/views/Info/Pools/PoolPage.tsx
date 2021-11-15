@@ -101,7 +101,7 @@ const PoolPage: React.FC<RouteComponentProps<{ address: string }>> = ({
                 <Text color="primary">{t('Pools')}</Text>
               </Link>
               <Flex>
-                <Text mr="8px">{`${poolData.token0.symbol} / ${poolData.token1.symbol}`}</Text>
+                <Text mr="8px" color="#fff">{`${poolData.token0.symbol} / ${poolData.token1.symbol}`}</Text>
               </Flex>
             </Breadcrumbs>
             <Flex justifyContent={[null, null, 'flex-end']} mt={['8px', '8px', 0]}>
@@ -119,6 +119,7 @@ const PoolPage: React.FC<RouteComponentProps<{ address: string }>> = ({
                 bold
                 fontSize={isXs || isSm ? '24px' : '40px'}
                 id="info-pool-pair-title"
+                color="#fff"
               >{`${poolData.token0.symbol} / ${poolData.token1.symbol}`}</Text>
             </Flex>
             <Flex justifyContent="space-between" flexDirection={['column', 'column', 'column', 'row']}>
@@ -126,7 +127,7 @@ const PoolPage: React.FC<RouteComponentProps<{ address: string }>> = ({
                 <Link to={`/info/token/${poolData.token0.address}`}>
                   <TokenButton>
                     <CurrencyLogo address={poolData.token0.address} size="24px" />
-                    <Text fontSize="16px" ml="4px" style={{ whiteSpace: 'nowrap' }} width="fit-content">
+                    <Text fontSize="16px" ml="4px" color="#fff" style={{ whiteSpace: 'nowrap' }} width="fit-content">
                       {`1 ${poolData.token0.symbol} =  ${formatAmount(poolData.token1Price, {
                         notation: 'standard',
                         displayThreshold: 0.001,
@@ -138,7 +139,7 @@ const PoolPage: React.FC<RouteComponentProps<{ address: string }>> = ({
                 <Link to={`/info/token/${poolData.token1.address}`}>
                   <TokenButton ml={[null, null, '10px']}>
                     <CurrencyLogo address={poolData.token1.address} size="24px" />
-                    <Text fontSize="16px" ml="4px" style={{ whiteSpace: 'nowrap' }} width="fit-content">
+                    <Text fontSize="16px" ml="4px" color="#fff" style={{ whiteSpace: 'nowrap' }} width="fit-content">
                       {`1 ${poolData.token1.symbol} =  ${formatAmount(poolData.token0Price, {
                         notation: 'standard',
                         displayThreshold: 0.001,
@@ -259,7 +260,7 @@ const PoolPage: React.FC<RouteComponentProps<{ address: string }>> = ({
             </Box>
             <ChartCard variant="pool" chartData={chartData} />
           </ContentLayout>
-          <Heading mb="16px" mt="40px" scale="lg">
+          <Heading mb="16px" mt="40px" scale="lg" color="#fff">
             {t('Transactions')}
           </Heading>
           <TransactionTable transactions={transactions} />

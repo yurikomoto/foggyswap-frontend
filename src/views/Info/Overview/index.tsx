@@ -104,13 +104,13 @@ const Overview: React.FC = () => {
 
   return (
     <Page>
-      <Heading scale="lg" mb="16px" id="info-overview-title">
+      <Heading scale="lg" mb="16px" id="info-overview-title" color="#fff">
         {t('WagyuSwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>
           <Box p={['16px', '16px', '24px']}>
-            <Text bold color="secondary">
+            <Text bold color="#fff">
               {t('Liquidity')}
             </Text>
             {liquidityHover > 0 ? (
@@ -149,15 +149,15 @@ const Overview: React.FC = () => {
           </Box>
         </Card>
       </ChartCardsContainer>
-      <Heading scale="lg" mt="40px" mb="16px">
+      <Heading scale="lg" mt="40px" mb="16px" color="#fff">
         {t('Top Tokens')}
       </Heading>
       <TokenTable tokenDatas={formattedTokens} />
-      <Heading scale="lg" mt="40px" mb="16px">
+      <Heading scale="lg" mt="40px" mb="16px" color="#fff">
         {t('Top Pools')}
       </Heading>
       <PoolTable poolDatas={poolDatas} loading={somePoolsAreLoading} />
-      <Heading scale="lg" mt="40px" mb="16px">
+      <Heading scale="lg" mt="40px" mb="16px" color="#fff">
         {t('Transactions')}
       </Heading>
       <TransactionTable transactions={transactions} />

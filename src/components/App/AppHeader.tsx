@@ -42,7 +42,7 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
           </IconButton>
         )}
         <Flex flexDirection="column" alignItems="center">
-          <Heading as="h2" mb="8px" scale="xl">
+          <Heading as="h2" mb="8px" scale="xl" fontFamily="FukuCatch">
             {title}
           </Heading>
           <Flex alignItems="center">

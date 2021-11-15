@@ -393,8 +393,8 @@ const Farms: React.FC = () => {
 
   return (
     <FarmWrapper bgUrl="/images/swap/bg.svg">
-      <PageHeader background="#0000">
-        <Heading as="h1" scale="xxl" color="#fff" mb="24px">
+      <PageHeader background="transparent">
+        <Heading as="h1" scale="xxl" color="#fff" mb="24px" fontFamily="FukuCatch">
           {t('Farms')}
         </Heading>
         <Heading scale="lg" color="#fff">
@@ -419,7 +419,9 @@ const Farms: React.FC = () => {
             </ViewControls>
             <FilterContainer>
               <LabelWrapper>
-                <Text textTransform="uppercase">{t('Sort by')}</Text>
+                <Text textTransform="uppercase" color="#fff">
+                  {t('Sort by')}
+                </Text>
                 <Select
                   options={[
                     {
@@ -447,7 +449,9 @@ const Farms: React.FC = () => {
                 />
               </LabelWrapper>
               <LabelWrapper style={{ marginLeft: 16 }}>
-                <Text textTransform="uppercase">{t('Search')}</Text>
+                <Text textTransform="uppercase" color="#fff">
+                  {t('Search')}
+                </Text>
                 <SearchInput onChange={handleChangeQuery} placeholder="Search Farms" />
               </LabelWrapper>
             </FilterContainer>

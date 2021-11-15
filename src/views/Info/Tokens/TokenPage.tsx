@@ -134,8 +134,10 @@ const TokenPage: React.FC<RouteComponentProps<{ address: string }>> = ({
                   <Text color="primary">{t('Tokens')}</Text>
                 </Link>
                 <Flex>
-                  <Text mr="8px">{tokenData.symbol}</Text>
-                  <Text>{`(${truncateHash(address)})`}</Text>
+                  <Text mr="8px" color="#fff">
+                    {tokenData.symbol}
+                  </Text>
+                  <Text color="#fff">{`(${truncateHash(address)})`}</Text>
                 </Flex>
               </Breadcrumbs>
               <Flex justifyContent={[null, null, 'flex-end']} mt={['8px', '8px', 0]}>
@@ -160,15 +162,16 @@ const TokenPage: React.FC<RouteComponentProps<{ address: string }>> = ({
                     lineHeight="0.7"
                     fontSize={isXs || isSm ? '24px' : '40px'}
                     id="info-token-name-title"
+                    color="#fff"
                   >
                     {tokenData.name}
                   </Text>
-                  <Text ml="12px" lineHeight="1" color="textSubtle" fontSize={isXs || isSm ? '14px' : '20px'}>
+                  <Text ml="12px" lineHeight="1" color="#fff" fontSize={isXs || isSm ? '14px' : '20px'}>
                     ({tokenData.symbol})
                   </Text>
                 </Flex>
                 <Flex mt="8px" ml="46px" alignItems="center">
-                  <Text mr="16px" bold fontSize="24px">
+                  <Text mr="16px" bold fontSize="24px" color="#fff">
                     ${formatAmount(tokenData.priceUSD, { notation: 'standard' })}
                   </Text>
                   <Percent value={tokenData.priceUSDChange} fontWeight={600} />
@@ -231,13 +234,13 @@ const TokenPage: React.FC<RouteComponentProps<{ address: string }>> = ({
             </ContentLayout>
 
             {/* pools and transaction tables */}
-            <Heading scale="lg" mb="16px" mt="40px">
+            <Heading scale="lg" mb="16px" mt="40px" color="#fff">
               {t('Pools')}
             </Heading>
 
             <PoolTable poolDatas={poolDatas} />
 
-            <Heading scale="lg" mb="16px" mt="40px">
+            <Heading scale="lg" mb="16px" mt="40px" color="#fff">
               {t('Transactions')}
             </Heading>
 
