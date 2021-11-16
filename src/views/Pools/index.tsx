@@ -263,7 +263,7 @@ const Pools: React.FC = () => {
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
             <Heading as="h1" scale="xxl" color="#fff" mb="24px" fontFamily="FukuCatch">
-              {t('Sizzle Pools')}
+              {t('Star Pools')}
             </Heading>
             <Heading scale="md" color="#fff">
               {t('Stake tokens to get')}

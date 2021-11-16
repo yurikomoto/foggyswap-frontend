@@ -68,7 +68,7 @@ const FarmsPoolsRow = () => {
     <div ref={observerRef}>
       <Flex flexDirection="column" mt="24px">
         <Flex mb="24px">
-          <RowHeading text={showFarms ? t('Top Farms') : t('Top Sizzle Pools')} />
+          <RowHeading text={showFarms ? t('Top Farms') : t('Top Star Pools')} />
           <IconButton
             variant="text"
             height="100%"
