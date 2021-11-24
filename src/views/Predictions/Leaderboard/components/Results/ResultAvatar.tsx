@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Flex, FlexProps, Link, ProfileAvatar, SubMenu, SubMenuItem, useModal, Text } from 'packages/uikit'
 import styled from 'styled-components'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { PredictionUser } from 'state/types'
 import { useGetProfileAvatar } from 'state/profile/hooks'
 import truncateHash from 'utils/truncateHash'
@@ -56,8 +56,8 @@ const ResultAvatar: React.FC<ResultAvatarProps> = ({ user, ...props }) => {
       options={{ placement: 'bottom-start' }}
     >
       <SubMenuItem onClick={onPresentWalletStatsModal}>{t('View Stats')}</SubMenuItem>
-      <SubMenuItem as={Link} href={getVelasScanLink(user.id, 'address')} bold={false} color="text" external>
-        {t('View on Velas Explorer')}
+      <SubMenuItem as={Link} href={getCardanoScanLink(user.id, 'address')} bold={false} color="text" external>
+        {t('View on Cardano Explorer')}
       </SubMenuItem>
     </SubMenu>
   )

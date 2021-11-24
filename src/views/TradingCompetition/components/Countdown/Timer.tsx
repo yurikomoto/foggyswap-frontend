@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Flex, Heading, Text, Link, useTooltip } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { ContextApi } from 'contexts/Localization/types'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 
 export interface TimerProps {
   prefix?: string
@@ -67,8 +67,8 @@ const TooltipContent = ({ blockNumber, t }: { blockNumber: number; t: ContextApi
     <Text color="body" mb="10px" fontWeight="600">
       {t('Block %num%', { num: blockNumber })}
     </Text>
-    <Link external href={getVelasScanLink(blockNumber, 'block')}>
-      {t('View on Velas Explorer')}
+    <Link external href={getCardanoScanLink(blockNumber, 'block')}>
+      {t('View on Cardano Explorer')}
     </Link>
   </>
 )

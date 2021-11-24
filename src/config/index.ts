@@ -7,9 +7,9 @@ BigNumber.config({
   DECIMAL_PLACES: 80,
 })
 
-export const VELAS_BLOCK_TIME = 0.4
+export const CARDANO_BLOCK_TIME = 0.4
 
-export const BASE_VELAS_SCAN_URLS = {
+export const BASE_CARDANO_SCAN_URLS = {
   [ChainId.MAINNET]: 'https://evmexplorer.velas.com',
   [ChainId.TESTNET]: 'https://evmexplorer.testnet.velas.com',
 }
@@ -28,7 +28,7 @@ export const ASTRO_PER_YEAR = ASTRO_PER_SECOND.times(SECONDS_PER_YEAR)
 export const BASE_URL = `${window.location.protocol}//${window.location.host}`
 export const BASE_ADD_LIQUIDITY_URL = `${BASE_URL}/add`
 export const BASE_LIQUIDITY_POOL_URL = `${BASE_URL}/pool`
-export const BASE_BSC_SCAN_URL = BASE_VELAS_SCAN_URLS[ChainId.MAINNET]
+export const BASE_BSC_SCAN_URL = BASE_CARDANO_SCAN_URLS[ChainId.MAINNET]
 export const DEFAULT_TOKEN_DECIMAL = BIG_TEN.pow(18)
 export const DEFAULT_GAS_LIMIT = 400000
 export const AUCTION_BIDDERS_TO_FETCH = 500

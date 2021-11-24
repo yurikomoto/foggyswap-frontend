@@ -23,7 +23,7 @@ import { useInitialBlock } from 'state/block/hooks'
 import { SnapshotCommand } from 'state/types'
 import useToast from 'hooks/useToast'
 import useWeb3Provider from 'hooks/useActiveWeb3React'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import truncateHash from 'utils/truncateHash'
 import { signMessage } from 'utils/web3React'
 import { useTranslation } from 'contexts/Localization'
@@ -261,14 +261,14 @@ const CreateProposal = () => {
                     <Text color="textSubtle" mr="16px">
                       {t('Creator')}
                     </Text>
-                    <LinkExternal href={getVelasScanLink(account, 'address')}>{truncateHash(account)}</LinkExternal>
+                    <LinkExternal href={getCardanoScanLink(account, 'address')}>{truncateHash(account)}</LinkExternal>
                   </Flex>
                 )}
                 <Flex alignItems="center" mb="16px">
                   <Text color="textSubtle" mr="16px">
                     {t('Snapshot')}
                   </Text>
-                  <LinkExternal href={getVelasScanLink(snapshot, 'block')}>{snapshot}</LinkExternal>
+                  <LinkExternal href={getCardanoScanLink(snapshot, 'block')}>{snapshot}</LinkExternal>
                 </Flex>
                 {account ? (
                   <>

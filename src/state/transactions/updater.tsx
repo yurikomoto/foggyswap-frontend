@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Text, Flex, Link } from 'packages/uikit'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { useBlock } from 'state/block/hooks'
 import useToast from 'hooks/useToast'
 import { AppDispatch, AppState } from '../index'
@@ -74,8 +74,8 @@ export default function Updater(): null {
                 <Flex flexDirection="column">
                   <Text>{transactions[hash]?.summary ?? `Hash: ${hash.slice(0, 8)}...${hash.slice(58, 65)}`}</Text>
                   {chainId && (
-                    <Link external href={getVelasScanLink(hash, 'transaction', chainId)}>
-                      View on Velas Explorer
+                    <Link external href={getCardanoScanLink(hash, 'transaction', chainId)}>
+                      View on Cardano Explorer
                     </Link>
                   )}
                 </Flex>,

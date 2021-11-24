@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'contexts/Localization'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { Flex, Link, PocketWatchIcon, Text, Skeleton } from 'packages/uikit'
 import getTimePeriods from 'utils/getTimePeriods'
 import { PublicIfoData } from 'views/Ifos/types'
@@ -34,7 +34,7 @@ const Timer: React.FC<Props> = ({ publicIfoData }) => {
               })}
             </Text>
             <Link
-              href={getVelasScanLink(startBlockNum, 'countdown')}
+              href={getCardanoScanLink(startBlockNum, 'countdown')}
               target="blank"
               rel="noopener noreferrer"
               ml="8px"

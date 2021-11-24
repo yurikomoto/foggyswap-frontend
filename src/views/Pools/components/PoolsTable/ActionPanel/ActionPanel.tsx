@@ -14,7 +14,7 @@ import {
   useTooltip,
 } from 'packages/uikit'
 import { BASE_BSC_SCAN_URL } from 'config'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { useBlock } from 'state/block/hooks'
 import { useCakeVault } from 'state/pools/hooks'
 import BigNumber from 'bignumber.js'
@@ -201,7 +201,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
       <Flex mb="8px" justifyContent="space-between">
         <Text>{hasPoolStarted ? t('Ends in') : t('Starts in')}:</Text>
         <Flex>
-          {/* <Link external href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}> */}
+          {/* <Link external href={getCardanoScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}> */}
           <RemainingTime fontSize="16px" value={blocksToDisplay} color="primary" />
           {/* <Text ml="4px" color="primary" textTransform="lowercase">
               {t('Blocks')}

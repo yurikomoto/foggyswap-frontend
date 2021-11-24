@@ -3,7 +3,7 @@ import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { Card, Flex, Text, Skeleton } from 'packages/uikit'
 import { DeserializedFarm } from 'state/types'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { useTranslation } from 'contexts/Localization'
 import ExpandableSectionButton from 'components/ExpandableSectionButton'
 import { BASE_ADD_LIQUIDITY_URL } from 'config'
@@ -118,7 +118,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
         {showExpandableSection && (
           <DetailsSection
             removed={removed}
-            bscScanAddress={getVelasScanLink(lpAddress, 'address')}
+            bscScanAddress={getCardanoScanLink(lpAddress, 'address')}
             infoAddress={`/info/pool/${lpAddress}`}
             lpAddress={lpAddress}
             totalValueFormatted={totalValueFormatted}

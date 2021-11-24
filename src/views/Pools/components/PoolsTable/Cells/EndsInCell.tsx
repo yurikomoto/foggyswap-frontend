@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Flex, Link, Skeleton, Text, TimerIcon } from 'packages/uikit'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { DeserializedPool } from 'state/types'
 import { useBlock } from 'state/block/hooks'
 import Balance from 'components/Balance'
@@ -39,7 +39,7 @@ const EndsInCell: React.FC<FinishCellProps> = ({ pool }) => {
       <Flex flex="1">
         {/* <Link
           external
-          href={getVelasScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}
+          href={getCardanoScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}
           onClick={(e) => e.stopPropagation()}
         > */}
         <TimerIcon ml="4px" />

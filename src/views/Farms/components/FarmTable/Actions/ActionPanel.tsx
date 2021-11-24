@@ -6,7 +6,7 @@ import { Button, Flex, LinkExternal, MetamaskIcon, Text } from 'packages/uikit'
 import { FarmWithStakedValue } from 'views/Farms/components/FarmCard/FarmCard'
 import getLiquidityUrlPathParts from 'utils/getLiquidityUrlPathParts'
 import { getAddress } from 'utils/addressHelpers'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { CommunityTag, CoreTag, DualTag } from 'components/Tags'
 
 import { useWeb3React } from '@web3-react/core'
@@ -153,7 +153,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
     tokenAddress: token.address,
   })
   const lpAddress = getAddress(farm.lpAddresses)
-  const bsc = getVelasScanLink(lpAddress, 'address')
+  const bsc = getCardanoScanLink(lpAddress, 'address')
   const info = `/info/pool/${lpAddress}`
 
   const isMetaMaskInScope = !!window.ethereum?.isMetaMask

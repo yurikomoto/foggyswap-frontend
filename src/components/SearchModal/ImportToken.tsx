@@ -3,7 +3,7 @@ import { Token, Currency } from '@astroswap/sdk'
 import { Button, Text, ErrorIcon, Flex, Message, Checkbox, Link, Tag, Grid } from 'packages/uikit'
 import { AutoColumn } from 'components/Layout/Column'
 import { useAddUserToken } from 'state/user/hooks'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import truncateHash from 'utils/truncateHash'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useCombinedInactiveList } from 'state/lists/hooks'
@@ -66,8 +66,8 @@ function ImportToken({ tokens, handleCurrencySelect }: ImportProps) {
             {chainId && (
               <Flex justifyContent="space-between" width="100%">
                 <Text mr="4px">{address}</Text>
-                <Link href={getVelasScanLink(token.address, 'address', chainId)} external>
-                  ({t('View on Velas Explorer')})
+                <Link href={getCardanoScanLink(token.address, 'address', chainId)} external>
+                  ({t('View on Cardano Explorer')})
                 </Link>
               </Flex>
             )}

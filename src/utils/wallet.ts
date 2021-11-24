@@ -36,7 +36,7 @@ export const setupNetwork = async () => {
       return false
     }
   } else {
-    console.error("Can't setup the VELAS network on metamask because window.ethereum is undefined")
+    console.error("Can't setup the Cardano network on metamask because window.ethereum is undefined")
     return false
   }
 }

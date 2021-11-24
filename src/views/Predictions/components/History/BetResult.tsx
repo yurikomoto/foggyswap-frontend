@@ -10,7 +10,7 @@ import { fetchLedgerData, markAsCollected } from 'state/predictions'
 import { Result } from 'state/predictions/helpers'
 import { useGetIsClaimable } from 'state/predictions/hooks'
 import { useBNBBusdPrice } from 'hooks/useBUSDPrice'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { multiplyPriceByAmount } from 'utils/prices'
 import useIsRefundable from '../../hooks/useIsRefundable'
 import { formatBnb, getNetPayout } from './helpers'
@@ -128,8 +128,8 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
         )}
         {bet.claimed && bet.claimedHash && (
           <Flex justifyContent="center">
-            <LinkExternal href={getVelasScanLink(bet.claimedHash, 'transaction')} mb="16px">
-              {t('View on Velas Explorer')}
+            <LinkExternal href={getCardanoScanLink(bet.claimedHash, 'transaction')} mb="16px">
+              {t('View on Cardano Explorer')}
             </LinkExternal>
           </Flex>
         )}

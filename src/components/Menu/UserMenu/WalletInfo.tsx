@@ -4,7 +4,7 @@ import { useWeb3React } from '@web3-react/core'
 import useTokenBalance, { FetchStatus, useGetBnbBalance } from 'hooks/useTokenBalance'
 import useAuth from 'hooks/useAuth'
 import { useTranslation } from 'contexts/Localization'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { getFullDisplayBalance, formatBigNumber } from 'utils/formatBalance'
 import tokens from 'config/constants/tokens'
 import CopyAddress from './CopyAddress'
@@ -57,7 +57,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         )}
       </Flex>
       <Flex alignItems="center" justifyContent="end" mb="24px">
-        <LinkExternal href={getVelasScanLink(account, 'address')}>{t('View on Velas Explorer')}</LinkExternal>
+        <LinkExternal href={getCardanoScanLink(account, 'address')}>{t('View on Cardano Explorer')}</LinkExternal>
       </Flex>
       <Button variant="secondary" width="100%" onClick={handleLogout}>
         {t('Disconnect Wallet')}

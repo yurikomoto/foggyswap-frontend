@@ -6,7 +6,7 @@ import useENS from '../../../hooks/ENS/useENS'
 import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
 import { AutoColumn } from '../../../components/Layout/Column'
 import { RowBetween } from '../../../components/Layout/Row'
-import { getVelasScanLink } from '../../../utils'
+import { getCardanoScanLink } from '../../../utils'
 
 const InputPanel = styled.div`
   display: flex;
@@ -102,8 +102,8 @@ export default function AddressInputPanel({
             <RowBetween>
               <Text>{t('Recipient')}</Text>
               {address && chainId && (
-                <Link external small href={getVelasScanLink(name ?? address, 'address', chainId)}>
-                  ({t('View on Velas Explorer')})
+                <Link external small href={getCardanoScanLink(name ?? address, 'address', chainId)}>
+                  ({t('View on Cardano Explorer')})
                 </Link>
               )}
             </RowBetween>

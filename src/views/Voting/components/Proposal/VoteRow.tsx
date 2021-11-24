@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, LinkExternal, Text, Tag, CheckmarkCircleIcon } from 'packages/uikit'
 import truncateHash from 'utils/truncateHash'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { useTranslation } from 'contexts/Localization'
 import { Vote } from 'state/types'
 import { IPFS_GATEWAY } from '../../config'
@@ -27,7 +27,7 @@ const VoteRow: React.FC<VoteRowProps> = ({ vote, isVoter }) => {
     <Row>
       <AddressColumn>
         <Flex alignItems="center">
-          <LinkExternal href={getVelasScanLink(vote.voter, 'address')}>{truncateHash(vote.voter)}</LinkExternal>
+          <LinkExternal href={getCardanoScanLink(vote.voter, 'address')}>{truncateHash(vote.voter)}</LinkExternal>
           {isVoter && (
             <Tag variant="success" outline ml="8px">
               <CheckmarkCircleIcon mr="4px" /> {t('Voted')}

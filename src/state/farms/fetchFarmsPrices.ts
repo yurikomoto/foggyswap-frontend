@@ -3,7 +3,7 @@ import { BIG_ONE, BIG_ZERO } from 'utils/bigNumber'
 import { filterFarmsByQuoteToken } from 'utils/farmsPriceHelpers'
 import { SerializedFarm } from 'state/types'
 import tokens from 'config/constants/tokens'
-import { VLX_USDT_LP_PID } from 'config/constants/farms'
+import { ADA_USDT_LP_PID } from 'config/constants/farms'
 
 const getFarmFromTokenSymbol = (
   farms: SerializedFarm[],
@@ -87,7 +87,7 @@ const getFarmQuoteTokenPrice = (
 }
 
 const fetchFarmsPrices = async (farms: SerializedFarm[]) => {
-  const bnbBusdFarm = farms.find((farm) => farm.pid === VLX_USDT_LP_PID)
+  const bnbBusdFarm = farms.find((farm) => farm.pid === ADA_USDT_LP_PID)
   const bnbPriceBusd = bnbBusdFarm.tokenPriceVsQuote ? BIG_ONE.div(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
 
   const farmsWithPrices = farms.map((farm) => {

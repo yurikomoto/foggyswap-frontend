@@ -1,21 +1,21 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
 import { TokenAmount, Token, ChainId, Percent, JSBI } from '@astroswap/sdk'
-import { getVelasScanLink, calculateSlippageAmount, isAddress, calculateGasMargin, basisPointsToPercent } from 'utils'
+import { getCardanoScanLink, calculateSlippageAmount, isAddress, calculateGasMargin, basisPointsToPercent } from 'utils'
 
 describe('utils', () => {
-  describe('#getVelasScanLink', () => {
+  describe('#getCardanoScanLink', () => {
     it('correct for tx', () => {
-      expect(getVelasScanLink('abc', 'transaction', ChainId.MAINNET)).toEqual('https://bscscan.com/tx/abc')
+      expect(getCardanoScanLink('abc', 'transaction', ChainId.MAINNET)).toEqual('https://bscscan.com/tx/abc')
     })
     it('correct for token', () => {
-      expect(getVelasScanLink('abc', 'token', ChainId.MAINNET)).toEqual('https://bscscan.com/token/abc')
+      expect(getCardanoScanLink('abc', 'token', ChainId.MAINNET)).toEqual('https://bscscan.com/token/abc')
     })
     it('correct for address', () => {
-      expect(getVelasScanLink('abc', 'address', ChainId.MAINNET)).toEqual('https://bscscan.com/address/abc')
+      expect(getCardanoScanLink('abc', 'address', ChainId.MAINNET)).toEqual('https://bscscan.com/address/abc')
     })
     it('enum', () => {
-      expect(getVelasScanLink('abc', 'address', ChainId.TESTNET)).toEqual('https://testnet.bscscan.com/address/abc')
+      expect(getCardanoScanLink('abc', 'address', ChainId.TESTNET)).toEqual('https://testnet.bscscan.com/address/abc')
     })
   })
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { CheckmarkIcon, CloseIcon, LinkExternal } from 'packages/uikit'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { getVelasScanLink } from 'utils'
+import { getCardanoScanLink } from 'utils'
 import { TransactionDetails } from 'state/transactions/reducer'
 import CircleLoader from '../../Loader/CircleLoader'
 
@@ -34,7 +34,7 @@ export default function Transaction({ tx }: { tx: TransactionDetails }) {
 
   return (
     <TransactionState pending={pending} success={success}>
-      <LinkExternal href={getVelasScanLink(tx.hash, 'transaction', chainId)}>{summary ?? tx.hash}</LinkExternal>
+      <LinkExternal href={getCardanoScanLink(tx.hash, 'transaction', chainId)}>{summary ?? tx.hash}</LinkExternal>
       <IconWrapper pending={pending} success={success}>
         {pending ? <CircleLoader /> : success ? <CheckmarkIcon color="success" /> : <CloseIcon color="failure" />}
       </IconWrapper>

@@ -16,9 +16,9 @@ interface SerializedTokenList {
 }
 
 export const mainnetTokens = {
-  wvlx: new Token(MAINNET, addresses[106].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://wagyuswap.app/'),
+  wvlx: new Token(MAINNET, addresses[106].WVLX, 18, 'WADA', 'Wrapped ADA', 'https://wagyuswap.app/'),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
-  vlx: new Token(MAINNET, addresses[106].WVLX, 18, 'VLX', 'VLX', 'https://wagyuswap.app/'),
+  vlx: new Token(MAINNET, addresses[106].WVLX, 18, 'ADA', 'ADA', 'https://wagyuswap.app/'),
   cake: new Token(MAINNET, addresses[106].WAGToken, 18, 'WAG', 'WAGToken', 'https://wagyuswap.app/'),
   usdt: new Token(
     MAINNET,
@@ -41,7 +41,7 @@ export const mainnetTokens = {
     '0xc111c29A988AE0C0087D97b33C6E6766808A3BD3',
     18,
     'BUSD',
-    'Velas BUSD',
+    'Cardano BUSD',
     'https://wagyuswap.app/',
   ),
   usdc: new Token(
@@ -49,22 +49,10 @@ export const mainnetTokens = {
     '0xe2C120f188eBd5389F71Cf4d9C16d05b62A58993',
     6,
     'USDC',
-    'Velas USDC',
-    'https://wagyuswap.app/',
-  ),
-  bitorb: new Token(
-    MAINNET,
-    '0x09bce7716d46459df7473982fd27a96eabd6ee4d',
-    6,
-    'BITORB',
-    'Bitorbit',
+    'Cardano USDC',
     'https://wagyuswap.app/',
   ),
   syrup: new Token(TESTNET, addresses[106].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://wagyuswap.app/'),
-  // te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://wagyuswap.app/'),
-  // te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://wagyuswap.app/'),
-  // te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://wagyuswap.app/'),
-  // te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://wagyuswap.app/'),
 }
 
 export const testnetTokens = {
@@ -76,7 +64,7 @@ export const testnetTokens = {
     '0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4',
     18,
     'USDT',
-    'Velas USDT',
+    'Cardano USDT',
     'https://wagyuswap.app/',
   ),
   busd: new Token(
@@ -84,7 +72,7 @@ export const testnetTokens = {
     '0xe2172a8E1762ae9962A59EE88a731522A61a4cc9',
     18,
     'BUSD',
-    'Velas BUSD',
+    'Cardano BUSD',
     'https://wagyuswap.app/',
   ),
   usdc: new Token(
@@ -92,7 +80,7 @@ export const testnetTokens = {
     '0x6b82bDB5a1AdFfa3816D1F942D60f0269647C646',
     18,
     'USDC',
-    'Velas USDC',
+    'Cardano USDC',
     'https://wagyuswap.app/',
   ),
   weth: new Token(

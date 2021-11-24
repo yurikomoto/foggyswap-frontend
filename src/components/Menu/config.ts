@@ -97,7 +97,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Github'),
-        href: 'https://github.com/wagyuswapapp',
+        href: 'https://github.com/astroswapapp',
       },
       {
         label: t('Cross chain swapz'),
