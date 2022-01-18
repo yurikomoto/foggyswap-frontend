@@ -136,10 +136,10 @@ const CollectRoundWinningsModal: React.FC<CollectRoundWinningsModalProps> = ({ o
   }
 
   return (
-    <Modal minWidth="288px" position="relative" mt="124px">
-      <BunnyDecoration>
+    <Modal minWidth="288px" position="relative">
+      {/* <BunnyDecoration>
         <img src="/images/decorations/prize-bunny.png" alt="bunny decoration" height="124px" width="168px" />
-      </BunnyDecoration>
+      </BunnyDecoration> */}
       <ModalHeader>
         <ModalTitle>
           <Heading>{t('Collect Winnings')}</Heading>

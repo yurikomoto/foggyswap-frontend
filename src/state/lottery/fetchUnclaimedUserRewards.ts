@@ -21,28 +21,45 @@ const lotteryAddress = getLotteryV2Address()
 const fetchCakeRewardsForTickets = async (
   winningTickets: LotteryTicket[],
 ): Promise<{ ticketsWithUnclaimedRewards: LotteryTicket[]; cakeTotal: BigNumber }> => {
-  const calls = winningTickets.map((winningTicket) => {
-    const { roundId, id, rewardBracket } = winningTicket
-    return {
-      name: 'viewRewardsForTicketId',
-      address: lotteryAddress,
-      params: [roundId, id, rewardBracket],
-    }
-  })
-
   try {
-    const cakeRewards = await multicallv2(lotteryV2Abi, calls)
+    let cakeTotal = BIG_ZERO
+    const ticketsWithUnclaimedRewards = []
 
-    const cakeTotal = cakeRewards.reduce((accum: BigNumber, cakeReward: ethers.BigNumber[]) => {
-      return accum.plus(new BigNumber(cakeReward[0].toString()))
-    }, BIG_ZERO)
+    let index = 0
+    const perPage = 50
 
-    const ticketsWithUnclaimedRewards = winningTickets.map((winningTicket, index) => {
-      return { ...winningTicket, cakeReward: cakeRewards[index] }
-    })
+    while (index < winningTickets.length) {
+      const calls = []
+      for (let wIndex = index; wIndex < winningTickets.length && wIndex < index + perPage; wIndex++) {
+        const winningTicket = winningTickets[wIndex]
+        const { roundId, id, rewardBracket } = winningTicket
+
+        calls.push({
+          name: 'viewRewardsForTicketId',
+          address: lotteryAddress,
+          params: [roundId, id, rewardBracket],
+        })
+      }
+
+      // eslint-disable-next-line no-await-in-loop
+      const cakeRewards = await multicallv2(lotteryV2Abi, calls)
+
+      const total = cakeRewards.reduce((accum: BigNumber, cakeReward: ethers.BigNumber[]) => {
+        return accum.plus(new BigNumber(cakeReward[0].toString()))
+      }, BIG_ZERO)
+      cakeTotal = cakeTotal.plus(total)
+
+      ticketsWithUnclaimedRewards.push(
+        ...winningTickets.map((winningTicket, index1) => {
+          return { ...winningTicket, cakeReward: cakeRewards[index1] }
+        }),
+      )
+
+      index += perPage
+    }
+
     return { ticketsWithUnclaimedRewards, cakeTotal }
   } catch (error) {
-    console.error(error)
     return { ticketsWithUnclaimedRewards: null, cakeTotal: null }
   }
 }

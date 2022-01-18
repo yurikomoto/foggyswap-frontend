@@ -17,10 +17,11 @@ import {
 import { useWeb3React } from '@web3-react/core'
 import { LotteryStatus } from 'config/constants/types'
 import { useTranslation } from 'contexts/Localization'
-import { usePriceCakeBusd } from 'state/farms/hooks'
+import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 import { useLottery } from 'state/lottery/hooks'
 import { getBalanceNumber } from 'utils/formatBalance'
 import Balance from 'components/Balance'
+import BigNumber from 'bignumber.js'
 import ViewTicketsModal from './ViewTicketsModal'
 import BuyTicketsButton from './BuyTicketsButton'
 import { dateTimeOptions } from '../helpers'
@@ -63,8 +64,11 @@ const NextDrawCard = () => {
   const [isExpanded, setIsExpanded] = useState(false)
   const ticketBuyIsDisabled = status !== LotteryStatus.OPEN || isTransitioning
 
-  const cakePriceBusd = usePriceCakeBusd()
-  const prizeInBusd = amountCollectedInCake.times(cakePriceBusd)
+  const cakePriceBusd = useCakeBusdPrice()
+  const prizeInBusd = amountCollectedInCake.times(
+    cakePriceBusd ? new BigNumber(cakePriceBusd.toFixed(2)) : new BigNumber('0'),
+  )
+
   const endTimeMs = parseInt(endTime, 10) * 1000
   const endDate = new Date(endTimeMs)
   const isLotteryOpen = status === LotteryStatus.OPEN
@@ -80,7 +84,7 @@ const NextDrawCard = () => {
     }
     return (
       <>
-        {prizeInBusd.isNaN() ? (
+        {prizeInBusd.isNaN() || !cakePriceBusd ? (
           <Skeleton my="7px" height={40} width={160} />
         ) : (
           <Balance
@@ -94,7 +98,7 @@ const NextDrawCard = () => {
             decimals={0}
           />
         )}
-        {prizeInBusd.isNaN() ? (
+        {prizeInBusd.isNaN() || !cakePriceBusd ? (
           <Skeleton my="2px" height={14} width={90} />
         ) : (
           <Balance

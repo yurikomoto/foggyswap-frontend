@@ -10,7 +10,7 @@ export default {
     106: addresses[106].AstroStakingFactory,
   },
   lotteryV2: {
-    111: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',
+    111: '0x9Adb942B4Efc5Fc7377Bcc0f62365E9C5901C9ce',
     106: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',
   },
   multiCall: {

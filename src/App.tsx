@@ -29,7 +29,7 @@ import GlobalCheckClaimStatus from './views/Collectibles/components/GlobalCheckC
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page
 const Farms = lazy(() => import('./views/Farms'))
-// const Lottery = lazy(() => import('./views/Lottery'))
+const Lottery = lazy(() => import('./views/Lottery'))
 // const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
 const AddLiquidity = lazy(() => import('./views/AddLiquidity'))
@@ -71,9 +71,9 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Pools />
             </Route>
-            {/* <Route path="/lottery">
+            <Route path="/lottery">
               <Lottery />
-            </Route> */}
+            </Route>
             {/* <Route path="/ifo">
               <Ifos />
             </Route> */}
