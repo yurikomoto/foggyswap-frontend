@@ -8,7 +8,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_rewardPerTimestamp",
+        "name": "_rewardPerSecond",
         "type": "uint256"
       },
       {
@@ -186,7 +186,7 @@
   },
   {
     "inputs": [],
-    "name": "rewardPerTimestamp",
+    "name": "rewardPerSecond",
     "outputs": [
       {
         "internalType": "uint256",

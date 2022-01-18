@@ -58,7 +58,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active WagyuSwap Profile to take part in an IFO!')}
+              {t('You’ll need an active AstroSwap Profile to take part in an IFO!')}
             </Text>
             {isStepValid ? (
               <Text color="success" bold>
@@ -75,10 +75,10 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
         return (
           <CardBody>
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Get WAG-BNB LP Tokens')}
+              {t('Get Astro-BNB LP Tokens')}
             </Heading>
             <Text color="textSubtle" small>
-              {t('Stake WAG and BNB in the liquidity pool to get LP tokens.')} <br />
+              {t('Stake Astro and BNB in the liquidity pool to get LP tokens.')} <br />
               {t('You’ll spend them to buy IFO sale tokens.')}
             </Text>
             <Button
@@ -112,7 +112,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
             </Heading>
             <Text color="textSubtle" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent WAG-BNB LP tokens will be returned to your wallet.',
+                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent Astro-BNB LP tokens will be returned to your wallet.',
               )}
             </Text>
           </CardBody>

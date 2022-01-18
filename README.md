@@ -1,1 +1,1 @@
-# Wagyuswap App
+# Astroswap App

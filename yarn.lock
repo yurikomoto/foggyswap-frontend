@@ -83,7 +83,7 @@
 
 "@astroswap-libs/astroswap-core@git://github.com/astroswapapp/astroswap-core.git":
   version "0.1.0"
-  resolved "git://github.com/astroswapapp/astroswap-core.git#5118cffbbcba520e2d7736fd21ca15656a90304b"
+  resolved "git://github.com/astroswapapp/astroswap-core.git#27d79663e2760998ed778ce67896b73276ea2fee"
   dependencies:
     truffle "^5.1.41"
     truffle-flattener "^1.4.4"
@@ -91,7 +91,7 @@
 
 "@astroswap/sdk@git://github.com/astroswapapp/astroswap-sdk.git":
   version "2.4.0"
-  resolved "git://github.com/astroswapapp/astroswap-sdk.git#2e48e3a3de1690b04d87f212bd352b9e35718e07"
+  resolved "git://github.com/astroswapapp/astroswap-sdk.git#5d8ed179dda0f22a45f9aebbe7ee601a8db3fbd0"
   dependencies:
     "@astroswap-libs/astroswap-core" "git://github.com/astroswapapp/astroswap-core.git"
     big.js "^5.2.2"

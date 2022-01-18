@@ -19,7 +19,7 @@ const HowToJoin = () => {
       </Heading>
       <HowToCard number={1} title={t('Get Ready')}>
         <Text fontSize="14px" color="textSubtle">
-          {t('Set up your')} <StyledLink href="/profile">{t('Wagyu Profile')}</StyledLink>
+          {t('Set up your')} <StyledLink href="/profile">{t('Astro Profile')}</StyledLink>
           {', '}
           {t('then register for the competition by clicking “I WANT TO BATTLE” button above.')}
         </Text>
@@ -27,7 +27,7 @@ const HowToJoin = () => {
       <HowToCard number={2} title={t('Battle Time')}>
         <Text fontSize="14px" color="textSubtle">
           {t(
-            'Trade BNB/BUSD, WAG/BNB, ETH/BNB and BTCB/BNB during the battle period to raise both your and your team’s score. See the Rules section below for more.',
+            'Trade BNB/BUSD, Astro/BNB, ETH/BNB and BTCB/BNB during the battle period to raise both your and your team’s score. See the Rules section below for more.',
           )}
         </Text>
       </HowToCard>

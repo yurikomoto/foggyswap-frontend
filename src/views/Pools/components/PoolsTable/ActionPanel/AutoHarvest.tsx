@@ -42,7 +42,7 @@ const AutoHarvestAction: React.FunctionComponent<AutoHarvestActionProps> = ({ us
 
   const actionTitle = (
     <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
-      {t('Recent WAG profit')}
+      {t('Recent Astro profit')}
     </Text>
   )
 

@@ -1,5 +1,5 @@
 import { Currency, ETHER, Token } from '@astroswap/sdk'
-import { AdaIcon } from 'packages/uikit'
+import { VelasIcon } from 'packages/uikit'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 import useHttpLocations from '../../hooks/useHttpLocations'
@@ -36,7 +36,7 @@ export default function CurrencyLogo({
   }, [currency, uriLocations])
 
   if (currency === ETHER) {
-    return <AdaIcon width={size} style={style} />
+    return <VelasIcon width={size} style={style} />
   }
 
   return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />

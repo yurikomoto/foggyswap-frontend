@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Text } from 'packages/uikit'
-import { getCardanoScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useTranslation } from 'contexts/Localization'
 import truncateHash from 'utils/truncateHash'
@@ -18,8 +18,8 @@ const DescriptionWithTx: React.FC<DescriptionWithTxProps> = ({ txHash, children 
     <>
       {typeof children === 'string' ? <Text as="p">{children}</Text> : children}
       {txHash && (
-        <Link external href={getCardanoScanLink(txHash, 'transaction', chainId)}>
-          {t('View on Cardano Explorer')}: {truncateHash(txHash, 8, 0)}
+        <Link external href={getVelasScanLink(txHash, 'transaction', chainId)}>
+          {t('View on Velas Explorer')}: {truncateHash(txHash, 8, 0)}
         </Link>
       )}
     </>

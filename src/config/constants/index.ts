@@ -2,7 +2,7 @@ import { ChainId, JSBI, Percent, Token } from '@astroswap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 import addresses from './addresses.json'
 
-export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].WagyuRouter
+export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].AstroRouter
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -95,5 +95,5 @@ export { default as farmsConfig } from './farms'
 export { default as poolsConfig } from './pools'
 export { default as ifosConfig } from './ifo'
 
-export const WAG_LP_SYMBOL = 'Wagyu-LP'
-export const WAG_LP_DECIMALS = 18
+export const ASTRO_LP_SYMBOL = 'Astro-LP'
+export const ASTRO_LP_DECIMALS = 18

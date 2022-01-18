@@ -5,10 +5,10 @@ import addresses from '../../addresses.json'
  */
 const tokens = {
   cake: {
-    symbol: 'WAG',
+    symbol: 'Astro',
     address: {
-      106: addresses[106].WAGToken,
-      111: addresses[111].WAGToken,
+      106: addresses[106].AstroToken,
+      111: addresses[111].AstroToken,
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
@@ -26,8 +26,8 @@ const tokens = {
   syrup: {
     symbol: 'SYRUP',
     address: {
-      106: addresses[106].WAGStake,
-      111: addresses[106].WAGStake,
+      106: addresses[106].AstroStake,
+      111: addresses[106].AstroStake,
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',

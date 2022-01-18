@@ -20,7 +20,7 @@ import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { wrappedCurrency } from 'utils/wrappedCurrency'
 import { RowFixed } from '../Layout/Row'
 import { AutoColumn, ColumnCenter } from '../Layout/Column'
-import { getCardanoScanLink } from '../../utils'
+import { getVelasScanLink } from '../../utils'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -81,8 +81,8 @@ function TransactionSubmittedContent({
         <AutoColumn gap="12px" justify="center">
           <Text fontSize="20px">{t('Transaction Submitted')}</Text>
           {chainId && hash && (
-            <Link external small href={getCardanoScanLink(hash, 'transaction', chainId)}>
-              {t('View on Cardano Explorer')}
+            <Link external small href={getVelasScanLink(hash, 'transaction', chainId)}>
+              {t('View on Velas Explorer')}
             </Link>
           )}
           {currencyToAdd && library?.provider?.isMetaMask && (

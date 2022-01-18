@@ -8,8 +8,8 @@ const serializedTokens = serializeTokens()
 const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 const { MAINNET } = ChainId
 
-export const ADA_ASTRO_LP_PID = chainId === MAINNET ? 1 : 9
-export const ADA_USDT_LP_PID = chainId === MAINNET ? 5 : 6
+export const VLX_ASTRO_LP_PID = chainId === MAINNET ? 1 : 9
+export const VLX_USDT_LP_PID = chainId === MAINNET ? 5 : 6
 
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
@@ -26,7 +26,7 @@ const farms: SerializedFarmConfig[] =
         },
         {
           pid: 1,
-          lpSymbol: 'ADA_WAG LP',
+          lpSymbol: 'ADA_Astro LP',
           lpAddresses: {
             111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
             106: '0x33f879690C165cC320B0BA04cEb1F9CeaC80F376',
@@ -81,100 +81,100 @@ const farms: SerializedFarmConfig[] =
          */
         {
           pid: 0,
-          lpSymbol: 'WAG',
+          lpSymbol: 'Astro',
           lpAddresses: {
-            111: '0xb830d8213e2c3dD621037703D05A5e594387B6Be',
-            106: '0x1920AFDC480f51F5d01306B72184655Cd5A3bE69',
+            111: '0x33106157A082EB2B5951C98D3A01eDF84BE3Efbf',
+            106: '',
           },
           token: serializedTokens.syrup,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 1,
-          lpSymbol: 'ADA_TE6 LP',
+          lpSymbol: 'VLX_TE6 LP',
           lpAddresses: {
-            111: '0xC056BBe888547986Ad2bb0Ff7F9fA484A0c27743',
-            106: '0xC056BBe888547986Ad2bb0Ff7F9fA484A0c27743',
+            111: '0x6155546674938FCf82F56DB25D3Cc73C92a16f6c',
+            106: '',
           },
           token: serializedTokens.te6,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 2,
-          lpSymbol: 'ADA_TE9 LP',
+          lpSymbol: 'VLX_TE9 LP',
           lpAddresses: {
-            111: '0x40d4fC460eF4C76a20CE1BaEAEB6b921050f483f',
-            106: '0x40d4fC460eF4C76a20CE1BaEAEB6b921050f483f',
+            111: '0xE88Ba0F4A34cdFC4154c3F55dECB88ab9970B4DB',
+            106: '',
           },
           token: serializedTokens.te9,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 3,
-          lpSymbol: 'ADA_TE12 LP',
+          lpSymbol: 'VLX_TE12 LP',
           lpAddresses: {
-            111: '0xc40969848d5B549138f0b1B499a69fA9B510407d',
-            106: '0xc40969848d5B549138f0b1B499a69fA9B510407d',
+            111: '0xB5dcC22D820CDE64B19Fd98a24A16a73C0411F12',
+            106: '',
           },
           token: serializedTokens.te12,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 4,
-          lpSymbol: 'ADA_TE18 LP',
+          lpSymbol: 'VLX_TE18 LP',
           lpAddresses: {
-            111: '0xf01D3d7827211626E7b76DD583EaC8b369d046b0',
-            106: '0xf01D3d7827211626E7b76DD583EaC8b369d046b0',
+            111: '0x59d8eDC1E8D71b85827d82510FC50FCc840A3aA1',
+            106: '',
           },
           token: serializedTokens.te18,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 5,
-          lpSymbol: 'ADA_ETH LP',
+          lpSymbol: 'VLX_ETH LP',
           lpAddresses: {
-            111: '0x8A70d2a3e2cba2CAD61FbA419E62eB821F18Bb57',
-            106: '0x8A70d2a3e2cba2CAD61FbA419E62eB821F18Bb57',
+            111: '0x58d1C019b06b1153741c9EbE47b0D49Aec3CbC24',
+            106: '',
           },
           token: serializedTokens.weth,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 6,
-          lpSymbol: 'ADA_USDT LP',
+          lpSymbol: 'VLX_USDT LP',
           lpAddresses: {
-            111: '0xF20c93c5e5F534C9D95567497Ea17a841164d37b',
-            106: '0xF20c93c5e5F534C9D95567497Ea17a841164d37b',
+            111: '0x9a14356ecdCed3347358Fb4BE4A6efEd61523027',
+            106: '',
           },
           token: serializedTokens.usdt,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 7,
-          lpSymbol: 'ADA_USDC LP',
+          lpSymbol: 'VLX_USDC LP',
           lpAddresses: {
-            111: '0x33ea93e391aF9cAA4b8e9C3368236B93DFCF39C4',
-            106: '0x33ea93e391aF9cAA4b8e9C3368236B93DFCF39C4',
+            111: '0x31Afb0CCB31D79818faF7AfCb5230A4625B40B61',
+            106: '',
           },
           token: serializedTokens.usdc,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 8,
-          lpSymbol: 'ADA_BUSD LP',
+          lpSymbol: 'VLX_BUSD LP',
           lpAddresses: {
-            111: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
-            106: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
+            111: '0x79F7f5E2c438775eEc7B3570F3cf73D70d66aE58',
+            106: '',
           },
           token: serializedTokens.busd,
           quoteToken: serializedTokens.wvlx,
         },
         {
           pid: 9,
-          lpSymbol: 'ADA_WAG LP',
+          lpSymbol: 'VLX_ASTRO LP',
           lpAddresses: {
-            111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
-            106: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
+            111: '0x2469B9C215b398ac5FB59fA9AC1a25a877C87876',
+            106: '',
           },
           token: serializedTokens.cake,
           quoteToken: serializedTokens.wvlx,
@@ -182,51 +182,3 @@ const farms: SerializedFarmConfig[] =
       ]
 
 export default farms
-
-/*
-"VLX_TE6_LP": {
-        "pair": "0x04394d1d07F24C30d82D06097301Da1f9732E54f",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0x24f1a66765601999c853136611f5AC999Ca77F50"
-    },
-    "VLX_TE9_LP": {
-        "pair": "0x3124E72d06f181a225e9E587C1ca4Da5E905Bd37",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0xb8075860b634c367dA432a8Bc84ad1556AB19679"
-    },
-    "VLX_TE12_LP": {
-        "pair": "0xBBf16449Aa3D7cd988810bf966982f68d1154023",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0x660F4DfEe75a28525DdB7916556418CDc9b329D3"
-    },
-    "VLX_TE18_LP": {
-        "pair": "0x4522640cF08B6acba90dDA9D4e6Ae3003b4e0ED7",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0xE76592830037d81e1cD5A49d912e8BFf029901Be"
-    },
-    "VLX_ETH_LP": {
-        "pair": "0x2537C7D256D7aec0f41BEf15C93Ec269D263F772",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0x3538C7f88aDbc8ad1F435f7EA70287e26b926344"
-    },
-    "VLX_USDT_LP": {
-        "pair": "0x681Ce22f568720eeFA34548d360c94721aCE1A50",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4"
-    },
-    "VLX_USDC_LP": {
-        "pair": "0xe29d45F71C3132391dFD0F92e54fcA74DE37c45A",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0x6b82bDB5a1AdFfa3816D1F942D60f0269647C646"
-    },
-    "VLX_BUSD_LP": {
-        "pair": "0x02d14903A8423027643e185ae0277D1d09e22497",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0xe2172a8E1762ae9962A59EE88a731522A61a4cc9"
-    },
-    "VLX_WAG_LP": {
-        "pair": "0x518F4Fea9084D981f5faA63F7b549eC922333e54",
-        "tokenA": "0xd4157755C3e63C8d599d450a90f7052a4aAA6cC2",
-        "tokenB": "0x1bC60cFc522A264639866D47C634EfCdddd624eA"
-    }
-*/

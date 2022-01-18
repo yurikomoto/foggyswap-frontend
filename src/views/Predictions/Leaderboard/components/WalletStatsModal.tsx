@@ -18,7 +18,7 @@ import {
 import { useGetProfileAvatar } from 'state/profile/hooks'
 import useTheme from 'hooks/useTheme'
 import styled from 'styled-components'
-import { getCardanoScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import truncateHash from 'utils/truncateHash'
 import { LeaderboardLoadingState } from 'state/types'
 import { useGetOrFetchLeaderboardAddressResult, useGetLeaderboardLoadingState } from 'state/predictions/hooks'
@@ -70,7 +70,7 @@ const WalletStatsModal: React.FC<WalletStatsModalProps> = ({ account, onDismiss,
                 {profileAvatar.username}
               </Heading>
             )}
-            <ExternalLink href={getCardanoScanLink(account, 'address')}>{truncateHash(account)}</ExternalLink>
+            <ExternalLink href={getVelasScanLink(account, 'address')}>{truncateHash(account)}</ExternalLink>
           </Box>
         </Flex>
         <IconButton variant="text" onClick={handleDismiss} aria-label="Close the dialog">

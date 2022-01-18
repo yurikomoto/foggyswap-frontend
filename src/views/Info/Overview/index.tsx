@@ -105,7 +105,7 @@ const Overview: React.FC = () => {
   return (
     <Page>
       <Heading scale="lg" mb="16px" id="info-overview-title" color="#fff">
-        {t('WagyuSwap Info & Analytics')}
+        {t('AstroSwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>

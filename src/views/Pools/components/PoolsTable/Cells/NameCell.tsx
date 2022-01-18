@@ -47,11 +47,11 @@ const NameCell: React.FC<NameCellProps> = ({ pool }) => {
   const showSubtitle = sousId !== 0 || (sousId === 0 && !isMobile)
 
   if (isAutoVault) {
-    title = t('Auto WAG')
+    title = t('Auto Astro')
     subtitle = t('Automatic restaking')
   } else if (isManualCakePool) {
-    title = t('Manual WAG')
-    subtitle = `${t('Earn')} WAG ${t('Stake').toLocaleLowerCase()} WAG`
+    title = t('Manual Astro')
+    subtitle = `${t('Earn')} Astro ${t('Stake').toLocaleLowerCase()} Astro`
   }
 
   return (

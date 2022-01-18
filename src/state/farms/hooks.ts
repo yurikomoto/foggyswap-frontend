@@ -8,7 +8,7 @@ import { getBalanceAmount } from 'utils/formatBalance'
 import { farmsConfig } from 'config/constants'
 import useRefresh from 'hooks/useRefresh'
 import { deserializeToken } from 'state/user/hooks/helpers'
-import { ADA_ASTRO_LP_PID } from 'config/constants/farms'
+import { VLX_ASTRO_LP_PID } from 'config/constants/farms'
 import { fetchFarmsPublicDataAsync, fetchFarmUserDataAsync, nonArchivedFarms } from '.'
 import { State, SerializedFarm, DeserializedFarmUserData, DeserializedFarm, DeserializedFarmsState } from '../types'
 
@@ -75,7 +75,7 @@ export const usePollFarmsWithUserData = (includeArchive = false) => {
 
 /**
  * Fetches the "core" farm data used globally
- * 251 = WAG-BNB LP
+ * 251 = Astro-BNB LP
  * 252 = BUSD-BNB LP
  */
 export const usePollCoreFarmData = () => {
@@ -146,7 +146,7 @@ export const useLpTokenPrice = (symbol: string) => {
 // /!\ Deprecated , use the BUSD hook in /hooks
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(ADA_ASTRO_LP_PID)
+  const cakeBnbFarm = useFarmFromPid(VLX_ASTRO_LP_PID)
   const cakePriceBusdAsString = cakeBnbFarm.tokenPriceUsdt
 
   const cakePriceBusd = useMemo(() => {

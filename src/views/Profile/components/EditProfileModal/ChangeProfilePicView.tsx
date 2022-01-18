@@ -93,7 +93,7 @@ const ChangeProfilePicPage: React.FC<ChangeProfilePicPageProps> = ({ onDismiss }
             {t('Sorry! You don’t have any eligible Collectibles in your wallet to use!')}
           </Text>
           <Text as="p" color="textSubtle" mb="24px">
-            {t('Make sure you have a Wagyu Collectible in your wallet and try again!')}
+            {t('Make sure you have a Astro Collectible in your wallet and try again!')}
           </Text>
         </>
       )}

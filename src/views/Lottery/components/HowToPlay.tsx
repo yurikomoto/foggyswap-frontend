@@ -218,7 +218,7 @@ const HowToPlay: React.FC = () => {
     {
       label: t('Step %number%', { number: 1 }),
       title: t('Buy Tickets'),
-      subtitle: t('Prices are set when the round starts, equal to 5 USD in WAG per ticket.'),
+      subtitle: t('Prices are set when the round starts, equal to 5 USD in Astro per ticket.'),
     },
     {
       label: t('Step %number%', { number: 2 }),
@@ -300,7 +300,7 @@ const HowToPlay: React.FC = () => {
           <BulletList>
             <li>
               <Text display="inline" color="textSubtle">
-                {t('100% of the WAG paid by people buying tickets that round goes back into the prize pools.')}
+                {t('100% of the Astro paid by people buying tickets that round goes back into the prize pools.')}
               </Text>
             </li>
           </BulletList>
@@ -311,21 +311,21 @@ const HowToPlay: React.FC = () => {
             <li>
               <Text display="inline" color="textSubtle">
                 {t(
-                  'After every round, if nobody wins in one of the prize brackets, the unclaimed WAG for that bracket rolls over into the next round and are redistributed among the prize pools.',
+                  'After every round, if nobody wins in one of the prize brackets, the unclaimed Astro for that bracket rolls over into the next round and are redistributed among the prize pools.',
                 )}
               </Text>
             </li>
           </BulletList>
           <Heading my="16px" scale="md">
-            {t('WAG Injections')}
+            {t('Astro Injections')}
           </Heading>
           <BulletList>
             <li>
               <Text display="inline" color="textSubtle">
                 {t(
-                  'An average total of 35,000 WAG from the treasury is added to lottery rounds over the course of a week. This WAG is of course also included in rollovers! Read more in our guide to ',
+                  'An average total of 35,000 Astro from the treasury is added to lottery rounds over the course of a week. This Astro is of course also included in rollovers! Read more in our guide to ',
                 )}
-                <InlineLink href="https://docs.wagyuswap.app/wagyuswap/">{t('WAG Tokenomics')}</InlineLink>
+                <InlineLink href="https://docs.wagyuswap.app/wagyuswap/">{t('Astro Tokenomics')}</InlineLink>
               </Text>
             </li>
           </BulletList>
@@ -344,7 +344,7 @@ const HowToPlay: React.FC = () => {
           <Text>
             {t('Check our in-depth guide on')}{' '}
             <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
-              {t('how to play the WagyuSwap lottery!')}
+              {t('how to play the AstroSwap lottery!')}
             </InlineLink>
           </Text>
         </Flex>

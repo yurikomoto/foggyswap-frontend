@@ -17,7 +17,7 @@ import {
 import { PredictionUser } from 'state/types'
 import { useGetProfileAvatar } from 'state/profile/hooks'
 import styled from 'styled-components'
-import { getCardanoScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import truncateHash from 'utils/truncateHash'
 import { useTranslation } from 'contexts/Localization'
 import WalletStatsModal from '../WalletStatsModal'
@@ -76,8 +76,8 @@ const RankingCard: React.FC<RankingCardProps> = ({ rank, user }) => {
             options={{ placement: 'bottom' }}
           >
             <SubMenuItem onClick={onPresentWalletStatsModal}>{t('View Stats')}</SubMenuItem>
-            <SubMenuItem as={Link} href={getCardanoScanLink(user.id, 'address')} bold={false} color="text" external>
-              {t('View on Cardano Explorer')}
+            <SubMenuItem as={Link} href={getVelasScanLink(user.id, 'address')} bold={false} color="text" external>
+              {t('View on Velas Explorer')}
             </SubMenuItem>
           </SubMenu>
         </Flex>

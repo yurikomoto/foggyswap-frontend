@@ -32,7 +32,7 @@ const useGetProfileCosts = () => {
           numberCakeToUpdate,
         })
       } catch (error) {
-        toastError(t('Error'), t('Could not retrieve WAG costs for profile'))
+        toastError(t('Error'), t('Could not retrieve Astro costs for profile'))
       }
     }
 

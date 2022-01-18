@@ -37,7 +37,7 @@ const Collectibles = () => {
         {t('Pancake Collectibles')}
       </Heading>
       <Text as="p">
-        {t('Pancake Collectibles are special ERC-721 NFTs that can be used on the WagyuSwap platform.')}
+        {t('Pancake Collectibles are special ERC-721 NFTs that can be used on the AstroSwap platform.')}
       </Text>
       <Text as="p">
         {t('NFTs in this user’s wallet that aren’t approved Pancake Collectibles won’t be shown here.')}
@@ -57,7 +57,7 @@ const Collectibles = () => {
         </Flex>
       )}
       <Flex alignItems="center" justifyContent="flex-end">
-        <Link to="/collectibles">{t('See all approved Wagyu Collectibles')}</Link>
+        <Link to="/collectibles">{t('See all approved Astro Collectibles')}</Link>
         <ChevronRightIcon />
       </Flex>
     </>

@@ -46,7 +46,7 @@ const Footer = () => {
           </ButtonMenuItem>
         </ButtonMenu>
         <LinkExternal
-          href="https://www.binance.org/en/bridge?utm_source=WagyuSwap"
+          href="https://www.binance.org/en/bridge?utm_source=AstroSwap"
           ml={[0, 0, '40px']}
           mt={['20px', '20px', 0]}
           mb={['8px', '8px', 0]}

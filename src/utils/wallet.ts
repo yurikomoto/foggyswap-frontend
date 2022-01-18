@@ -1,7 +1,7 @@
 // Set of helper functions to facilitate wallet setup
 
 import { BASE_BSC_SCAN_URL, BASE_URL } from 'config'
-import { WAG_LP_SYMBOL } from 'config/constants'
+import { ASTRO_LP_SYMBOL } from 'config/constants'
 import { nodes } from './getRpcUrl'
 import getTokenLogoURL from './getTokenLogoURL'
 
@@ -36,7 +36,7 @@ export const setupNetwork = async () => {
       return false
     }
   } else {
-    console.error("Can't setup the Cardano network on metamask because window.ethereum is undefined")
+    console.error("Can't setup the Velas network on metamask because window.ethereum is undefined")
     return false
   }
 }
@@ -58,7 +58,7 @@ export const registerToken = async (tokenAddress: string, tokenSymbol: string, t
         symbol: tokenSymbol,
         decimals: tokenDecimals,
         // image: `${BASE_URL}/images/tokens/${tokenAddress}.png`,
-        image: tokenSymbol === WAG_LP_SYMBOL ? '' : getTokenLogoURL(tokenAddress),
+        image: tokenSymbol === ASTRO_LP_SYMBOL ? '' : getTokenLogoURL(tokenAddress),
       },
     },
   })

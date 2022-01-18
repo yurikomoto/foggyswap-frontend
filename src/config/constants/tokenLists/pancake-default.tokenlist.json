@@ -83,12 +83,12 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4/logo.png?raw=true"
     },
     {
-      "name": "Wagyu",
-      "symbol": "WAG",
-      "address": "0xb830d8213e2c3dd621037703d05a5e594387b6be",
+      "name": "Astro",
+      "symbol": "Astro",
+      "address": "0x33106157a082eb2b5951c98d3a01edf84be3efbf",
       "chainId": 111,
       "decimals": 18,
-      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0xb830d8213e2c3dd621037703d05a5e594387b6be/logo.png?raw=true"
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0x33106157a082eb2b5951c98d3a01edf84be3efbf/logo.png?raw=true"
     }
   ]
 }

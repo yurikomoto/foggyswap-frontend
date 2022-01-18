@@ -166,7 +166,7 @@
     "name": "wagyuVault",
     "outputs": [
       {
-        "internalType": "contract WagyuVault",
+        "internalType": "contract AstroVault",
         "name": "",
         "type": "address"
       }

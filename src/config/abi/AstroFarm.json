@@ -2,12 +2,12 @@
   {
     "inputs": [
       {
-        "internalType": "contract WAGToken",
+        "internalType": "contract AstroToken",
         "name": "_cake",
         "type": "address"
       },
       {
-        "internalType": "contract WAGStake",
+        "internalType": "contract AstroStake",
         "name": "_syrup",
         "type": "address"
       },
@@ -24,6 +24,11 @@
       {
         "internalType": "uint256",
         "name": "_startTimestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_endTimestamp",
         "type": "uint256"
       }
     ],
@@ -165,7 +170,7 @@
     "name": "cake",
     "outputs": [
       {
-        "internalType": "contract WAGToken",
+        "internalType": "contract AstroToken",
         "name": "",
         "type": "address"
       }
@@ -241,6 +246,19 @@
     "name": "emergencyWithdraw",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "endTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -471,7 +489,7 @@
     "name": "syrup",
     "outputs": [
       {
-        "internalType": "contract WAGStake",
+        "internalType": "contract AstroStake",
         "name": "",
         "type": "address"
       }
@@ -509,6 +527,32 @@
     "inputs": [
       {
         "internalType": "uint256",
+        "name": "_cakePerSecond",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateCakePerSecond",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_endTimestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateEndTimestamp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
         "name": "multiplierNumber",
         "type": "uint256"
       }
@@ -527,6 +571,19 @@
       }
     ],
     "name": "updatePool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "points",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateStakingPoolAlloc",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

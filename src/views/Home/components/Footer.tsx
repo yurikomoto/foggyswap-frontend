@@ -66,18 +66,18 @@ const BottomRightImgWrapper = styled(Flex)`
 const topLeftImage = {
   path: '/images/home/flying-pancakes/',
   attributes: [
-    { src: '1-bottom', alt: 'Wagyuswap flying on the bottom' },
-    { src: '1-left', alt: 'Wagyuswap flying on the left' },
-    { src: '1-top', alt: 'Wagyuswap flying on the top' },
+    { src: '1-bottom', alt: 'Astroswap flying on the bottom' },
+    { src: '1-left', alt: 'Astroswap flying on the left' },
+    { src: '1-top', alt: 'Astroswap flying on the top' },
   ],
 }
 
 const bottomRightImage = {
   path: '/images/home/flying-pancakes/',
   attributes: [
-    { src: '2-bottom', alt: 'Wagyuswap flying on the bottom' },
-    { src: '2-top', alt: 'Wagyuswap flying on the top' },
-    { src: '2-right', alt: 'Wagyuswap flying on the right' },
+    { src: '2-bottom', alt: 'Astroswap flying on the bottom' },
+    { src: '2-top', alt: 'Astroswap flying on the top' },
+    { src: '2-right', alt: 'Astroswap flying on the right' },
   ],
 }
 

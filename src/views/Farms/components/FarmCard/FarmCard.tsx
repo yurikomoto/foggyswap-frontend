@@ -3,7 +3,7 @@ import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { Card, Flex, Text, Skeleton } from 'packages/uikit'
 import { DeserializedFarm } from 'state/types'
-import { getCardanoScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import { useTranslation } from 'contexts/Localization'
 import ExpandableSectionButton from 'components/ExpandableSectionButton'
 import { BASE_ADD_LIQUIDITY_URL } from 'config'
@@ -55,7 +55,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
       : ''
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : t('WAG + Fees')
+  const earnLabel = farm.dual ? farm.dual.earnLabel : t('Astro + Fees')
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,
@@ -63,7 +63,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
   })
   const addLiquidityUrl = `${BASE_ADD_LIQUIDITY_URL}/${liquidityUrlPathParts}`
   const lpAddress = getAddress(farm.lpAddresses)
-  const isPromotedFarm = farm.token.symbol === 'WAG'
+  const isPromotedFarm = farm.token.symbol === 'Astro'
 
   return (
     <StyledCard isActive={isPromotedFarm}>
@@ -118,7 +118,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
         {showExpandableSection && (
           <DetailsSection
             removed={removed}
-            bscScanAddress={getCardanoScanLink(lpAddress, 'address')}
+            bscScanAddress={getVelasScanLink(lpAddress, 'address')}
             infoAddress={`/info/pool/${lpAddress}`}
             lpAddress={lpAddress}
             totalValueFormatted={totalValueFormatted}

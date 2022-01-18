@@ -19,14 +19,14 @@ export const swapSectionData: SalesSectionProps = {
     attributes: [
       { src: 'VLX', alt: 'VLX token' },
       { src: 'BTC', alt: 'BTC token' },
-      { src: 'WAG', alt: 'WAG token' },
+      { src: 'Astro', alt: 'Astro token' },
     ],
   },
 }
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'WagyuSwap makes it easy to make your crypto work for you.',
+  bodyText: 'AstroSwap makes it easy to make your crypto work for you.',
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -49,13 +49,13 @@ export const earnSectionData: SalesSectionProps = {
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'WAG makes our world go round.',
+  headingText: 'Astro makes our world go round.',
   bodyText:
-    'WAG token is at the heart of the WagyuSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'Astro token is at the heart of the AstroSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: 'Buy WAG',
+    text: 'Buy Astro',
     external: false,
   },
   secondaryButton: {
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d pancake' },
       { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'WAG token' },
+      { src: 'coin', alt: 'Astro token' },
       { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

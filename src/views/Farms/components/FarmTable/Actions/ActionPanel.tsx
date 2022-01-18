@@ -1,12 +1,12 @@
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
-import { WAG_LP_DECIMALS, WAG_LP_SYMBOL } from 'config/constants'
+import { ASTRO_LP_DECIMALS, ASTRO_LP_SYMBOL } from 'config/constants'
 import { useTranslation } from 'contexts/Localization'
 import { Button, Flex, LinkExternal, MetamaskIcon, Text } from 'packages/uikit'
 import { FarmWithStakedValue } from 'views/Farms/components/FarmCard/FarmCard'
 import getLiquidityUrlPathParts from 'utils/getLiquidityUrlPathParts'
 import { getAddress } from 'utils/addressHelpers'
-import { getCardanoScanLink } from 'utils'
+import { getVelasScanLink } from 'utils'
 import { CommunityTag, CoreTag, DualTag } from 'components/Tags'
 
 import { useWeb3React } from '@web3-react/core'
@@ -153,7 +153,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
     tokenAddress: token.address,
   })
   const lpAddress = getAddress(farm.lpAddresses)
-  const bsc = getCardanoScanLink(lpAddress, 'address')
+  const bsc = getVelasScanLink(lpAddress, 'address')
   const info = `/info/pool/${lpAddress}`
 
   const isMetaMaskInScope = !!window.ethereum?.isMetaMask
@@ -177,7 +177,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
               variant="text"
               p="0"
               height="auto"
-              onClick={() => registerToken(tokenAddress, WAG_LP_SYMBOL, WAG_LP_DECIMALS)}
+              onClick={() => registerToken(tokenAddress, ASTRO_LP_SYMBOL, ASTRO_LP_DECIMALS)}
             >
               <Text color="primary">{t('Add to Metamask')}</Text>
               <MetamaskIcon ml="4px" />
