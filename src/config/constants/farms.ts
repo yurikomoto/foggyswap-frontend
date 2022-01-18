@@ -8,8 +8,8 @@ const serializedTokens = serializeTokens()
 const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 const { MAINNET } = ChainId
 
-export const VLX_ASTRO_LP_PID = chainId === MAINNET ? 1 : 9
-export const VLX_USDT_LP_PID = chainId === MAINNET ? 5 : 6
+export const ADA_ASTRO_LP_PID = chainId === MAINNET ? 1 : 1
+export const ADA_USDT_LP_PID = chainId === MAINNET ? 5 : 3
 
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
@@ -83,7 +83,7 @@ const farms: SerializedFarmConfig[] =
           pid: 0,
           lpSymbol: 'Astro',
           lpAddresses: {
-            111: '0x33106157A082EB2B5951C98D3A01eDF84BE3Efbf',
+            111: '0x73E199C7AED3485B74e5A63f3A204407CE44A825',
             106: '',
           },
           token: serializedTokens.syrup,
@@ -91,93 +91,53 @@ const farms: SerializedFarmConfig[] =
         },
         {
           pid: 1,
-          lpSymbol: 'VLX_TE6 LP',
+          lpSymbol: 'ADA_ASTRO LP',
           lpAddresses: {
-            111: '0x6155546674938FCf82F56DB25D3Cc73C92a16f6c',
-            106: '',
-          },
-          token: serializedTokens.te6,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 2,
-          lpSymbol: 'VLX_TE9 LP',
-          lpAddresses: {
-            111: '0xE88Ba0F4A34cdFC4154c3F55dECB88ab9970B4DB',
-            106: '',
-          },
-          token: serializedTokens.te9,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 3,
-          lpSymbol: 'VLX_TE12 LP',
-          lpAddresses: {
-            111: '0xB5dcC22D820CDE64B19Fd98a24A16a73C0411F12',
-            106: '',
-          },
-          token: serializedTokens.te12,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 4,
-          lpSymbol: 'VLX_TE18 LP',
-          lpAddresses: {
-            111: '0x59d8eDC1E8D71b85827d82510FC50FCc840A3aA1',
-            106: '',
-          },
-          token: serializedTokens.te18,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 5,
-          lpSymbol: 'VLX_ETH LP',
-          lpAddresses: {
-            111: '0x58d1C019b06b1153741c9EbE47b0D49Aec3CbC24',
-            106: '',
-          },
-          token: serializedTokens.weth,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 6,
-          lpSymbol: 'VLX_USDT LP',
-          lpAddresses: {
-            111: '0x9a14356ecdCed3347358Fb4BE4A6efEd61523027',
-            106: '',
-          },
-          token: serializedTokens.usdt,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 7,
-          lpSymbol: 'VLX_USDC LP',
-          lpAddresses: {
-            111: '0x31Afb0CCB31D79818faF7AfCb5230A4625B40B61',
-            106: '',
-          },
-          token: serializedTokens.usdc,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 8,
-          lpSymbol: 'VLX_BUSD LP',
-          lpAddresses: {
-            111: '0x79F7f5E2c438775eEc7B3570F3cf73D70d66aE58',
-            106: '',
-          },
-          token: serializedTokens.busd,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 9,
-          lpSymbol: 'VLX_ASTRO LP',
-          lpAddresses: {
-            111: '0x2469B9C215b398ac5FB59fA9AC1a25a877C87876',
+            111: '0xF8A8dA66e3D7A7e696464A50061BbEe1A3cf9e6b',
             106: '',
           },
           token: serializedTokens.cake,
-          quoteToken: serializedTokens.wvlx,
+          quoteToken: serializedTokens.ada,
+        },
+        {
+          pid: 2,
+          lpSymbol: 'ADA_ETH LP',
+          lpAddresses: {
+            111: '0x8aa6D06723eAc62DCEf1d61573d78A4fB4008cc8',
+            106: '',
+          },
+          token: serializedTokens.weth,
+          quoteToken: serializedTokens.ada,
+        },
+        {
+          pid: 3,
+          lpSymbol: 'ADA_USDT LP',
+          lpAddresses: {
+            111: '0xbA1AF83C0FC66F5Cdd17AFC0Cc8B077c3820D934',
+            106: '',
+          },
+          token: serializedTokens.usdt,
+          quoteToken: serializedTokens.ada,
+        },
+        {
+          pid: 4,
+          lpSymbol: 'ADA_USDC LP',
+          lpAddresses: {
+            111: '0x3b9F1b0F3aCE0181269E53A7aA10d218e81a29d7',
+            106: '',
+          },
+          token: serializedTokens.usdc,
+          quoteToken: serializedTokens.ada,
+        },
+        {
+          pid: 5,
+          lpSymbol: 'ADA_BUSD LP',
+          lpAddresses: {
+            111: '0xDCa7E16a316D6283B970fd0E50E6Ae8c0B852B51',
+            106: '',
+          },
+          token: serializedTokens.busd,
+          quoteToken: serializedTokens.ada,
         },
       ]
 

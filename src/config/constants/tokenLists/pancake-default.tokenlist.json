@@ -85,10 +85,18 @@
     {
       "name": "Astro",
       "symbol": "Astro",
-      "address": "0x33106157a082eb2b5951c98d3a01edf84be3efbf",
+      "address": "0x73e199c7aed3485b74e5a63f3a204407ce44a825",
       "chainId": 111,
       "decimals": 18,
-      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0x33106157a082eb2b5951c98d3a01edf84be3efbf/logo.png?raw=true"
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0x73e199c7aed3485b74e5a63f3a204407ce44a825/logo.png?raw=true"
+    },
+    {
+      "name": "Cardano",
+      "symbol": "ADA",
+      "address": "0x6292d721d00bddaf683e1e64e4fcc9588c95398d",
+      "chainId": 111,
+      "decimals": 18,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0x6292d721d00bddaf683e1e64e4fcc9588c95398d/logo.png?raw=true"
     }
   ]
 }

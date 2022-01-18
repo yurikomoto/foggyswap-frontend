@@ -64,6 +64,7 @@ export const mainnetTokens = {
 
 export const testnetTokens = {
   wvlx: new Token(TESTNET, addresses[111].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://www.astroswap.app/'),
+  ada: new Token(TESTNET, addresses[111].AdaToken, 18, 'ADA', 'Cardano', 'https://www.cardano.org/'),
   cake: new Token(TESTNET, addresses[111].AstroToken, 18, 'ASTRO', 'AstroToken', 'https://www.astroswap.app/'),
   syrup: new Token(
     TESTNET,

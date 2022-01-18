@@ -31,7 +31,7 @@ const pools: SerializedPoolConfig[] =
           stakingToken: serializedTokens.cake,
           earningToken: serializedTokens.cake,
           contractAddress: {
-            111: '0x89a9648a910244C172BAE8F004a0DCc4772dB9c0',
+            111: '0x2F1a6cbE5844516fdFA78f9a17F72cD60dd042b7',
             106: '',
           },
           poolCategory: PoolCategory.CORE,
@@ -45,7 +45,7 @@ const pools: SerializedPoolConfig[] =
           stakingToken: serializedTokens.te6,
           earningToken: serializedTokens.cake,
           contractAddress: {
-            111: '0xfd482d069A0708E54CB70b464Bb4Caf57B00e1Fc',
+            111: '0x8a68Eed82c2D91ED02aDf4A1a8BFF099C73374f3',
             106: '',
           },
           poolCategory: PoolCategory.CORE,
@@ -59,7 +59,7 @@ const pools: SerializedPoolConfig[] =
           stakingToken: serializedTokens.te9,
           earningToken: serializedTokens.cake,
           contractAddress: {
-            111: '0x3bE7C997cf946C9AF492A6BBb194bCbb7b1C5E5d',
+            111: '0x873a2E7D6ce0A79F33cE7a4d0501f88C3CA8FCCB',
             106: '',
           },
           poolCategory: PoolCategory.CORE,
@@ -73,7 +73,7 @@ const pools: SerializedPoolConfig[] =
           stakingToken: serializedTokens.te12,
           earningToken: serializedTokens.cake,
           contractAddress: {
-            111: '0x70b00521b93d65C43C7B8FbEC7adBcd58FF01435',
+            111: '0xdbc585d038494F5c1e2BC08a1c944d51595D0f4B',
             106: '',
           },
           poolCategory: PoolCategory.CORE,
@@ -87,7 +87,7 @@ const pools: SerializedPoolConfig[] =
           stakingToken: serializedTokens.te18,
           earningToken: serializedTokens.cake,
           contractAddress: {
-            111: '0x2ED0fF6d27C032C2Db907daec99fFC279733d490',
+            111: '0x623D161c9D4a0d0A5EFB0eB20f65412f52da005c',
             106: '',
           },
           poolCategory: PoolCategory.CORE,
