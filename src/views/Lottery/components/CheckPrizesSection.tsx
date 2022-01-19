@@ -136,7 +136,7 @@ const CheckPrizesSection = () => {
             {checkNowText()}
           </Button>
         </Flex>
-        <TicketImage src="/images/lottery/ticket-r.png" alt="lottery ticket" />
+        {/* <TicketImage src="/images/lottery/ticket-r.png" alt="lottery ticket" /> */}
       </Flex>
     )
   }

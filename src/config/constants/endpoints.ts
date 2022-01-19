@@ -18,7 +18,7 @@ export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/
 
 // http://thegraph.testnet.astroswap.app/subgraphs/name/wagyu/graphql
 // export const INFO_CLIENT = {
-//   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/wagyu',
+//   [ChainId.TESTNET]: 'http://51.222.43.201/subgraphs/name/wagyu',
 //   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/wagyu',
 // }[chainId]
 
@@ -28,7 +28,7 @@ export const INFO_CLIENT = {
 }[chainId]
 
 // export const BLOCKS_CLIENT = {
-//   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/blocks',
+//   [ChainId.TESTNET]: 'http://51.222.43.201/subgraphs/name/blocks',
 //   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/blocks',
 // }[chainId]
 
@@ -43,6 +43,6 @@ export const GRAPH_API_LOTTERY = {
 }[chainId]
 
 // export const GRAPH_API_LOTTERY = {
-//   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/lottery',
+//   [ChainId.TESTNET]: 'http://51.222.43.201/subgraphs/name/lottery',
 //   [ChainId.MAINNET]: 'http://209.237.140.231:8000/subgraphs/name/lottery',
 // }[chainId]

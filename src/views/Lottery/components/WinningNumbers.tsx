@@ -25,11 +25,11 @@ const WinningNumbers: React.FC<WinningNumbersProps> = ({
   const numAsArray = reversedNumber.split('')
   const colors: BallColor[] = ['pink', 'lilac', 'teal', 'aqua', 'green', 'yellow']
 
-  useEffect(() => {
-    if (rotateText && numAsArray && rotationValues.length === 0) {
-      setRotationValues(numAsArray.map(() => random(-30, 30)))
-    }
-  }, [rotateText, numAsArray, rotationValues])
+  // useEffect(() => {
+  //   if (rotateText && numAsArray && rotationValues.length === 0) {
+  //     setRotationValues(numAsArray.map(() => random(-30, 30)))
+  //   }
+  // }, [rotateText, numAsArray, rotationValues])
 
   return (
     <Flex justifyContent="space-between" {...containerProps}>

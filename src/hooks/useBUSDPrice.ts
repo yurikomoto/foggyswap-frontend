@@ -1,13 +1,13 @@
 import { ChainId, Currency, currencyEquals, JSBI, Price } from '@astroswap/sdk'
 import { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import tokens, { testnetTokens } from 'config/constants/tokens'
-// import tokens, { mainnetTokens } from 'config/constants/tokens'
+// import tokens, { testnetTokens } from 'config/constants/tokens'
+import tokens, { mainnetTokens, testnetTokens } from 'config/constants/tokens'
 import { PairState, usePairs } from './usePairs'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-// const USDT_MAINNET = mainnetTokens.usdt
-const USDT_MAINNET = testnetTokens.usdt
+const USDT_MAINNET = mainnetTokens.usdt
+const USDT_TESTNET = testnetTokens.usdt
 const { ada: ADA } = tokens
 
 /**
@@ -17,13 +17,14 @@ const { ada: ADA } = tokens
 export default function useBUSDPrice(currency?: Currency): Price | undefined {
   const { chainId } = useActiveWeb3React()
   const wrapped = wrappedCurrency(currency, chainId)
+  const USDT = chainId === ChainId.MAINNET ? USDT_MAINNET : USDT_TESTNET
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
       [chainId && wrapped && currencyEquals(ADA, wrapped) ? undefined : currency, chainId ? ADA : undefined],
-      [wrapped?.equals(USDT_MAINNET) ? undefined : wrapped, chainId === ChainId.MAINNET ? USDT_MAINNET : undefined],
-      [chainId ? ADA : undefined, chainId === ChainId.MAINNET ? USDT_MAINNET : undefined],
+      [wrapped?.equals(USDT) ? undefined : wrapped, USDT],
+      [chainId ? ADA : undefined, USDT],
     ],
-    [chainId, currency, wrapped],
+    [chainId, currency, wrapped, USDT],
   )
 
   const [[ethPairState, ethPair], [usdtPairState, usdtPair], [usdtEthPairState, usdtEthPair]] = usePairs(tokenPairs)
@@ -36,13 +37,13 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     if (wrapped.equals(ADA)) {
       if (usdtPair) {
         const price = usdtPair.priceOf(ADA)
-        return new Price(currency, USDT_MAINNET, price.denominator, price.numerator)
+        return new Price(currency, USDT, price.denominator, price.numerator)
       }
       return undefined
     }
     // handle busd
-    if (wrapped.equals(USDT_MAINNET)) {
-      return new Price(USDT_MAINNET, USDT_MAINNET, '1', '1')
+    if (wrapped.equals(USDT)) {
+      return new Price(USDT, USDT, '1', '1')
     }
 
     const ethPairETHAmount = ethPair?.reserveOf(ADA)
@@ -57,26 +58,22 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
 
     // all other tokens
     // first try the busd pair
-    if (
-      usdtPairState === PairState.EXISTS &&
-      usdtPair &&
-      usdtPair.reserveOf(USDT_MAINNET).greaterThan(ethPairETHBUSDValue)
-    ) {
+    if (usdtPairState === PairState.EXISTS && usdtPair && usdtPair.reserveOf(USDT).greaterThan(ethPairETHBUSDValue)) {
       const price = usdtPair.priceOf(wrapped)
-      return new Price(currency, USDT_MAINNET, price.denominator, price.numerator)
+      return new Price(currency, USDT, price.denominator, price.numerator)
     }
     if (ethPairState === PairState.EXISTS && ethPair && usdtEthPairState === PairState.EXISTS && usdtEthPair) {
-      if (usdtEthPair.reserveOf(USDT_MAINNET).greaterThan('0') && ethPair.reserveOf(ADA).greaterThan('0')) {
-        const ethBusdPrice = usdtEthPair.priceOf(USDT_MAINNET)
+      if (usdtEthPair.reserveOf(USDT).greaterThan('0') && ethPair.reserveOf(ADA).greaterThan('0')) {
+        const ethBusdPrice = usdtEthPair.priceOf(USDT)
         const currencyEthPrice = ethPair.priceOf(ADA)
         const busdPrice = ethBusdPrice.multiply(currencyEthPrice).invert()
 
-        return new Price(currency, USDT_MAINNET, busdPrice.denominator, busdPrice.numerator)
+        return new Price(currency, USDT, busdPrice.denominator, busdPrice.numerator)
       }
     }
 
     return undefined
-  }, [chainId, currency, ethPair, ethPairState, usdtEthPair, usdtEthPairState, usdtPair, usdtPairState, wrapped])
+  }, [chainId, currency, ethPair, ethPairState, usdtEthPair, usdtEthPairState, usdtPair, usdtPairState, wrapped, USDT])
 }
 
 export const useCakeBusdPrice = (): Price | undefined => {

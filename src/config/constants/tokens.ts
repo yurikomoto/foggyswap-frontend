@@ -77,7 +77,7 @@ export const testnetTokens = {
   usdt: new Token(
     TESTNET,
     '0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4',
-    18,
+    6,
     'USDT',
     'Velas USDT',
     'https://www.astroswap.app/',
@@ -93,7 +93,7 @@ export const testnetTokens = {
   usdc: new Token(
     TESTNET,
     '0x6b82bDB5a1AdFfa3816D1F942D60f0269647C646',
-    18,
+    6,
     'USDC',
     'Velas USDC',
     'https://www.astroswap.app/',
