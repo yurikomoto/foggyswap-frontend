@@ -185,17 +185,10 @@ const Farms: React.FC = () => {
           return farm
         }
         const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteTokenPriceUsdt)
-        console.log(
-          'totalLiquidity',
-          totalLiquidity.toFixed(4),
-          farm.lpTotalInQuoteToken.toFixed(),
-          farm.quoteTokenPriceUsdt,
-        )
+
         const { cakeRewardsApr, lpRewardsApr } = isActive
           ? getFarmApr(new BigNumber(farm.poolWeight), cakePrice, totalLiquidity, farm.lpAddresses[ChainId.MAINNET])
           : { cakeRewardsApr: 0, lpRewardsApr: 0 }
-
-        console.log(cakeRewardsApr, lpRewardsApr)
 
         return { ...farm, apr: cakeRewardsApr, lpRewardsApr, liquidity: totalLiquidity }
       })
