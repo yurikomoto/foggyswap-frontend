@@ -22,6 +22,7 @@ import PageHeader from 'components/PageHeader'
 import SearchInput from 'components/SearchInput'
 import Select, { OptionProps } from 'components/Select/Select'
 import Loading from 'components/Loading'
+import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import Table from './components/FarmTable/FarmTable'
 import FarmTabButtons from './components/FarmTabButtons'
@@ -134,7 +135,14 @@ const Farms: React.FC = () => {
   const { pathname } = useLocation()
   const { t } = useTranslation()
   const { data: farmsLP, userDataLoaded } = useFarms()
-  const cakePrice = usePriceCakeBusd()
+  const cakeBusdPrice = useCakeBusdPrice()
+  const cakePrice = useMemo(() => {
+    if (cakeBusdPrice) {
+      return new BigNumber(cakeBusdPrice.toFixed(4))
+    }
+    return new BigNumber('0')
+  }, [cakeBusdPrice])
+  // const cakePrice = usePriceCakeBusd()
   const [query, setQuery] = useState('')
   const [viewMode, setViewMode] = useUserFarmsViewMode()
   const { account } = useWeb3React()
@@ -177,9 +185,17 @@ const Farms: React.FC = () => {
           return farm
         }
         const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteTokenPriceUsdt)
+        console.log(
+          'totalLiquidity',
+          totalLiquidity.toFixed(4),
+          farm.lpTotalInQuoteToken.toFixed(),
+          farm.quoteTokenPriceUsdt,
+        )
         const { cakeRewardsApr, lpRewardsApr } = isActive
           ? getFarmApr(new BigNumber(farm.poolWeight), cakePrice, totalLiquidity, farm.lpAddresses[ChainId.MAINNET])
           : { cakeRewardsApr: 0, lpRewardsApr: 0 }
+
+        console.log(cakeRewardsApr, lpRewardsApr)
 
         return { ...farm, apr: cakeRewardsApr, lpRewardsApr, liquidity: totalLiquidity }
       })

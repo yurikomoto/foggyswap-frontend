@@ -26,7 +26,7 @@ const getFarmBaseTokenPrice = (
     return hasTokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
-  if (farm.quoteToken.symbol === tokens.wvlx.symbol) {
+  if (farm.quoteToken.symbol === tokens.ada.symbol) {
     return hasTokenPriceVsQuote ? bnbPriceBusd.times(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
@@ -40,7 +40,7 @@ const getFarmBaseTokenPrice = (
   // If the farm's quote token isn't BUSD or WBNB, we then use the quote token, of the original farm's quote token
   // i.e. for farm PNT - pBTC we use the pBTC farm's quote token - BNB, (pBTC - BNB)
   // from the BNB - pBTC price, we can calculate the PNT - BUSD price
-  if (quoteTokenFarm.quoteToken.symbol === tokens.wvlx.symbol) {
+  if (quoteTokenFarm.quoteToken.symbol === tokens.ada.symbol) {
     const quoteTokenInBusd = bnbPriceBusd.times(quoteTokenFarm.tokenPriceVsQuote)
     return hasTokenPriceVsQuote && quoteTokenInBusd
       ? new BigNumber(farm.tokenPriceVsQuote).times(quoteTokenInBusd)
@@ -67,7 +67,7 @@ const getFarmQuoteTokenPrice = (
     return BIG_ONE
   }
 
-  if (farm.quoteToken.symbol === 'WVLX') {
+  if (farm.quoteToken.symbol === 'ADA') {
     return bnbPriceBusd
   }
 
@@ -75,7 +75,7 @@ const getFarmQuoteTokenPrice = (
     return BIG_ZERO
   }
 
-  if (quoteTokenFarm.quoteToken.symbol === 'WVLX') {
+  if (quoteTokenFarm.quoteToken.symbol === 'ADA') {
     return quoteTokenFarm.tokenPriceVsQuote ? bnbPriceBusd.times(quoteTokenFarm.tokenPriceVsQuote) : BIG_ZERO
   }
 

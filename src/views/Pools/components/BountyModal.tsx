@@ -14,6 +14,7 @@ import Balance from 'components/Balance'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 import { useCakeVault } from 'state/pools/hooks'
 import { useCallWithGasPrice } from 'hooks/useCallWithGasPrice'
+import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 
 interface BountyModalProps {
   onDismiss?: () => void
@@ -40,12 +41,14 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
     fees: { callFee },
   } = useCakeVault()
   const { callWithGasPrice } = useCallWithGasPrice()
-  const cakePriceBusd = usePriceCakeBusd()
+  const cakePriceBusd = useCakeBusdPrice()
   const callFeeAsDecimal = callFee / 100
   const totalYieldToDisplay = getBalanceNumber(totalPendingCakeHarvest, 18)
 
   const estimatedDollarBountyReward = useMemo(() => {
-    return new BigNumber(estimatedCakeBountyReward).multipliedBy(cakePriceBusd)
+    if (cakePriceBusd)
+      return new BigNumber(estimatedCakeBountyReward).multipliedBy(new BigNumber(cakePriceBusd.toFixed(5)))
+    return new BigNumber('0')
   }, [cakePriceBusd, estimatedCakeBountyReward])
 
   const hasFetchedDollarBounty = estimatedDollarBountyReward.gte(0)

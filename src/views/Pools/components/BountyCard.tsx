@@ -19,6 +19,7 @@ import { getBalanceNumber } from 'utils/formatBalance'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 import { useCakeVault } from 'state/pools/hooks'
 import Balance from 'components/Balance'
+import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 import BountyModal from './BountyModal'
 
 const StyledCard = styled(Card)`
@@ -35,10 +36,12 @@ const BountyCard = () => {
     estimatedCakeBountyReward,
     fees: { callFee },
   } = useCakeVault()
-  const cakePriceBusd = usePriceCakeBusd()
+  const cakePriceBusd = useCakeBusdPrice()
 
   const estimatedDollarBountyReward = useMemo(() => {
-    return new BigNumber(estimatedCakeBountyReward).multipliedBy(cakePriceBusd)
+    if (cakePriceBusd)
+      return new BigNumber(estimatedCakeBountyReward).multipliedBy(new BigNumber(cakePriceBusd.toFixed(5)))
+    return new BigNumber('0')
   }, [cakePriceBusd, estimatedCakeBountyReward])
 
   const hasFetchedDollarBounty = estimatedDollarBountyReward.gte(0)
