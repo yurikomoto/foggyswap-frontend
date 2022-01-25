@@ -81,7 +81,7 @@ const FarmAuction = () => {
             {t('Home')}
           </Link>
           <Link href="/farms" color="primary" style={{ fontWeight: 400 }}>
-            {t('Farms')}
+            {t('Solar Farms')}
           </Link>
           <Text>{t('Community Farm Auction')}</Text>
         </Breadcrumbs>

@@ -82,7 +82,7 @@ export const fetchFarmUserDataAsync = createAsyncThunk<FarmUserDataResponse[], {
 )
 
 export const farmsSlice = createSlice({
-  name: 'Farms',
+  name: 'Solar Farms',
   initialState,
   reducers: {
     setLoadArchivedFarmsData: (state, action) => {

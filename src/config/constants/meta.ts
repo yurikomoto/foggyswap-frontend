@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'AstroSwap',
   description:
-    'The most popular AMM on VELAS by user count! Earn Astro through yield farming or win it in the Lottery, then stake it in Star Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by AstroYUSWAP), NFTs, and more, on a platform you can trust.',
+    'The most popular AMM on VELAS by user count! Earn Astro through yield farming or win it in the Lottery, then stake it in Star Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by ASTROSWAP), NFTs, and more, on a platform you can trust.',
   image: 'https://exchange.wagyusw.app/images/hero.png',
 }
 
@@ -63,7 +63,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/farms':
       return {
-        title: `${t('Farms')} | ${t('AstroSwap')}`,
+        title: `${t('Solar Farms')} | ${t('AstroSwap')}`,
       }
     case '/farms/auction':
       return {
@@ -71,7 +71,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/pools':
       return {
-        title: `${t('Pools')} | ${t('AstroSwap')}`,
+        title: `${t('Galaxy Pools')} | ${t('AstroSwap')}`,
       }
     case '/lottery':
       return {

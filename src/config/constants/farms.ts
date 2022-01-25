@@ -34,36 +34,36 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.cake,
           quoteToken: serializedTokens.wvlx,
         },
-        {
-          pid: 2,
-          lpSymbol: 'ADA_ETH LP',
-          lpAddresses: {
-            111: '0x8A70d2a3e2cba2CAD61FbA419E62eB821F18Bb57',
-            106: '0x7c3F1eA99770aa23Fe1b19097c93BB0cF34C8351',
-          },
-          token: serializedTokens.weth,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 3,
-          lpSymbol: 'ADA_BUSD LP',
-          lpAddresses: {
-            111: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
-            106: '0x8e2B762Bee3E2bf2C8fB0cdd04274042748D6C23',
-          },
-          token: serializedTokens.busd,
-          quoteToken: serializedTokens.wvlx,
-        },
-        {
-          pid: 4,
-          lpSymbol: 'ADA_USDC LP',
-          lpAddresses: {
-            111: '0x33ea93e391aF9cAA4b8e9C3368236B93DFCF39C4',
-            106: '0x757Ac3cDFfa84b67dFC58c5880Aa8037ef5a23d5',
-          },
-          token: serializedTokens.usdc,
-          quoteToken: serializedTokens.wvlx,
-        },
+        // {
+        //   pid: 2,
+        //   lpSymbol: 'ADA_ETH LP',
+        //   lpAddresses: {
+        //     111: '0x8A70d2a3e2cba2CAD61FbA419E62eB821F18Bb57',
+        //     106: '0x7c3F1eA99770aa23Fe1b19097c93BB0cF34C8351',
+        //   },
+        //   token: serializedTokens.weth,
+        //   quoteToken: serializedTokens.wvlx,
+        // },
+        // {
+        //   pid: 3,
+        //   lpSymbol: 'ADA_BUSD LP',
+        //   lpAddresses: {
+        //     111: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
+        //     106: '0x8e2B762Bee3E2bf2C8fB0cdd04274042748D6C23',
+        //   },
+        //   token: serializedTokens.busd,
+        //   quoteToken: serializedTokens.wvlx,
+        // },
+        // {
+        //   pid: 4,
+        //   lpSymbol: 'ADA_USDC LP',
+        //   lpAddresses: {
+        //     111: '0x33ea93e391aF9cAA4b8e9C3368236B93DFCF39C4',
+        //     106: '0x757Ac3cDFfa84b67dFC58c5880Aa8037ef5a23d5',
+        //   },
+        //   token: serializedTokens.usdc,
+        //   quoteToken: serializedTokens.wvlx,
+        // },
         {
           pid: 5,
           lpSymbol: 'ADA_USDT LP',
@@ -99,16 +99,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.cake,
           quoteToken: serializedTokens.ada,
         },
-        {
-          pid: 2,
-          lpSymbol: 'ADA_ETH LP',
-          lpAddresses: {
-            111: '0x8aa6D06723eAc62DCEf1d61573d78A4fB4008cc8',
-            106: '',
-          },
-          token: serializedTokens.weth,
-          quoteToken: serializedTokens.ada,
-        },
+        // {
+        //   pid: 2,
+        //   lpSymbol: 'ADA_ETH LP',
+        //   lpAddresses: {
+        //     111: '0x8aa6D06723eAc62DCEf1d61573d78A4fB4008cc8',
+        //     106: '',
+        //   },
+        //   token: serializedTokens.weth,
+        //   quoteToken: serializedTokens.ada,
+        // },
         {
           pid: 3,
           lpSymbol: 'ADA_USDT LP',
@@ -119,26 +119,26 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.usdt,
           quoteToken: serializedTokens.ada,
         },
-        {
-          pid: 4,
-          lpSymbol: 'ADA_USDC LP',
-          lpAddresses: {
-            111: '0x3b9F1b0F3aCE0181269E53A7aA10d218e81a29d7',
-            106: '',
-          },
-          token: serializedTokens.usdc,
-          quoteToken: serializedTokens.ada,
-        },
-        {
-          pid: 5,
-          lpSymbol: 'ADA_BUSD LP',
-          lpAddresses: {
-            111: '0xDCa7E16a316D6283B970fd0E50E6Ae8c0B852B51',
-            106: '',
-          },
-          token: serializedTokens.busd,
-          quoteToken: serializedTokens.ada,
-        },
+        // {
+        //   pid: 4,
+        //   lpSymbol: 'ADA_USDC LP',
+        //   lpAddresses: {
+        //     111: '0x3b9F1b0F3aCE0181269E53A7aA10d218e81a29d7',
+        //     106: '',
+        //   },
+        //   token: serializedTokens.usdc,
+        //   quoteToken: serializedTokens.ada,
+        // },
+        // {
+        //   pid: 5,
+        //   lpSymbol: 'ADA_BUSD LP',
+        //   lpAddresses: {
+        //     111: '0xDCa7E16a316D6283B970fd0E50E6Ae8c0B852B51',
+        //     106: '',
+        //   },
+        //   token: serializedTokens.busd,
+        //   quoteToken: serializedTokens.ada,
+        // },
       ]
 
 export default farms

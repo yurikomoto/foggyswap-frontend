@@ -404,7 +404,7 @@ const Farms: React.FC = () => {
     <FarmWrapper bgUrl="/images/swap/bg.svg">
       <PageHeader background="transparent">
         <Heading as="h1" scale="xxl" color="#fff" mb="24px" fontFamily="FukuCatch">
-          {t('Farms')}
+          {t('Solar Farms')}
         </Heading>
         <Heading scale="lg" color="#fff">
           {t('Stake LP tokens to earn.')}
