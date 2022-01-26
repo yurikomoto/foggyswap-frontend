@@ -19,6 +19,7 @@ export const mainnetTokens = {
   wvlx: new Token(MAINNET, addresses[106].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://www.astroswap.app/'),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   vlx: new Token(MAINNET, addresses[106].WVLX, 18, 'VLX', 'VLX', 'https://www.astroswap.app/'),
+  ada: new Token(TESTNET, addresses[106].AdaToken, 18, 'ADA', 'Cardano', 'https://www.cardano.org/'),
   cake: new Token(MAINNET, addresses[106].AstroToken, 18, 'ASTRO', 'AstroToken', 'https://www.astroswap.app/'),
   usdt: new Token(
     MAINNET,

@@ -5,6 +5,7 @@ const scaleKeyValues = {
   sm: {
     pancakeSize: '14px', // The size of a pancake (the handle)
     travelDistance: '14px', // How far pancakes should travel horizontally
+    astro: '17px',
     toggleHeight: '20px', // General Height and
     toggleWidth: '36px', // Width of a toggle box
     pancakeThickness: '1px', // Bottom shadow of a pancake
@@ -24,6 +25,7 @@ const scaleKeyValues = {
   md: {
     pancakeSize: '24px',
     travelDistance: '24px',
+    astro: '28px',
     toggleHeight: '32px',
     toggleWidth: '56px',
     pancakeThickness: '1.5px',
@@ -43,6 +45,7 @@ const scaleKeyValues = {
   lg: {
     pancakeSize: '31px',
     travelDistance: '31px',
+    astro: '35px',
     toggleHeight: '40px',
     toggleWidth: '72px',
     pancakeThickness: '2px',
@@ -92,13 +95,13 @@ export const PancakeStack = styled.div<HandleProps>`
     border-radius: 50%;
   }
 
-  .wagyu {
-    width: ${getScale('pancakeSize')};
-    height: ${getScale('pancakeSize')};
-    /* position: absolute; */
+  .astro {
+    width: ${getScale('astro')};
+    height: ${getScale('astro')};
+    position: relative;
     transition: 0.4s ease;
-    top: 2px;
-    left: 4px;
+    top: 0;
+    left: 0;
     opacity: 0;
   }
 
@@ -132,7 +135,7 @@ export const PancakeInput = styled.input<InputProps>`
     transform: translateX(${getScale('travelDistance')});
   }
 
-  &:checked + label .wagyu {
+  &:checked + label .astro {
     transition-delay: 0.2s;
     opacity: 1;
   }
