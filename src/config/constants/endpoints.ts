@@ -16,15 +16,9 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
-// https://thegraph.testnet.astroswap.app/subgraphs/name/wagyu/graphql
-// export const INFO_CLIENT = {
-//   [ChainId.TESTNET]: 'http://51.222.43.201/subgraphs/name/wagyu',
-//   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/wagyu',
-// }[chainId]
-
 export const INFO_CLIENT = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/astro',
-  [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/astro',
+  [ChainId.MAINNET]: 'https://thegraph.astroswap.app/subgraphs/name/astro',
 }[chainId]
 
 // export const BLOCKS_CLIENT = {
@@ -34,12 +28,12 @@ export const INFO_CLIENT = {
 
 export const BLOCKS_CLIENT = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/blocks',
-  [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/blocks',
+  [ChainId.MAINNET]: 'https://thegraph.astroswap.app/subgraphs/name/blocks',
 }[chainId]
 
 export const GRAPH_API_LOTTERY = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/lottery',
-  [ChainId.MAINNET]: 'https://thegraph.wagyuswap.app/subgraphs/name/lottery',
+  [ChainId.MAINNET]: 'https://thegraph.astroswap.app/subgraphs/name/lottery',
 }[chainId]
 
 // export const GRAPH_API_LOTTERY = {
