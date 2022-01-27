@@ -21,26 +21,26 @@
     {
       "name": "Wrapped Cardano",
       "symbol": "ADA",
-      "address": "0xc579d1f3cf86749e05cd06f7ade17856c2ce3126",
+      "address": "0x3611fbfb06ffbcef9afb210f6ace86742e6c14a4",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x3611fbfb06ffbcef9afb210f6ace86742e6c14a4/logo.png?raw=true"
+    },
+    {
+      "name": "Multichain BUSD",
+      "symbol": "BUSD",
+      "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
       "chainId": 106,
       "decimals": 18,
-      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xc579d1f3cf86749e05cd06f7ade17856c2ce3126/logo.png?raw=true"
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xc111c29a988ae0c0087d97b33c6e6766808a3bd3/logo.png?raw=true"
     },
     {
-      "name": "Multichain USDT",
-      "symbol": "USDT",
-      "address": "0x01445C31581c354b7338AC35693AB2001B50b9aE",
-      "chainId": 106,
-      "decimals": 6,
-      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x01445c31581c354b7338ac35693ab2001b50b9ae/logo.png?raw=true"
-    },
-    {
-      "name": "Multichain USDT",
-      "symbol": "USDT",
-      "address": "0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4",
+      "name": "Multichain BUSD",
+      "symbol": "BUSD",
+      "address": "0xe2172a8e1762ae9962a59ee88a731522a61a4cc9",
       "chainId": 111,
-      "decimals": 6,
-      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4/logo.png?raw=true"
+      "decimals": 18,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas-test/assets/0xe2172a8e1762ae9962a59ee88a731522a61a4cc9/logo.png?raw=true"
     },
     {
       "name": "Astro",

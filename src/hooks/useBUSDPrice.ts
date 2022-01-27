@@ -6,8 +6,8 @@ import tokens, { mainnetTokens, testnetTokens } from 'config/constants/tokens'
 import { PairState, usePairs } from './usePairs'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-const USDT_MAINNET = mainnetTokens.usdt
-const USDT_TESTNET = testnetTokens.usdt
+const BUSD_MAINNET = mainnetTokens.busd
+const BUSD_TESTNET = testnetTokens.busd
 const { ada: ADA } = tokens
 
 /**
@@ -17,14 +17,14 @@ const { ada: ADA } = tokens
 export default function useBUSDPrice(currency?: Currency): Price | undefined {
   const { chainId } = useActiveWeb3React()
   const wrapped = wrappedCurrency(currency, chainId)
-  const USDT = chainId === ChainId.MAINNET ? USDT_MAINNET : USDT_TESTNET
+  const BUSD = chainId === ChainId.MAINNET ? BUSD_MAINNET : BUSD_TESTNET
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
       [chainId && wrapped && currencyEquals(ADA, wrapped) ? undefined : currency, chainId ? ADA : undefined],
-      [wrapped?.equals(USDT) ? undefined : wrapped, USDT],
-      [chainId ? ADA : undefined, USDT],
+      [wrapped?.equals(BUSD) ? undefined : wrapped, BUSD],
+      [chainId ? ADA : undefined, BUSD],
     ],
-    [chainId, currency, wrapped, USDT],
+    [chainId, currency, wrapped, BUSD],
   )
 
   const [[ethPairState, ethPair], [usdtPairState, usdtPair], [usdtEthPairState, usdtEthPair]] = usePairs(tokenPairs)
@@ -37,13 +37,13 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     if (wrapped.equals(ADA)) {
       if (usdtPair) {
         const price = usdtPair.priceOf(ADA)
-        return new Price(currency, USDT, price.denominator, price.numerator)
+        return new Price(currency, BUSD, price.denominator, price.numerator)
       }
       return undefined
     }
     // handle busd
-    if (wrapped.equals(USDT)) {
-      return new Price(USDT, USDT, '1', '1')
+    if (wrapped.equals(BUSD)) {
+      return new Price(BUSD, BUSD, '1', '1')
     }
 
     const ethPairETHAmount = ethPair?.reserveOf(ADA)
@@ -58,22 +58,22 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
 
     // all other tokens
     // first try the busd pair
-    if (usdtPairState === PairState.EXISTS && usdtPair && usdtPair.reserveOf(USDT).greaterThan(ethPairETHBUSDValue)) {
+    if (usdtPairState === PairState.EXISTS && usdtPair && usdtPair.reserveOf(BUSD).greaterThan(ethPairETHBUSDValue)) {
       const price = usdtPair.priceOf(wrapped)
-      return new Price(currency, USDT, price.denominator, price.numerator)
+      return new Price(currency, BUSD, price.denominator, price.numerator)
     }
     if (ethPairState === PairState.EXISTS && ethPair && usdtEthPairState === PairState.EXISTS && usdtEthPair) {
-      if (usdtEthPair.reserveOf(USDT).greaterThan('0') && ethPair.reserveOf(ADA).greaterThan('0')) {
-        const ethBusdPrice = usdtEthPair.priceOf(USDT)
+      if (usdtEthPair.reserveOf(BUSD).greaterThan('0') && ethPair.reserveOf(ADA).greaterThan('0')) {
+        const ethBusdPrice = usdtEthPair.priceOf(BUSD)
         const currencyEthPrice = ethPair.priceOf(ADA)
         const busdPrice = ethBusdPrice.multiply(currencyEthPrice).invert()
 
-        return new Price(currency, USDT, busdPrice.denominator, busdPrice.numerator)
+        return new Price(currency, BUSD, busdPrice.denominator, busdPrice.numerator)
       }
     }
 
     return undefined
-  }, [chainId, currency, ethPair, ethPairState, usdtEthPair, usdtEthPairState, usdtPair, usdtPairState, wrapped, USDT])
+  }, [chainId, currency, ethPair, ethPairState, usdtEthPair, usdtEthPairState, usdtPair, usdtPairState, wrapped, BUSD])
 }
 
 export const useCakeBusdPrice = (): Price | undefined => {

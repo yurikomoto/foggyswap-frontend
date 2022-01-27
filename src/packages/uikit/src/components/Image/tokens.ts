@@ -32,11 +32,11 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
   },
-  usdt: {
-    symbol: 'USDT',
+  busd: {
+    symbol: 'BUSD',
     address: {
-      106: '0x01445C31581c354b7338AC35693AB2001B50b9aE',
-      111: '0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4',
+      106: '0xc111c29a988ae0c0087d97b33c6e6766808a3bd3',
+      111: '0xe2172a8e1762ae9962a59ee88a731522a61a4cc9',
     },
     decimals: 18,
     projectLink: 'https://tether.to/',

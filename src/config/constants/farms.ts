@@ -9,7 +9,7 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 const { MAINNET } = ChainId
 
 export const ADA_ASTRO_LP_PID = chainId === MAINNET ? 1 : 1
-export const ADA_USDT_LP_PID = chainId === MAINNET ? 5 : 3
+export const ADA_BUSD_LP_PID = chainId === MAINNET ? 3 : 5
 
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
@@ -18,21 +18,21 @@ const farms: SerializedFarmConfig[] =
           pid: 0,
           lpSymbol: 'ASTRO',
           lpAddresses: {
-            111: '0xb830d8213e2c3dD621037703D05A5e594387B6Be',
-            106: '0xaBf26902Fd7B624e0db40D31171eA9ddDf078351',
+            111: '',
+            106: '0x72eB7CA07399Ec402c5b7aa6A65752B6A1Dc0C27',
           },
           token: serializedTokens.syrup,
-          quoteToken: serializedTokens.wvlx,
+          quoteToken: serializedTokens.ada,
         },
         {
           pid: 1,
-          lpSymbol: 'ADA_Astro LP',
+          lpSymbol: 'ADA_ASTRO LP',
           lpAddresses: {
-            111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
-            106: '0x33f879690C165cC320B0BA04cEb1F9CeaC80F376',
+            111: '',
+            106: '0x448c37F79F2162e9e283C5F7967EABCBae8D46D0',
           },
           token: serializedTokens.cake,
-          quoteToken: serializedTokens.wvlx,
+          quoteToken: serializedTokens.ada,
         },
         // {
         //   pid: 2,
@@ -44,16 +44,16 @@ const farms: SerializedFarmConfig[] =
         //   token: serializedTokens.weth,
         //   quoteToken: serializedTokens.wvlx,
         // },
-        // {
-        //   pid: 3,
-        //   lpSymbol: 'ADA_BUSD LP',
-        //   lpAddresses: {
-        //     111: '0xe25107384e3d23403c4537967D34cCe02A2b56c6',
-        //     106: '0x8e2B762Bee3E2bf2C8fB0cdd04274042748D6C23',
-        //   },
-        //   token: serializedTokens.busd,
-        //   quoteToken: serializedTokens.wvlx,
-        // },
+        {
+          pid: 3,
+          lpSymbol: 'ADA_BUSD LP',
+          lpAddresses: {
+            111: '',
+            106: '0xB60765B8f8e83C429980e3ACEf9fEc455d7Db44C',
+          },
+          token: serializedTokens.busd,
+          quoteToken: serializedTokens.ada,
+        },
         // {
         //   pid: 4,
         //   lpSymbol: 'ADA_USDC LP',
@@ -64,16 +64,16 @@ const farms: SerializedFarmConfig[] =
         //   token: serializedTokens.usdc,
         //   quoteToken: serializedTokens.wvlx,
         // },
-        {
-          pid: 5,
-          lpSymbol: 'ADA_USDT LP',
-          lpAddresses: {
-            111: '0xF20c93c5e5F534C9D95567497Ea17a841164d37b',
-            106: '0x7F3cB73FC470c2c9F543FdD17dF4De0e97b51A97',
-          },
-          token: serializedTokens.usdt,
-          quoteToken: serializedTokens.wvlx,
-        },
+        // {
+        //   pid: 5,
+        //   lpSymbol: 'ADA_USDT LP',
+        //   lpAddresses: {
+        //     111: '0xF20c93c5e5F534C9D95567497Ea17a841164d37b',
+        //     106: '0x7F3cB73FC470c2c9F543FdD17dF4De0e97b51A97',
+        //   },
+        //   token: serializedTokens.usdt,
+        //   quoteToken: serializedTokens.wvlx,
+        // },
       ]
     : [
         /**
@@ -109,16 +109,16 @@ const farms: SerializedFarmConfig[] =
         //   token: serializedTokens.weth,
         //   quoteToken: serializedTokens.ada,
         // },
-        {
-          pid: 3,
-          lpSymbol: 'ADA_USDT LP',
-          lpAddresses: {
-            111: '0xbA1AF83C0FC66F5Cdd17AFC0Cc8B077c3820D934',
-            106: '',
-          },
-          token: serializedTokens.usdt,
-          quoteToken: serializedTokens.ada,
-        },
+        // {
+        //   pid: 3,
+        //   lpSymbol: 'ADA_USDT LP',
+        //   lpAddresses: {
+        //     111: '0xbA1AF83C0FC66F5Cdd17AFC0Cc8B077c3820D934',
+        //     106: '',
+        //   },
+        //   token: serializedTokens.usdt,
+        //   quoteToken: serializedTokens.ada,
+        // },
         // {
         //   pid: 4,
         //   lpSymbol: 'ADA_USDC LP',
@@ -129,16 +129,16 @@ const farms: SerializedFarmConfig[] =
         //   token: serializedTokens.usdc,
         //   quoteToken: serializedTokens.ada,
         // },
-        // {
-        //   pid: 5,
-        //   lpSymbol: 'ADA_BUSD LP',
-        //   lpAddresses: {
-        //     111: '0xDCa7E16a316D6283B970fd0E50E6Ae8c0B852B51',
-        //     106: '',
-        //   },
-        //   token: serializedTokens.busd,
-        //   quoteToken: serializedTokens.ada,
-        // },
+        {
+          pid: 5,
+          lpSymbol: 'ADA_BUSD LP',
+          lpAddresses: {
+            111: '0xDCa7E16a316D6283B970fd0E50E6Ae8c0B852B51',
+            106: '',
+          },
+          token: serializedTokens.busd,
+          quoteToken: serializedTokens.ada,
+        },
       ]
 
 export default farms
