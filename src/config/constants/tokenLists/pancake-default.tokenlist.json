@@ -13,10 +13,10 @@
     {
       "name": "AstroSwap",
       "symbol": "ASTRO",
-      "address": "0xabf26902fd7b624e0db40d31171ea9dddf078351",
+      "address": "0x72eb7ca07399ec402c5b7aa6a65752b6a1dc0c27",
       "chainId": 106,
       "decimals": 18,
-      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xabf26902fd7b624e0db40d31171ea9dddf078351/logo.png?raw=true"
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x72eb7ca07399ec402c5b7aa6a65752b6a1dc0c27/logo.png?raw=true"
     },
     {
       "name": "Wrapped Cardano",

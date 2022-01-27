@@ -41,18 +41,18 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake],
-  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake, mainnetTokens.ada],
+  [ChainId.TESTNET]: [testnetTokens.ada, testnetTokens.cake, testnetTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.wvlx, mainnetTokens.busd],
-  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.MAINNET]: [mainnetTokens.ada, mainnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.ada, testnetTokens.cake, testnetTokens.busd],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.MAINNET]: [[mainnetTokens.cake, mainnetTokens.wvlx]],
+  [ChainId.MAINNET]: [[mainnetTokens.cake, mainnetTokens.ada]],
 }
 
 export const NetworkContextName = 'NETWORK'

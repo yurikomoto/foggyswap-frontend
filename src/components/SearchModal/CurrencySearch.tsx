@@ -147,7 +147,8 @@ function CurrencySearch({
           <Box margin="24px -24px">
             <CurrencyList
               height={390}
-              showETH={showETH}
+              // showETH={showETH}
+              showETH={false}
               currencies={
                 filteredInactiveTokens ? filteredSortedTokens.concat(filteredInactiveTokens) : filteredSortedTokens
               }
