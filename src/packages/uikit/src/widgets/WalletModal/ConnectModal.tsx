@@ -78,13 +78,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
           <Text textAlign="center" color="textSubtle" as="p" mb="16px">
             {t('Haven’t got a crypto wallet yet?')}
           </Text>
-          <Button
-            as="a"
-            href="https://docs.wagyuswap.app/wagyuswap/"
-            variant="subtle"
-            width="100%"
-            {...getExternalLinkProps()}
-          >
+          <Button as="a" href="https://docs.astroswap.app/" variant="subtle" width="100%" {...getExternalLinkProps()}>
             {t('Learn How to Connect')}
           </Button>
         </Box>

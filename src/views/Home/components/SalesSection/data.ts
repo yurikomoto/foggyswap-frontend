@@ -10,7 +10,7 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.wagyuswap.app/wagyuswap/',
+    to: 'https://docs.astroswap.app/',
     text: 'Learn',
     external: true,
   },
@@ -34,7 +34,7 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.wagyuswap.app/wagyuswap/products/yield-farming',
+    to: 'https://docs.astroswap.app/products/yield-farming',
     text: 'Learn',
     external: true,
   },
@@ -59,7 +59,7 @@ export const cakeSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.wagyuswap.app/wagyuswap/',
+    to: 'https://docs.astroswap.app/',
     text: 'Learn',
     external: true,
   },

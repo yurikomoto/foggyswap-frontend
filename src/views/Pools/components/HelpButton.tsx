@@ -26,7 +26,7 @@ const StyledLink = styled(Link)`
 const HelpButton = () => {
   const { t } = useTranslation()
   return (
-    <StyledLink external href="https://docs.wagyuswap.app/wagyuswap/products/syrup-pool">
+    <StyledLink external href="https://docs.astroswap.app/products/syrup-pool">
       <Button px={['14px', null, null, null, '20px']} variant="subtle">
         <ButtonText color="backgroundAlt" bold fontSize="16px">
           {t('Help')}

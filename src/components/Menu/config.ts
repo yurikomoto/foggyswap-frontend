@@ -89,7 +89,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       // {
       //   label: t('Contact'),
-      //   href: 'https://docs.wagyuswap.app/wagyuswap/',
+      //   href: 'https://docs.astroswap.app/',
       // },
       // {
       //   label: t('Voting'),
@@ -105,15 +105,15 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
       {
         label: t('Docs'),
-        href: 'https://docs.wagyuswap.app/wagyuswap/',
+        href: 'https://docs.astroswap.app/',
       },
       {
         label: t('Blog'),
-        href: 'https://medium.com/@wagyuswap.app',
+        href: 'https://medium.com/@astroswap',
       },
       {
         label: t('Support'),
-        href: 'mailto:support@wagyuswap.app',
+        href: 'mailto:support@astroswap.app',
       },
       // {
       //   label: t('Merch'),

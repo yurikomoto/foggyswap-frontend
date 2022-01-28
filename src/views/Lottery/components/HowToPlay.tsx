@@ -325,7 +325,7 @@ const HowToPlay: React.FC = () => {
                 {t(
                   'An average total of 35,000 Astro from the treasury is added to lottery rounds over the course of a week. This Astro is of course also included in rollovers! Read more in our guide to ',
                 )}
-                <InlineLink href="https://docs.wagyuswap.app/wagyuswap/">{t('Astro Tokenomics')}</InlineLink>
+                <InlineLink href="https://docs.astroswap.app/">{t('Astro Tokenomics')}</InlineLink>
               </Text>
             </li>
           </BulletList>
