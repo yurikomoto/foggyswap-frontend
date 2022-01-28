@@ -12,8 +12,8 @@ type ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
-    // mainnetTokens.wvlx,
-    // mainnetTokens.ada,
+    mainnetTokens.wvlx,
+    mainnetTokens.ada,
     mainnetTokens.cake,
     mainnetTokens.busd,
     // mainnetTokens.weth,
@@ -47,12 +47,12 @@ export const SUGGESTED_BASES: ChainTokenList = {
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.ada, mainnetTokens.busd],
+  [ChainId.MAINNET]: [mainnetTokens.ada, mainnetTokens.busd, mainnetTokens.wvlx],
   [ChainId.TESTNET]: [testnetTokens.ada, testnetTokens.cake, testnetTokens.busd],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.MAINNET]: [[mainnetTokens.cake, mainnetTokens.ada]],
+  [ChainId.MAINNET]: [[mainnetTokens.cake, mainnetTokens.wvlx]],
 }
 
 export const NetworkContextName = 'NETWORK'

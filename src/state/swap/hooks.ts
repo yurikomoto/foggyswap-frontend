@@ -11,7 +11,6 @@ import useParsedQueryString from 'hooks/useParsedQueryString'
 import { useTranslation } from 'contexts/Localization'
 import { isAddress } from 'utils'
 import { computeSlippageAdjustedAmounts } from 'utils/prices'
-import tokens from 'config/constants/tokens'
 import { AppDispatch, AppState } from '../index'
 import { useCurrencyBalances } from '../wallet/hooks'
 import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies, typeInput } from './actions'
@@ -203,10 +202,10 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'ADA') return tokens.ada.address
-    if (valid === false) return tokens.ada.address
+    if (urlParam.toUpperCase() === 'VLX') return 'VLX'
+    if (valid === false) return 'VLX'
   }
-  return tokens.ada.address ?? ''
+  return 'VLX' ?? ''
 }
 
 function parseTokenAmountURLParameter(urlParam: any): string {

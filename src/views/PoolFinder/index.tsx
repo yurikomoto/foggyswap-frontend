@@ -90,7 +90,7 @@ export default function PoolFinder() {
   )
 
   return (
-    <Page>
+    <Page bgUrl="/images/swap/bg.svg">
       <AppBody>
         <AppHeader title={t('Import Pool')} subtitle={t('Import an existing pool')} backTo="/pool" />
         <AutoColumn style={{ padding: '1rem' }} gap="md">
