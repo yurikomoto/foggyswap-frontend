@@ -30,7 +30,7 @@ export const mainnetTokens = {
     'https://www.astroswap.app/',
   ),
   syrup: new Token(
-    TESTNET,
+    MAINNET,
     addresses[106].AstroStake,
     18,
     'AstroStake',

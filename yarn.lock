@@ -91,7 +91,7 @@
 
 "@astroswap/sdk@git://github.com/astroswapapp/astroswap-sdk.git":
   version "2.4.0"
-  resolved "git://github.com/astroswapapp/astroswap-sdk.git#674494b3f2ff199f246c6175bf6cb2b79ce60726"
+  resolved "git://github.com/astroswapapp/astroswap-sdk.git#5cf112dcb1d11de21c1a584d794587461dbc2c7a"
   dependencies:
     "@astroswap-libs/astroswap-core" "git://github.com/astroswapapp/astroswap-core.git"
     big.js "^5.2.2"
