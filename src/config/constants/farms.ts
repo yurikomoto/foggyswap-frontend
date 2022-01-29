@@ -22,7 +22,7 @@ const farms: SerializedFarmConfig[] =
             106: '0x72eB7CA07399Ec402c5b7aa6A65752B6A1Dc0C27',
           },
           token: serializedTokens.syrup,
-          quoteToken: serializedTokens.ada,
+          quoteToken: serializedTokens.cake,
         },
         {
           pid: 1,
@@ -67,7 +67,7 @@ const farms: SerializedFarmConfig[] =
             106: '',
           },
           token: serializedTokens.syrup,
-          quoteToken: serializedTokens.wvlx,
+          quoteToken: serializedTokens.astro,
         },
         {
           pid: 1,
