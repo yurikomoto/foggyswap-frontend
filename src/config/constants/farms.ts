@@ -45,7 +45,7 @@ const farms: SerializedFarmConfig[] =
           quoteToken: serializedTokens.ada,
         },
         {
-          pid: 2,
+          pid: 3,
           lpSymbol: 'ADA_VLX LP',
           lpAddresses: {
             111: '',
