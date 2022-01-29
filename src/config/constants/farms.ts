@@ -9,7 +9,7 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 const { MAINNET } = ChainId
 
 export const ADA_ASTRO_LP_PID = chainId === MAINNET ? 1 : 1
-export const ADA_BUSD_LP_PID = chainId === MAINNET ? 2 : 5
+export const ADA_BUSD_LP_PID = chainId === MAINNET ? 3 : 5
 
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
@@ -36,22 +36,22 @@ const farms: SerializedFarmConfig[] =
         },
         {
           pid: 2,
-          lpSymbol: 'ADA_BUSD LP',
-          lpAddresses: {
-            111: '',
-            106: '0xc12e7E665B7d6537f87635655E70F7387Da12D90',
-          },
-          token: serializedTokens.busd,
-          quoteToken: serializedTokens.ada,
-        },
-        {
-          pid: 3,
           lpSymbol: 'ADA_VLX LP',
           lpAddresses: {
             111: '',
             106: '0x0513fdbEb64589f01269eee85B36C97d93Da40a1',
           },
           token: serializedTokens.wvlx,
+          quoteToken: serializedTokens.ada,
+        },
+        {
+          pid: 3,
+          lpSymbol: 'ADA_BUSD LP',
+          lpAddresses: {
+            111: '',
+            106: '0xc12e7E665B7d6537f87635655E70F7387Da12D90',
+          },
+          token: serializedTokens.busd,
           quoteToken: serializedTokens.ada,
         },
       ]
