@@ -21,7 +21,7 @@ export const BASE_VELAS_SCAN_URLS = {
 // 9 Astro per block goes to Yield farms and lottery
 // ASTRO_PER_SECOND in config/index.ts = 40 as we only change the amount sent to the burn pool which is effectively a farm.
 // Astro/Block in src/views/Home/components/CakeDataRow.tsx = 15 (40 - Amount sent to burn pool)
-export const ASTRO_PER_SECOND = new BigNumber(13)
+export const ASTRO_PER_SECOND = new BigNumber(50)
 export const SECONDS_PER_YEAR = new BigNumber(60 * 60 * 24 * 365) // 10512000
 export const ASTRO_PER_YEAR = ASTRO_PER_SECOND.times(SECONDS_PER_YEAR)
 // export const BASE_URL = 'https://pancakeswap.finance'
