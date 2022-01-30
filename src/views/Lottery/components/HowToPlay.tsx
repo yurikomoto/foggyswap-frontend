@@ -218,7 +218,7 @@ const HowToPlay: React.FC = () => {
     {
       label: t('Step %number%', { number: 1 }),
       title: t('Buy Tickets'),
-      subtitle: t('Prices are set when the round starts, equal to 5 USD in Astro per ticket.'),
+      subtitle: t('Prices are set when the round starts, equal to 1 USD in Astro per ticket.'),
     },
     {
       label: t('Step %number%', { number: 2 }),
@@ -343,7 +343,7 @@ const HowToPlay: React.FC = () => {
           </Heading>
           <Text>
             {t('Check our in-depth guide on')}{' '}
-            <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
+            <InlineLink href="https://docs.astroswap.app/products/space-lottery/how-to-play-the-space-lottery">
               {t('how to play the AstroSwap lottery!')}
             </InlineLink>
           </Text>
