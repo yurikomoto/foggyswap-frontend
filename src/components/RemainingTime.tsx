@@ -34,7 +34,7 @@ const RemainingTime: React.FC<BalanceProps> = ({
     const sec = secs % 60
     str = `${sec}S`
 
-    const mins = Math.floor(sec / 60)
+    const mins = Math.floor(secs / 60)
 
     if (mins === 0) return str
 

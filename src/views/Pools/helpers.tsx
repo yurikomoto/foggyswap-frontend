@@ -72,6 +72,7 @@ export const getPoolBlockInfo = (pool: DeserializedPool, currentBlock: number) =
   const blocksUntilStart = Math.max(startBlock - currentTimeSeconds, 0)
   const blocksRemaining = Math.max(endBlock - currentTimeSeconds, 0)
   const hasPoolStarted = blocksUntilStart === 0 && blocksRemaining > 0
-  const blocksToDisplay = hasPoolStarted ? blocksRemaining : blocksUntilStart
+  // const blocksToDisplay = hasPoolStarted ? blocksRemaining : blocksUntilStart
+  const blocksToDisplay = Number(hasPoolStarted ? endBlock : startBlock)
   return { shouldShowBlockCountdown, blocksUntilStart, blocksRemaining, hasPoolStarted, blocksToDisplay }
 }
