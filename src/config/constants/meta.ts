@@ -3,9 +3,8 @@ import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
   title: 'AstroSwap',
-  description:
-    'The most popular AMM on VELAS by user count! Earn Astro through yield farming or win it in the Lottery, then stake it in Star Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by ASTROSWAP), NFTs, and more, on a platform you can trust.',
-  image: 'https://exchange.wagyusw.app/images/hero.png',
+  description: 'A layer 2 dex for Cardano ecosystem',
+  image: 'https://exchange.astroswwap.app/images/hero.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
