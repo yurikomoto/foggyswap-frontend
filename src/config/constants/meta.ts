@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'AstroSwap',
   description: 'A layer 2 dex for Cardano ecosystem',
-  image: 'https://exchange.astroswwap.app/images/hero.png',
+  image: 'https://exchange.astroswap.app/images/hero.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
