@@ -1,8 +1,8 @@
 {
   "short_name": "AstroSwap",
   "name": "AstroSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "description": "Farm ASTRO with Astro LP Tokens",
+  "homepage_url": "https://exchange.astroswap.app",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",
