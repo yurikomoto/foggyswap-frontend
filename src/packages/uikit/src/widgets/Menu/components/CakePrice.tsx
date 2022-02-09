@@ -29,7 +29,7 @@ const ImgWrapper = styled.img`
 const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
   return cakePriceUsd ? (
     <PriceLink
-      href="https://exchange.astroswap.app/swap?outputCurrency=0xabf26902fd7b624e0db40d31171ea9dddf078351"
+      href="https://exchange.astroswap.app/swap?outputCurrency=0x72eB7CA07399Ec402c5b7aa6A65752B6A1Dc0C27"
       target="_blank"
     >
       <ImgWrapper alt="logo" src="/images/logo.png" />
