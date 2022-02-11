@@ -29,6 +29,14 @@ export const mainnetTokens = {
     'Multichain BUSD',
     'https://www.astroswap.app/',
   ),
+  adapad: new Token(
+    MAINNET,
+    '0xdb0170e2d0c1cc1b2e7a90313d9b9afa4f250289',
+    18,
+    'ADAPAD',
+    'ADAPad',
+    'https://adapad.io/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,
