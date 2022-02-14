@@ -35,6 +35,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xdb0170e2d0c1cc1b2e7a90313d9b9afa4f250289/logo.png?raw=true"
     },
     {
+      "name": "WAGToken",
+      "symbol": "WAG",
+      "address": "0xabf26902fd7b624e0db40d31171ea9dddf078351",
+      "chainId": 106,
+      "decimals": 18,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xabf26902fd7b624e0db40d31171ea9dddf078351/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
