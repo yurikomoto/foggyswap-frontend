@@ -45,6 +45,7 @@ export const mainnetTokens = {
     'ADAPad',
     'https://adapad.io/',
   ),
+  dana: new Token(MAINNET, '0x87d506b45d3398a49f95d0e4b26f645dc74fe105', 6, 'DANA', 'Ardana', 'https://ardana.org/'),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,

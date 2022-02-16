@@ -74,6 +74,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.wag,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 7,
+          lpSymbol: 'ADA_DANA LP',
+          lpAddresses: {
+            111: '',
+            106: '0x69cf53f67aA38ea4091e6aabeF08ea21d5074E70',
+          },
+          token: serializedTokens.dana,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**

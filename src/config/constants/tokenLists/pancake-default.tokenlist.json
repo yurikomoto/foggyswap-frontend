@@ -43,6 +43,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xabf26902fd7b624e0db40d31171ea9dddf078351/logo.png?raw=true"
     },
     {
+      "name": "Ardana",
+      "symbol": "DANA",
+      "address": "0x87d506b45d3398a49f95d0e4b26f645dc74fe105",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x87d506b45d3398a49f95d0e4b26f645dc74fe105/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
