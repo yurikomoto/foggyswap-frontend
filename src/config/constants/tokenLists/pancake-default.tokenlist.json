@@ -51,6 +51,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x87d506b45d3398a49f95d0e4b26f645dc74fe105/logo.png?raw=true"
     },
     {
+      "name": "Revuto",
+      "symbol": "REVU",
+      "address": "0x78fec264679c07aa1302af240fcb0c76db6e3a1c",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x78fec264679c07aa1302af240fcb0c76db6e3a1c/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",

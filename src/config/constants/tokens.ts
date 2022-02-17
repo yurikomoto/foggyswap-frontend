@@ -46,6 +46,14 @@ export const mainnetTokens = {
     'https://adapad.io/',
   ),
   dana: new Token(MAINNET, '0x87d506b45d3398a49f95d0e4b26f645dc74fe105', 6, 'DANA', 'Ardana', 'https://ardana.org/'),
+  revu: new Token(
+    MAINNET,
+    '0x78fec264679c07aa1302af240fcb0c76db6e3a1c',
+    6,
+    'REVU',
+    'Revuto',
+    'https://crypto.revuto.com/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,

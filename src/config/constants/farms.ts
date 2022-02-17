@@ -84,6 +84,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.dana,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 8,
+          lpSymbol: 'ADA_REVU LP',
+          lpAddresses: {
+            111: '',
+            106: '0x9417AfAcd1880C5E8919Dbe9232181b3a4bF59Bc',
+          },
+          token: serializedTokens.revu,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**
