@@ -59,6 +59,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x78fec264679c07aa1302af240fcb0c76db6e3a1c/logo.png?raw=true"
     },
     {
+      "name": "MELD",
+      "symbol": "MELD",
+      "address": "0xa5dcd54e78431f912d39e45174de23cde3842795",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xa5dcd54e78431f912d39e45174de23cde3842795/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",

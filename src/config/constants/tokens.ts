@@ -54,6 +54,7 @@ export const mainnetTokens = {
     'Revuto',
     'https://crypto.revuto.com/',
   ),
+  meld: new Token(MAINNET, '0xa5dcd54e78431f912d39e45174de23cde3842795', 6, 'MELD', 'MELD', 'https://meld.com/'),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,
