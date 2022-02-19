@@ -55,6 +55,14 @@ export const mainnetTokens = {
     'https://crypto.revuto.com/',
   ),
   meld: new Token(MAINNET, '0xa5dcd54e78431f912d39e45174de23cde3842795', 6, 'MELD', 'MELD', 'https://meld.com/'),
+  lq: new Token(
+    MAINNET,
+    '0x07bfb2da0f5204f1a9e48f0d7dc0442ec953e318',
+    6,
+    'LQ',
+    'Liqwid Finance',
+    'https://www.liqwid.finance/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,
