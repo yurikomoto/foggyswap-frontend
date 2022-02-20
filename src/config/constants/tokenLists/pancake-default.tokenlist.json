@@ -75,6 +75,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x07bfb2da0f5204f1a9e48f0d7dc0442ec953e318/logo.png?raw=true"
     },
     {
+      "name": "Ray Network",
+      "symbol": "XRAY",
+      "address": "0x438ec6bdf9909131b3bf5243429572fb9d0354a7",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x438ec6bdf9909131b3bf5243429572fb9d0354a7/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",

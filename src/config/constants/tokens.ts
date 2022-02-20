@@ -63,6 +63,14 @@ export const mainnetTokens = {
     'Liqwid Finance',
     'https://www.liqwid.finance/',
   ),
+  xray: new Token(
+    MAINNET,
+    '0x438ec6bdf9909131b3bf5243429572fb9d0354a7',
+    6,
+    'XRAY',
+    'Ray Network',
+    'https://raynetwork.io/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,
