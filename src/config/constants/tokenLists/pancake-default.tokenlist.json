@@ -83,6 +83,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x438ec6bdf9909131b3bf5243429572fb9d0354a7/logo.png?raw=true"
     },
     {
+      "name": "Pavia",
+      "symbol": "PAVIA",
+      "address": "0x3ed96aaaba90d2e4642a917d65613784124b5793",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x3ed96aaaba90d2e4642a917d65613784124b5793/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",

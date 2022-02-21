@@ -124,6 +124,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.xray,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 11,
+          lpSymbol: 'ADA_PAVIA LP',
+          lpAddresses: {
+            111: '',
+            106: '0xCe9250cDc7DAB5038809f78Ba147f99C7eA83a20',
+          },
+          token: serializedTokens.pavia,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**
