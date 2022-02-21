@@ -125,7 +125,7 @@ const farms: SerializedFarmConfig[] =
           quoteToken: serializedTokens.ada,
         },
         {
-          pid: 11,
+          pid: 12,
           lpSymbol: 'ADA_PAVIA LP',
           lpAddresses: {
             111: '',
