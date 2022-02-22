@@ -139,7 +139,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'ADA_VYFI LP',
           lpAddresses: {
             111: '',
-            106: '',
+            106: '0x996EA5f6Fb82f565e41F64Bf10B951Fe40b81441',
           },
           token: serializedTokens.vyfi,
           quoteToken: serializedTokens.ada,
