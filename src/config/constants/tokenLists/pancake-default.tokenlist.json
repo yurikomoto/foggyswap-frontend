@@ -91,6 +91,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x3ed96aaaba90d2e4642a917d65613784124b5793/logo.png?raw=true"
     },
     {
+      "name": "VyFinance",
+      "symbol": "VYFI",
+      "address": "0xc4b2aa12383e7a2fcc5fda9b7c5257c20b20cdd6",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xc4b2aa12383e7a2fcc5fda9b7c5257c20b20cdd6/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",

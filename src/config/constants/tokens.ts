@@ -72,6 +72,14 @@ export const mainnetTokens = {
     'https://raynetwork.io/',
   ),
   pavia: new Token(MAINNET, '0x3ed96aaaba90d2e4642a917d65613784124b5793', 6, 'PAVIA', 'Pavia', 'https://www.pavia.io/'),
+  vyfi: new Token(
+    MAINNET,
+    '0xc4b2aa12383e7a2fcc5fda9b7c5257c20b20cdd6',
+    6,
+    'VYFI',
+    'VyFinance',
+    'https://www.vyfi.io/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,

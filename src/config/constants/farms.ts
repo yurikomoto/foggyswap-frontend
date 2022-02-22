@@ -134,6 +134,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.pavia,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 13,
+          lpSymbol: 'ADA_VYFI LP',
+          lpAddresses: {
+            111: '',
+            106: '',
+          },
+          token: serializedTokens.vyfi,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**
