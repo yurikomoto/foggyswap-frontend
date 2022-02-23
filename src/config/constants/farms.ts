@@ -149,7 +149,7 @@ const farms: SerializedFarmConfig[] =
           lpSymbol: 'ADA_AADA LP',
           lpAddresses: {
             111: '',
-            106: '',
+            106: '0x78c9997e126E7a11C4bb6465bdD278643568A2Cd',
           },
           token: serializedTokens.aada,
           quoteToken: serializedTokens.ada,
