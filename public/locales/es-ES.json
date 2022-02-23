@@ -388,7 +388,7 @@
   "Any funds you stake in this pool will be automagically harvested and restaked (compounded) for you.": "Cualquier fondo que inviertas en este pool se cosechará automáticamente y se volverá a invertir (después de calcular el interés compuesto) para ti.",
   "Total staked": "Total invertido",
   "Just stake some tokens to earn.": "Solo invierte algunos tokens para ganar.",
-  "High APR, low risk.": "APR elevado, el riesgo es bajo.",
+  "High APR.": "APR elevado, el riesgo es bajo.",
   "Stake LP tokens to earn.": "Invierte en tokens LP para ganar.",
   "Basic Sale": "Venta básica",
   "Everyone can only commit a limited amount, but may expect a higher return per token committed.": "Cada persona solo puede asignar una cantidad limitada, pero puedes esperar un mayor rendimiento por cada token asignado.",
