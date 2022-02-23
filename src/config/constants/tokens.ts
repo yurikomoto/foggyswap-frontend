@@ -80,6 +80,14 @@ export const mainnetTokens = {
     'VyFinance',
     'https://www.vyfi.io/',
   ),
+  aada: new Token(
+    MAINNET,
+    '0x478bcae58d38a1fde507eab3ff2251b60e53863a',
+    6,
+    'AADA',
+    'AADA Finance',
+    'https://aada.finance/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,

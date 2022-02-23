@@ -144,6 +144,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.vyfi,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 14,
+          lpSymbol: 'ADA_AADA LP',
+          lpAddresses: {
+            111: '',
+            106: '',
+          },
+          token: serializedTokens.aada,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**
