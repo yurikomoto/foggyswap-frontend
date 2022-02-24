@@ -154,6 +154,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.aada,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 15,
+          lpSymbol: 'ADA_CLAP LP',
+          lpAddresses: {
+            111: '',
+            106: '0x2F153F7D04c58516264ab7753c98AB88D6280339',
+          },
+          token: serializedTokens.clap,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**

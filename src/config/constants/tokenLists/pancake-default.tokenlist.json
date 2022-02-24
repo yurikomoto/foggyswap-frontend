@@ -107,6 +107,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x478bcae58d38a1fde507eab3ff2251b60e53863a/logo.png?raw=true"
     },
     {
+      "name": "Cardashift",
+      "symbol": "CLAP",
+      "address": "0x253540b0fa37d2fc25e348672e09cbf395832438",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x253540b0fa37d2fc25e348672e09cbf395832438/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",

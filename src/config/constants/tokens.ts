@@ -88,6 +88,14 @@ export const mainnetTokens = {
     'AADA Finance',
     'https://aada.finance/',
   ),
+  clap: new Token(
+    MAINNET,
+    '0x253540b0fa37d2fc25e348672e09cbf395832438',
+    6,
+    'CLAP',
+    'Cardashift',
+    'https://cardashift.com/',
+  ),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,
