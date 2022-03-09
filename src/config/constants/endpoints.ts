@@ -16,19 +16,24 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
+// export const INFO_CLIENT = {
+//   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/astro',
+//   [ChainId.MAINNET]: 'http://51.91.119.137/subgraphs/name/astro',
+// }[chainId]
+
 export const INFO_CLIENT = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/astro',
-  [ChainId.MAINNET]: 'https://thegraph.astroswap.app/subgraphs/name/astro',
+  [ChainId.MAINNET]: 'https://thegraph1.astroswap.app/subgraphs/name/astro',
 }[chainId]
 
 // export const BLOCKS_CLIENT = {
 //   [ChainId.TESTNET]: 'http://51.222.43.201/subgraphs/name/blocks',
-//   [ChainId.MAINNET]: 'http://167.71.200.226/subgraphs/name/blocks',
+//   [ChainId.MAINNET]: 'http://51.91.119.137/subgraphs/name/astro',
 // }[chainId]
 
 export const BLOCKS_CLIENT = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/blocks',
-  [ChainId.MAINNET]: 'https://thegraph.astroswap.app/subgraphs/name/blocks',
+  [ChainId.MAINNET]: 'https://thegraph1.astroswap.app/subgraphs/name/astro',
 }[chainId]
 
 export const GRAPH_API_LOTTERY = {
