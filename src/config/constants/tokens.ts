@@ -96,6 +96,7 @@ export const mainnetTokens = {
     'Cardashift',
     'https://cardashift.com/',
   ),
+  adax: new Token(MAINNET, '0xd579b8b50200739ddd74e9255a75de6f4716d14d', 6, 'ADAX', 'ADAX', 'https://adax.pro/'),
   syrup: new Token(
     MAINNET,
     addresses[106].AstroStake,
