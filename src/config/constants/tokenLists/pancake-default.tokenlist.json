@@ -131,6 +131,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xcbb18fd7756b94417bd0b0c7b5b02847cae60e6f/logo.png?raw=true"
     },
     {
+      "name": "Quasi Universal Interplanetary Denomination",
+      "symbol": "QUID",
+      "address": "0x8c12c459d1b12e9b820448dffc8ed8c50afaeeed",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x8c12c459d1b12e9b820448dffc8ed8c50afaeeed/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
