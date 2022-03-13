@@ -88,6 +88,14 @@ export const mainnetTokens = {
     'AADA Finance',
     'https://aada.finance/',
   ),
+  sundae: new Token(
+    MAINNET,
+    '0x87cc4003d1bb6114ca9f10dd27a50346f6046c50',
+    6,
+    'SUNDAE',
+    'SundaeSwap',
+    'https://sundaeswap.finance/',
+  ),
   clap: new Token(
     MAINNET,
     '0x253540b0fa37d2fc25e348672e09cbf395832438',

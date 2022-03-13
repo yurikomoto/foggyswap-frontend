@@ -131,6 +131,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x95e922a37cc593c9397bbd579a443ed90c6c5ce2/logo.png?raw=true"
     },
     {
+      "name": "SundaeSwap",
+      "symbol": "SUNDAE",
+      "address": "0x87cc4003d1bb6114ca9f10dd27a50346f6046c50",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x87cc4003d1bb6114ca9f10dd27a50346f6046c50/logo.png?raw=true"
+    },
+    {
       "name": "MONET",
       "symbol": "MONET",
       "address": "0xcbb18fd7756b94417bd0b0c7b5b02847cae60e6f",
