@@ -139,6 +139,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x87cc4003d1bb6114ca9f10dd27a50346f6046c50/logo.png?raw=true"
     },
     {
+      "name": "ADALend",
+      "symbol": "ADAL",
+      "address": "0x7f332ebf0519eb48661e1faa8c4724f9ab9fd3ce",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x7f332ebf0519eb48661e1faa8c4724f9ab9fd3ce/logo.png?raw=true"
+    },
+    {
       "name": "MONET",
       "symbol": "MONET",
       "address": "0xcbb18fd7756b94417bd0b0c7b5b02847cae60e6f",
