@@ -147,6 +147,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x7f332ebf0519eb48661e1faa8c4724f9ab9fd3ce/logo.png?raw=true"
     },
     {
+      "name": "CardStarter",
+      "symbol": "CARDS",
+      "address": "0x2e4a65f658db73f681afc9b538e0bebe2478cafc",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x2e4a65f658db73f681afc9b538e0bebe2478cafc/logo.png?raw=true"
+    },
+    {
       "name": "MONET",
       "symbol": "MONET",
       "address": "0xcbb18fd7756b94417bd0b0c7b5b02847cae60e6f",
