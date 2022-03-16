@@ -66,20 +66,34 @@ const pools: SerializedPoolConfig[] =
           sortOrder: 5,
           isFinished: false,
         },
-        // {
-        //   sousId: 5,
-        //   stakingToken: serializedTokens.cake,
-        //   earningToken: serializedTokens.wmt,
-        //   contractAddress: {
-        //     111: '',
-        //     106: '0xb3cb1605FDAEFDc150825DB4Fc438C5b7D738DDe',
-        //   },
-        //   poolCategory: PoolCategory.CORE,
-        //   harvest: true,
-        //   tokenPerBlock: '0.0192',
-        //   sortOrder: 6,
-        //   isFinished: false,
-        // },
+        {
+          sousId: 5,
+          stakingToken: serializedTokens.cake,
+          earningToken: serializedTokens.wmt,
+          contractAddress: {
+            111: '',
+            106: '0xb3cb1605FDAEFDc150825DB4Fc438C5b7D738DDe',
+          },
+          poolCategory: PoolCategory.CORE,
+          harvest: true,
+          tokenPerBlock: '0.0192',
+          sortOrder: 6,
+          isFinished: false,
+        },
+        {
+          sousId: 6,
+          stakingToken: serializedTokens.cake,
+          earningToken: serializedTokens.wmt,
+          contractAddress: {
+            111: '',
+            106: '0x293389535A49513514487fFf9b1ab4399a2D7099',
+          },
+          poolCategory: PoolCategory.CORE,
+          harvest: true,
+          tokenPerBlock: '0.0192',
+          sortOrder: 7,
+          isFinished: false,
+        },
       ]
     : [
         {
