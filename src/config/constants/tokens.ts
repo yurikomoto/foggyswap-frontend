@@ -104,6 +104,14 @@ export const mainnetTokens = {
     'Cardashift',
     'https://cardashift.com/',
   ),
+  wmt: new Token(
+    MAINNET,
+    '0xf8306d5344da9f0ba7fe87f51abf39a10a4455f3',
+    6,
+    'WMT',
+    'World Mobile Token',
+    'https://worldmobiletoken.com/',
+  ),
   adax: new Token(MAINNET, '0xd579b8b50200739ddd74e9255a75de6f4716d14d', 6, 'ADAX', 'ADAX', 'https://adax.pro/'),
   syrup: new Token(
     MAINNET,
