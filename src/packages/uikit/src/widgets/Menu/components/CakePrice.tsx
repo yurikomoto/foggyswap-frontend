@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { PancakeRoundIcon } from '../../../components/Svg'
 import Text from '../../../components/Text/Text'
 import Skeleton from '../../../components/Skeleton/Skeleton'
 
 interface Props {
-  cakePriceUsd?: number
+  cakePriceUsd?: number | string
 }
 
 const PriceLink = styled.a`
@@ -33,7 +32,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
       target="_blank"
     >
       <ImgWrapper alt="logo" src="/images/logo.png" />
-      <Text color="tertiary" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color="tertiary" bold>{`$${cakePriceUsd}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
