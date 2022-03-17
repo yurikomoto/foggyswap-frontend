@@ -187,6 +187,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xf8306d5344da9f0ba7fe87f51abf39a10a4455f3/logo.png?raw=true"
     },
     {
+      "name": "A SHIB",
+      "symbol": "ASHIB",
+      "address": "0xff77dc079a879397398b5da1997fc8cc966edba3",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xff77dc079a879397398b5da1997fc8cc966edba3/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
