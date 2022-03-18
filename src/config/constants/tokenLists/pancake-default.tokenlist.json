@@ -195,6 +195,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xff77dc079a879397398b5da1997fc8cc966edba3/logo.png?raw=true"
     },
     {
+      "name": "MuesliSwap",
+      "symbol": "MILK",
+      "address": "0x8501e51e8d6ef1395be8aa7df388fe7498568a8e",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x8501e51e8d6ef1395be8aa7df388fe7498568a8e/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
