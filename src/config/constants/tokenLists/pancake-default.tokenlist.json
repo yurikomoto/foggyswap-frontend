@@ -203,6 +203,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x8501e51e8d6ef1395be8aa7df388fe7498568a8e/logo.png?raw=true"
     },
     {
+      "name": "ADADAO",
+      "symbol": "ADAO",
+      "address": "0x141ba6becda65b991f12e417f07636c656937e07",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x141ba6becda65b991f12e417f07636c656937e07/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
