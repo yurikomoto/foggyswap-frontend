@@ -211,6 +211,22 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x141ba6becda65b991f12e417f07636c656937e07/logo.png?raw=true"
     },
     {
+      "name": "Minswap",
+      "symbol": "MIN",
+      "address": "0x83adf2a3fcf7b24f7a979654441906774f4c93dc",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x83adf2a3fcf7b24f7a979654441906774f4c93dc/logo.png?raw=true"
+    },
+    {
+      "name": "Minswap",
+      "symbol": "MINT",
+      "address": "0x5303129f97cd3784748837362986fffacc985504",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x5303129f97cd3784748837362986fffacc985504/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
