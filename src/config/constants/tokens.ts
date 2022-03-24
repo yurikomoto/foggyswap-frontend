@@ -112,6 +112,14 @@ export const mainnetTokens = {
     'World Mobile Token',
     'https://worldmobiletoken.com/',
   ),
+  adao: new Token(
+    MAINNET,
+    '0x141ba6becda65b991f12e417f07636c656937e07',
+    6,
+    'ADAO',
+    'ADADAO',
+    'https://www.adadao.org/',
+  ),
   adax: new Token(MAINNET, '0xd579b8b50200739ddd74e9255a75de6f4716d14d', 6, 'ADAX', 'ADAX', 'https://adax.pro/'),
   syrup: new Token(
     MAINNET,

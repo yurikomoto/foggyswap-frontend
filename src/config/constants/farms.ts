@@ -194,6 +194,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.wmt,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 20,
+          lpSymbol: 'ADA_ADAO LP',
+          lpAddresses: {
+            111: '',
+            106: '0xa2d3b8862870cc20618161e28c2929ba6eb21f93',
+          },
+          token: serializedTokens.adao,
+          quoteToken: serializedTokens.ada,
+        },
       ]
     : [
         /**
