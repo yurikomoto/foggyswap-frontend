@@ -227,6 +227,22 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x5303129f97cd3784748837362986fffacc985504/logo.png?raw=true"
     },
     {
+      "name": "Ravendex",
+      "symbol": "RAVE",
+      "address": "0xaf0fd569d6da17c4eeb131be5570a4cbc518b0e4",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xaf0fd569d6da17c4eeb131be5570a4cbc518b0e4/logo.png?raw=true"
+    },
+    {
+      "name": "Charlz Token",
+      "symbol": "CHRLZ",
+      "address": "0xd0f9966476e5a79ef5fee6f36deb7771c3f2876a",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xd0f9966476e5a79ef5fee6f36deb7771c3f2876a/logo.png?raw=true"
+    },
+    {
       "name": "Multichain BUSD",
       "symbol": "BUSD",
       "address": "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3",
