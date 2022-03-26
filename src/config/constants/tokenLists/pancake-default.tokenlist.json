@@ -59,6 +59,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x87d506b45d3398a49f95d0e4b26f645dc74fe105/logo.png?raw=true"
     },
     {
+      "name": "anetaBTC",
+      "symbol": "cNETA",
+      "address": "0xd3ee69c96e50c6abf90d20102433f41bee6a3eef",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xd3ee69c96e50c6abf90d20102433f41bee6a3eef/logo.png?raw=true"
+    },
+    {
       "name": "Revuto",
       "symbol": "REVU",
       "address": "0x78fec264679c07aa1302af240fcb0c76db6e3a1c",
@@ -241,6 +249,14 @@
       "chainId": 106,
       "decimals": 6,
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xd0f9966476e5a79ef5fee6f36deb7771c3f2876a/logo.png?raw=true"
+    },
+    {
+      "name": "SWAPZ.app",
+      "symbol": "SWAPZ",
+      "address": "0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac",
+      "chainId": 106,
+      "decimals": 18,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac/logo.png?raw=true"
     },
     {
       "name": "Multichain BUSD",
