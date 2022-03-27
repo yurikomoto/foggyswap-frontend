@@ -155,6 +155,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x87cc4003d1bb6114ca9f10dd27a50346f6046c50/logo.png?raw=true"
     },
     {
+      "name": "Black Doge",
+      "symbol": "BDOGE",
+      "address": "0x74bc215bba14e8c550ccb168e96e4db1244db3ae",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x74bc215bba14e8c550ccb168e96e4db1244db3ae/logo.png?raw=true"
+    },
+    {
       "name": "ADALend",
       "symbol": "ADAL",
       "address": "0x7f332ebf0519eb48661e1faa8c4724f9ab9fd3ce",
