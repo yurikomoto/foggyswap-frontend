@@ -11,6 +11,7 @@ const { MAINNET } = ChainId
 export const ADA_ASTRO_LP_PID = chainId === MAINNET ? 1 : 1
 export const ADA_BUSD_LP_PID = chainId === MAINNET ? 3 : 5
 
+console.log('serializedTokens', serializedTokens)
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
     ? [
@@ -211,7 +212,7 @@ const farms: SerializedFarmConfig[] =
             111: '',
             106: '0xF5e274b19Fa19163FCa57b97Fb17Fed1DDF69E41',
           },
-          token: serializedTokens.astro,
+          token: serializedTokens.cake,
           quoteToken: serializedTokens.swapz,
         },
       ]
