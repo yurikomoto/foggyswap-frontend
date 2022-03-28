@@ -204,6 +204,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.adao,
           quoteToken: serializedTokens.ada,
         },
+        {
+          pid: 21,
+          lpSymbol: 'ASTRO_SWAPZ LP',
+          lpAddresses: {
+            111: '',
+            106: '0xF5e274b19Fa19163FCa57b97Fb17Fed1DDF69E41',
+          },
+          token: serializedTokens.astro,
+          quoteToken: serializedTokens.swapz,
+        },
       ]
     : [
         /**

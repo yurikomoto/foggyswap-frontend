@@ -45,14 +45,14 @@ export const mainnetTokens = {
     'ADAPad',
     'https://adapad.io/',
   ),
-  // swapz: new Token(
-  //   MAINNET,
-  //   '0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac',
-  //   18,
-  //   'SWAPZ',
-  //   'SWAPZ.app',
-  //   'https://swapz.app',
-  // ),
+  swapz: new Token(
+    MAINNET,
+    '0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac',
+    18,
+    'SWAPZ',
+    'SWAPZ.app',
+    'https://swapz.app',
+  ),
   dana: new Token(MAINNET, '0x87d506b45d3398a49f95d0e4b26f645dc74fe105', 6, 'DANA', 'Ardana', 'https://ardana.org/'),
   revu: new Token(
     MAINNET,
