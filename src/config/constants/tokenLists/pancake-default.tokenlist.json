@@ -259,6 +259,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xd0f9966476e5a79ef5fee6f36deb7771c3f2876a/logo.png?raw=true"
     },
     {
+      "name": "GOKEY",
+      "symbol": "GOKEY",
+      "address": "0x7beef0aa4f60e2ba88d4c7fc4ac662961337833c",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x7beef0aa4f60e2ba88d4c7fc4ac662961337833c/logo.png?raw=true"
+    },
+    {
       "name": "SWAPZ.app",
       "symbol": "SWAPZ",
       "address": "0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac",
