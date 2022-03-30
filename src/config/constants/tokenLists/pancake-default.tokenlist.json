@@ -267,6 +267,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x7beef0aa4f60e2ba88d4c7fc4ac662961337833c/logo.png?raw=true"
     },
     {
+      "name": "StripperCoin",
+      "symbol": "STRIP",
+      "address": "0x490e88ae8f578483baf49434f7d3ad57ea634fc2",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x490e88ae8f578483baf49434f7d3ad57ea634fc2/logo.png?raw=true"
+    },
+    {
       "name": "SWAPZ.app",
       "symbol": "SWAPZ",
       "address": "0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac",
