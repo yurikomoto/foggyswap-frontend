@@ -227,6 +227,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x141ba6becda65b991f12e417f07636c656937e07/logo.png?raw=true"
     },
     {
+      "name": "Flickto",
+      "symbol": "FLICK",
+      "address": "0x07f4154b0ebf48675e85e7b4675d3cdace45ba51",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x07f4154b0ebf48675e85e7b4675d3cdace45ba51/logo.png?raw=true"
+    },
+    {
       "name": "Minswap",
       "symbol": "MIN",
       "address": "0x83adf2a3fcf7b24f7a979654441906774f4c93dc",
