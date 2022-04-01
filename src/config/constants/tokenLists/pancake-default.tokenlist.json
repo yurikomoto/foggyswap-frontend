@@ -227,6 +227,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x141ba6becda65b991f12e417f07636c656937e07/logo.png?raw=true"
     },
     {
+      "name": "DripDropz",
+      "symbol": "DRIP",
+      "address": "0xc3406fc71d0491f7590f27076867445bfcc48a9a",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xc3406fc71d0491f7590f27076867445bfcc48a9a/logo.png?raw=true"
+    },
+    {
       "name": "Flickto",
       "symbol": "FLICK",
       "address": "0x07f4154b0ebf48675e85e7b4675d3cdace45ba51",
