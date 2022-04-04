@@ -291,6 +291,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x490e88ae8f578483baf49434f7d3ad57ea634fc2/logo.png?raw=true"
     },
     {
+      "name": "Cardano Gold",
+      "symbol": "CARGO",
+      "address": "0x6df6b678271766479bf0253d9b4fd1cf8e4db911",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x6df6b678271766479bf0253d9b4fd1cf8e4db911/logo.png?raw=true"
+    },
+    {
       "name": "SWAPZ.app",
       "symbol": "SWAPZ",
       "address": "0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac",
