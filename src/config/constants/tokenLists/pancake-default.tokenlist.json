@@ -299,6 +299,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x6df6b678271766479bf0253d9b4fd1cf8e4db911/logo.png?raw=true"
     },
     {
+      "name": "Dracards",
+      "symbol": "FIRE",
+      "address": "0x853bc583c6c67d226019e2c603921be4d1779341",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x853bc583c6c67d226019e2c603921be4d1779341/logo.png?raw=true"
+    },
+    {
       "name": "BISON COIN",
       "symbol": "BISON",
       "address": "0xa1f69a8fe5e68ab39251aeb924c88c09a1439f07",
