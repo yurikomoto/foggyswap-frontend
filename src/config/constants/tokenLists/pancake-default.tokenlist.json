@@ -315,6 +315,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xa1f69a8fe5e68ab39251aeb924c88c09a1439f07/logo.png?raw=true"
     },
     {
+      "name": "IBILECOIN",
+      "symbol": "BLC",
+      "address": "0x0d42a3b0ca326478e0569361130f8bb03c5824ad",
+      "chainId": 106,
+      "decimals": 6,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x0d42a3b0ca326478e0569361130f8bb03c5824ad/logo.png?raw=true"
+    },
+    {
       "name": "SWAPZ.app",
       "symbol": "SWAPZ",
       "address": "0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac",
