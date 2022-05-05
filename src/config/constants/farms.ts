@@ -215,6 +215,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.swapz,
           quoteToken: serializedTokens.cake,
         },
+        {
+          pid: 22,
+          lpSymbol: 'ASTRO_WBTC LP',
+          lpAddresses: {
+            111: '',
+            106: '0xFB6359B276847f9AB756908961Dbe3DBA64719F3',
+          },
+          token: serializedTokens.swapz,
+          quoteToken: serializedTokens.cake,
+        },
       ]
     : [
         /**

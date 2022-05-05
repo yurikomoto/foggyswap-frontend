@@ -331,6 +331,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x6a117582badc2f5c49f33da453d41cd1dce6c3ba/logo.png?raw=true"
     },
     {
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
+      "address": "0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c",
+      "chainId": 106,
+      "decimals": 8,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c/logo.png?raw=true"
+    },
+    {
       "name": "SWAPZ.app",
       "symbol": "SWAPZ",
       "address": "0x9b6fbF0ea23faF0d77B94d5699B44062e5E747Ac",

@@ -53,6 +53,14 @@ export const mainnetTokens = {
     'SWAPZ.app',
     'https://swapz.app',
   ),
+  wbtc: new Token(
+    MAINNET,
+    '0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c',
+    18,
+    'WBTC',
+    'Wrapped Bitcoin',
+    'https://wbtc.network/',
+  ),
   dana: new Token(MAINNET, '0x87d506b45d3398a49f95d0e4b26f645dc74fe105', 6, 'DANA', 'Ardana', 'https://ardana.org/'),
   revu: new Token(
     MAINNET,
