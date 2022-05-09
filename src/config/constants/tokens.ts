@@ -61,6 +61,14 @@ export const mainnetTokens = {
     'VELERO',
     'https://velero.finance/',
   ),
+  usdv: new Token(
+    MAINNET,
+    '0xcd7509b76281223f5b7d3ad5d47f8d7aa5c2b9bf',
+    18,
+    'USDV',
+    'USD Velero Stablecoin',
+    'https://velero.finance/',
+  ),
   wbtc: new Token(
     MAINNET,
     '0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c',
