@@ -53,6 +53,14 @@ export const mainnetTokens = {
     'SWAPZ.app',
     'https://swapz.app',
   ),
+  vdgt: new Token(
+    MAINNET,
+    '0xd12f7a98c0d740e7ec82e8caf94eb79c56d1b623',
+    18,
+    'VDGT',
+    'VELERO',
+    'https://velero.finance/',
+  ),
   wbtc: new Token(
     MAINNET,
     '0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c',
