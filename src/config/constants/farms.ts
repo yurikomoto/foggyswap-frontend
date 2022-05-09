@@ -225,6 +225,26 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.wbtc,
           quoteToken: serializedTokens.cake,
         },
+        {
+          pid: 23,
+          lpSymbol: 'ASTRO_USDV LP',
+          lpAddresses: {
+            111: '',
+            106: '0xeA02187075C76923Ba85985e9A3c244F5F36B530',
+          },
+          token: serializedTokens.usdv,
+          quoteToken: serializedTokens.cake,
+        },
+        {
+          pid: 24,
+          lpSymbol: 'ASTRO_VDGT LP',
+          lpAddresses: {
+            111: '',
+            106: '0x0d0D2cf62aC6e3950fa07bF9a2F4D158587CD2bB',
+          },
+          token: serializedTokens.vdgt,
+          quoteToken: serializedTokens.cake,
+        },
       ]
     : [
         /**
