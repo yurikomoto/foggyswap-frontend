@@ -245,6 +245,16 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.vdgt,
           quoteToken: serializedTokens.cake,
         },
+        {
+          pid: 25,
+          lpSymbol: 'ASTRO_WETH LP',
+          lpAddresses: {
+            111: '',
+            106: '0xAAF1f3b3A808b556B1A086d3113c9cA72BcE3618',
+          },
+          token: serializedTokens.weth,
+          quoteToken: serializedTokens.cake,
+        },
       ]
     : [
         /**

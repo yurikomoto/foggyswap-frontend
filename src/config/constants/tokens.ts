@@ -29,6 +29,14 @@ export const mainnetTokens = {
     'Multichain BUSD',
     'https://www.astroswap.app/',
   ),
+  weth: new Token(
+    MAINNET,
+    '0x85219708c49aa701871Ad330A94EA0f41dFf24Ca',
+    18,
+    'WETH',
+    'Multichain WETH',
+    'https://wagyuswap.app/',
+  ),
   wag: new Token(
     MAINNET,
     '0xabf26902fd7b624e0db40d31171ea9dddf078351',

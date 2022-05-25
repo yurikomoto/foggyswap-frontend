@@ -347,6 +347,14 @@
       "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0xd12f7a98c0d740e7ec82e8caf94eb79c56d1b623/logo.png?raw=true"
     },
     {
+      "name": "Multichain ETH",
+      "symbol": "ETH",
+      "address": "0x85219708c49aa701871Ad330A94EA0f41dFf24Ca",
+      "chainId": 106,
+      "decimals": 18,
+      "logoURI": "https://github.com/astroswapapp/assets/blob/master/blockchains/velas/assets/0x85219708c49aa701871ad330a94ea0f41dff24ca/logo.png?raw=true"
+    },
+    {
       "name": "USD Velero Stablecoin",
       "symbol": "USDV",
       "address": "0xcd7509b76281223f5b7d3ad5d47f8d7aa5c2b9bf",
