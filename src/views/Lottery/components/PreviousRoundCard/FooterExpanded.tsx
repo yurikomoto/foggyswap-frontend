@@ -44,7 +44,7 @@ const PreviousRoundCardFooter: React.FC<{ lotteryNodeData: LotteryRound; lottery
   if (lotteryNodeData) {
     const { amountCollectedInCake } = lotteryNodeData
     prizeInBusd = amountCollectedInCake.times(
-      cakePriceBusd ? new BigNumber(cakePriceBusd.toFixed(2)) : new BigNumber('0'),
+      cakePriceBusd ? new BigNumber(cakePriceBusd.toFixed(6)) : new BigNumber('0'),
     )
   }
 

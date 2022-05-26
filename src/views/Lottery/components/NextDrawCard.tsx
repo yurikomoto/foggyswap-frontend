@@ -66,7 +66,7 @@ const NextDrawCard = () => {
 
   const cakePriceBusd = useCakeBusdPrice()
   const prizeInBusd = amountCollectedInCake.times(
-    cakePriceBusd ? new BigNumber(cakePriceBusd.toFixed(2)) : new BigNumber('0'),
+    cakePriceBusd ? new BigNumber(cakePriceBusd.toFixed(6)) : new BigNumber('0'),
   )
 
   const endTimeMs = parseInt(endTime, 10) * 1000
