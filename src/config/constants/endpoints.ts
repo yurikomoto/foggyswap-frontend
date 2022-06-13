@@ -23,7 +23,7 @@ export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/
 
 export const INFO_CLIENT = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/astro',
-  [ChainId.MAINNET]: 'https://thegraph1.astroswap.app/subgraphs/name/astro',
+  [ChainId.MAINNET]: 'https://thegraph2.astroswap.app/subgraphs/name/astro',
 }[chainId]
 
 // export const BLOCKS_CLIENT = {
@@ -33,7 +33,7 @@ export const INFO_CLIENT = {
 
 export const BLOCKS_CLIENT = {
   [ChainId.TESTNET]: 'https://thegraph.testnet.astroswap.app/subgraphs/name/blocks',
-  [ChainId.MAINNET]: 'https://thegraph1.astroswap.app/subgraphs/name/astro',
+  [ChainId.MAINNET]: 'https://thegraph2.astroswap.app/subgraphs/name/astro',
 }[chainId]
 
 export const GRAPH_API_LOTTERY = {
