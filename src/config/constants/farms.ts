@@ -11,7 +11,6 @@ const { MAINNET } = ChainId
 export const ADA_ASTRO_LP_PID = chainId === MAINNET ? 1 : 1
 export const ADA_BUSD_LP_PID = chainId === MAINNET ? 3 : 5
 
-console.log('serializedTokens', serializedTokens)
 const farms: SerializedFarmConfig[] =
   chainId === MAINNET
     ? [
