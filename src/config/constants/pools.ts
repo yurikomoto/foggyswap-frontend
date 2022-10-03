@@ -121,7 +121,7 @@ const pools: SerializedPoolConfig[] =
           harvest: true,
           tokenPerBlock: '0.495',
           sortOrder: 9,
-          isFinished: false,
+          isFinished: true,
         },
         {
           sousId: 10,
