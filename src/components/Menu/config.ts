@@ -107,10 +107,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Docs'),
         href: 'https://docs.astroswap.app/',
       },
-      {
-        label: t('Blog'),
-        href: 'https://medium.com/@astroswap',
-      },
+      // {
+      //   label: t('Blog'),
+      //   href: 'https://medium.com/@astroswap',
+      // },
       {
         label: t('Support'),
         href: 'mailto:support@astroswap.app',

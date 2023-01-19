@@ -145,11 +145,11 @@ export const socials = [
     icon: 'TelegramIcon',
     href: 'https://t.me/AstroSwapOfficial',
   },
-  {
-    label: 'Medium',
-    icon: 'MediumIcon',
-    href: 'https://medium.com/@astroswap',
-  },
+  // {
+  //   label: 'Medium',
+  //   icon: 'MediumIcon',
+  //   href: 'https://medium.com/@astroswap',
+  // },
   {
     label: 'Twitter',
     icon: 'TwitterIcon',
