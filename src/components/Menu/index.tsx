@@ -12,7 +12,7 @@ import GlobalSettings from './GlobalSettings'
 const Menu = (props) => {
   const { isDark, toggleTheme } = useTheme()
   const cakePriceUsd = useCakeBusdPrice()
-  const cakePriceUsdDisplay = cakePriceUsd ? `${cakePriceUsd.toFixed(3)}` : ''
+  const cakePriceUsdDisplay = cakePriceUsd ? `${cakePriceUsd.toFixed(5)}` : ''
 
   const { profile } = useProfile()
   const { currentLanguage, setLanguage, t } = useTranslation()
