@@ -115,6 +115,18 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Support'),
         href: 'mailto:support@astroswap.app',
       },
+      {
+        label: t('AML Policy'),
+        href: '/aml-policy',
+      },
+      {
+        label: t('Privacy&Cookie Policy'),
+        href: '/privacy-cookie-policy',
+      },
+      {
+        label: t('Terms of Uee'),
+        href: '/terms-of-use',
+      },
       // {
       //   label: t('Merch'),
       //   href: 'https://pancakeswap.creator-spring.com/',

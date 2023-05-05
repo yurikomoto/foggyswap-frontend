@@ -7,6 +7,9 @@ import { usePollBlockNumber } from 'state/block/hooks'
 import { usePollCoreFarmData } from 'state/farms/hooks'
 import { useFetchProfile } from 'state/profile/hooks'
 import { DatePickerPortal } from 'components/DatePicker'
+import AMLPolicy from 'views/AMLPolicy'
+import PrivacyCookiePolicy from 'views/PrivacyCookiePolicy'
+import TermsOfUse from 'views/TermsOfUse'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import SuspenseWithChunkError from './components/SuspenseWithChunkError'
@@ -73,6 +76,15 @@ const App: React.FC = () => {
             </Route>
             <Route path="/lottery">
               <Lottery />
+            </Route>
+            <Route path="/aml-policy">
+              <AMLPolicy />
+            </Route>
+            <Route path="/privacy-cookie-policy">
+              <PrivacyCookiePolicy />
+            </Route>
+            <Route path="/terms-of-use">
+              <TermsOfUse />
             </Route>
             {/* <Route path="/ifo">
               <Ifos />
