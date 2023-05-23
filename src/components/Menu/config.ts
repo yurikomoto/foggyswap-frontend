@@ -124,7 +124,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         href: '/privacy-cookie-policy',
       },
       {
-        label: t('Terms of Uee'),
+        label: t('Terms of Use'),
         href: '/terms-of-use',
       },
       // {
