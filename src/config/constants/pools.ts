@@ -151,6 +151,20 @@ const pools: SerializedPoolConfig[] =
           sortOrder: 11,
           isFinished: true,
         },
+        {
+          sousId: 19,
+          stakingToken: serializedTokens.ada,
+          earningToken: serializedTokens.wmt,
+          contractAddress: {
+            111: '',
+            106: '0xa4531FFD3834C18447c41E0FDA880E8d2288cd70',
+          },
+          poolCategory: PoolCategory.CORE,
+          harvest: false,
+          tokenPerBlock: '0.0192',
+          sortOrder: 12,
+          isFinished: true,
+        },
       ]
     : [
         {
